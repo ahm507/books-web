@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
+
+<table dir=ltr border="0" cellspacing="0" cellpadding="0" height="20" width="771" align=center bgcolor="#3a6ea5">
+
+
+	<tr bgcolor="#000000" height=10>
+
+
+		<td valign="middle" align="right"  bgcolor="#000000">
+
+		</td>
+
+
+	</tr>
+
+
+</table>
+
+
+
+	
+
+<table dir=ltr border="0" cellspacing="0" cellpadding="0" height="20" width="771" align=center bgcolor="#9999cc">
+
+
+ 	<!--Toolbar  -->
+		<tr>
+		
+		<td align=right bgcolor="#3a6ea5" colspan=3>
+		<br>
+		<font size=-1>
+		&nbsp; &nbsp;
+		
+		&nbsp; <a class="toolbar" href="books.jsp">«” ⁄—«÷ «·ﬂ »</a>  &nbsp;
+		
+		<font color=white> | </font> 
+		
+		&nbsp; <a class="toolbar" href="search.jsp">«·»ÕÀ</a> &nbsp;
+
+		
+		</font></td>
+		</tr>
+
+
+
+		<!-- a minor space after the toolbar -->
+		<tr bgcolor="#333366">
+			<td colspan="2" width="766"> </td>
+		</tr>
+
+</table>
+
+
+<!-- header ends inc_header.htm-->
+

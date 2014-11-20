@@ -1,0 +1,51 @@
+HTML
+{
+    BACKGROUND-COLOR: #fff2e0;
+}
+
+body {
+
+	background: #fff2e0;
+	color: #000000;
+/*	FONT-FAMILY: tahoma; 	*/
+/*	FONT-FAMILY: Traditional Arabic; */
+/*	font-size: 8pt; */
+	margin-top: 0;
+	margin-right:0; 
+	margin-bottom:0;
+	margin-left:0; 
+}
+
+body.english {
+
+	background: #fff2e0;
+	color: #000000;
+	FONT-FAMILY: Arial; 
+/*	FONT-FAMILY: Traditional Arabic; */
+/*	font-size: 5pt; 	*/
+	font-size: 75%; 
+	margin-top: 0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+}
+
+/* Enhance line spacing for readibility*/
+P { line-height: 130% ;}
+
+UL { line-height: 130% ;}
+
+
+/*This is toolbar hyberlink style*/
+
+A.toolbar:link    { color: #FFFFFF ; font-style: normal; font-weight: bold; text-decoration:none;}
+A.toolbar:active  { color: #FFFFFF; font-style: normal; font-weight: bold; text-decoration:none;}
+A.toolbar:visited { color: #FFFFFF; font-style: normal; font-weight: bold; text-decoration:none;}
+A.toolbar:hover {color: #FFFFFF; text-decoration : underline; cursor: hand; }
+
+
+/*  The normal toolbar */
+A:link {	color: #0033BB; text-decoration: none; cursor: hand; }
+A:visited {color: #0033BB; text-decoration: none; cursor : hand; }
+A:active{        color:#003399; text-decoration: none; cursor: hand; }
+A:hover {	color: #0063ce; text-decoration : underline; cursor: hand; }

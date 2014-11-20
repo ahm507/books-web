@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
+ 		
+	
+	    <table border="0" cellpadding="0" cellspacing="0"  bgcolor=#3a6ea5 bordercolor="#111111" width=771 height="1" align=center >
+      <tr>
+        <td bgcolor="#3a6ea5 width="100%" height="1" align="center" valign="middle" colspan="4" >
+        <img height="2"></td>
+      </tr>
+		  <tr>
+        <td bgcolor="#3a6ea5 width="13%" align="center">
+        <a Title="«·’›Õ… «·—∆Ì”Ì…" href="http://www.islamic-council.com/indexua.htm"><font color="#FFFFFF" > <b> &nbsp; «·’›Õ… «·—∆Ì”Ì…</b></font></a></td>        
+        <td class="LeftTab" width="12%" align="center">
+
+        <a Title="«·≈ ’«· »‰«" href="http://www.islamic-council.com/images/mail.gif"><font color="#FFFFFF" > <b> &nbsp; «·≈ ’«· »‰«</b></font></a></td>
+        <td bgcolor="#3a6ea5 width="15%" align="center">
+        <a Title="—Ê«»ÿ" href="http://www.islamic-council.com/alinksux.htm"><font color="#FFFFFF" > &nbsp; <b>  —Ê«»ÿ</b></font></a></td>
+        <td bgcolor="#3a6ea5 width="11%" align="center">
+        <a Title="⁄‰ «·„Êﬁ⁄" href="http://www.islamic-council.com/aaboutux.htm"><font color="#FFFFFF" >  <b> &nbsp; ⁄‰ «·„Êﬁ⁄</b></font></a></td>
+        <td bgcolor="#3a6ea5 width="13%" align="center">
+        <a Title="Œ—Ìÿ… «·„Êﬁ⁄" href="http://www.islamic-council.com/asitemapux.htm"><font color="#FFFFFF" >  <b> &nbsp; Œ—Ìÿ… «·„Êﬁ⁄</b></font></a></td>
+
+      </tr>
+      <tr>
+        <td bgcolor="#3a6ea5 width="100%" height="1" align="center" valign="middle" colspan="4" >
+		<img height="2"></td>
+	  </tr>
+    </table>
+	
+
+<!-- footer end footer.html -->
+
