@@ -9,6 +9,8 @@ import org.junit.Test;
 
 import java.io.*;
 
+import junit.framework.Assert;
+
 //import com.sun.java.util.jar.pack.Package.File;
 
 
@@ -28,19 +30,20 @@ public class IndexerTest {
 	@Test
 	public void testIndexDoc() throws IOException, InterruptedException, Exception {
 		
-		String rootPath = "/Users/Macpro/Projects/Dr.AlyRashed/WebBooks/books2/test/";
+		String rootPath = "/Users/Macpro/Projects/Eclipse-AlyRashed/Books2/test/";
 
 		String dataPath = rootPath + "book1";
 		String indexPath = rootPath + "book1";
 		
-		//Remove old index files
-		new File(indexPath + "\\_8.cfs").delete(); 
-		new File(indexPath + "\\segments.gen").delete();
-		new File(indexPath + "\\segments_j").delete();
-
 		Indexer indexer = new Indexer();
 		// Just it will be successful if not throw an exception
-		indexer.indexDoc(dataPath, indexPath, null);
+		int indexedRecordsCount = indexer.indexDoc(dataPath, indexPath, null);
+		int expected = 499;
+		Assert.assertEquals(expected, indexedRecordsCount);
+
+		
+		
+		
 				
 	}
 

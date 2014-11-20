@@ -62,9 +62,10 @@ public class Indexer {
 	
 //	response.getWriter().println(backup.getRowFormatted(t));
 
-	public void indexDoc(String inputPath, String indexPath, JspWriter out) 
+	public int indexDoc(String inputPath, String indexPath, JspWriter out) 
 						throws Exception, IOException, InterruptedException {
 
+		int indexedRecordsCount = 0; 
 		sett.loadSettings(inputPath + "/build.properties");
 
 		indexWriter = new IndexWriter(indexPath, new SimpleAnalyzer());
@@ -109,7 +110,7 @@ public class Indexer {
 					
 					indexRecord(recordID, bookID, parentID, ptext.getTitle(), 
 							ptext.getText(), ptext.getTextNoVowels());
-					
+					indexedRecordsCount ++;
 					outCounter++;
 					if(outCounter % 100 == 0) { 
 						if(out != null) {
@@ -165,12 +166,9 @@ public class Indexer {
 					
 				}				
 				
-				
 			} // cur file end
 			
-			
 		} // all files end
-		
 		
 		//Close the index
 //		try {
@@ -186,7 +184,7 @@ public class Indexer {
 			out.flush();
 		}
 		
-				
+		return indexedRecordsCount;
 	}
 	
 	/**
