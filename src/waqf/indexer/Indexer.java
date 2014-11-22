@@ -7,7 +7,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
@@ -29,7 +28,7 @@ import javax.servlet.jsp.*;
  *
  */
 public class Indexer {
-	Settings sett = new Settings();
+	Settings settings = new Settings();
 	Logger logger = Logger.getLogger("waqf.indexer");
 	
 	IndexWriter indexWriter = null;
@@ -58,24 +57,20 @@ public class Indexer {
  * @throws InterruptedException 
  * 
  */  
-
-	
-//	response.getWriter().println(backup.getRowFormatted(t));
-
 	public int indexDoc(String inputPath, String indexPath, JspWriter out) 
 						throws Exception, IOException, InterruptedException {
 
 		int indexedRecordsCount = 0; 
-		sett.loadSettings(inputPath + "/build.properties");
+		settings.loadSettings(inputPath + "/build.properties");
 
 		indexWriter = new IndexWriter(indexPath, new SimpleAnalyzer());
 		
 		//get array of all text files to index from build.ini
-		String [] filesNames = sett.getFileList();
+		String [] filesNames = settings.getFileList();
 		if(filesNames == null || filesNames.length == 0) {
 			throw new Exception("No files specified to index!");
 		}
-		int bookID = sett.getDocID();
+		int bookID = settings.getDocID();
 		int recordID = 0;
 		int parentID = -1;
 		Stack<Integer> parentStack = new Stack<Integer>();
@@ -106,7 +101,7 @@ public class Indexer {
 						continue;
 					}
 		
-					ParsedText ptext = ParsedText.parseText(record, sett.getTitleSep()); 
+					ParsedText ptext = ParsedText.parseText(record, settings.getTitleSep()); 
 					
 					indexRecord(recordID, bookID, parentID, ptext.getTitle(), 
 							ptext.getText(), ptext.getTextNoVowels());
@@ -159,7 +154,7 @@ public class Indexer {
 					//Write any remaining record that could be missed
 					record = record.trim();
 					if(record.length() > 0) {
-					ParsedText ptext = ParsedText.parseText(record, sett.getTitleSep()); 
+					ParsedText ptext = ParsedText.parseText(record, settings.getTitleSep()); 
 					indexRecord(recordID, bookID, parentID, ptext.getTitle(), 
 							ptext.getText(), ptext.getTextNoVowels());
 					}
@@ -171,7 +166,6 @@ public class Indexer {
 		} // all files end
 		
 		//Close the index
-//		try {
 		if(out != null) {
 			out.println("Indexing is OK. Now will optimize the index.<br>");
 		}
@@ -192,10 +186,9 @@ public class Indexer {
 	 * @param record the string recoed
 	 * @return the level number
 	 */
-	
-	public int getRecordLevel(String record) {
+	private int getRecordLevel(String record) {
 		record = record.trim();
-		String []levelBreakers = sett.getLevelsBreakers();
+		String []levelBreakers = settings.getLevelsBreakers();
 		for(int i=0; i<levelBreakers.length; i++) {
 			if(record.indexOf(levelBreakers[i]) != -1) 
 				return i;
@@ -205,59 +198,44 @@ public class Indexer {
 		return -1;
 	}
 	
-	
 	/**
 	 * check settings for the record breaker mark and check if the string starts with it and report the result.
 	 * @param line line of text
 	 * @return true of the line starts with a new record breaker
 	 */
-	public boolean isNewRecord(String line) {
+	private boolean isNewRecord(String line) {
 		
 		line = line.trim();
-		if(line.startsWith(sett.getRecordBreaker()) == false) {
+		if(line.startsWith(settings.getRecordBreaker()) == false) {
 			return false;
 		}
 		return true;
 	}
-/**
+
+	
+	/**
  * Read all lines from a text in one shot
  * @param fileName
  * @return 
  * @return array of all read lines
  * @throws FileNotFoundException 
  */	
-	
-	public Vector<String> readLines(String inputPath, String fileName) 
+	private Vector<String> readLines(String inputPath, String fileName) 
 							throws FileNotFoundException,  IOException{
-	
 	    Vector<String> lines = new Vector<String>(); 
-		
-		BufferedReader fileReader;
-//		try {
-			fileReader = new BufferedReader(new FileReader (inputPath + "/" + fileName));
-			
-			for(;;) {
-				String line = fileReader.readLine();
-				if(line == null) {  // end of file
-					break;
-				}
-				if(line.length() > 0)
-					lines.add(line);
-			}			
-			
-/*		} catch (FileNotFoundException e) {
-			logger.throwing("Indexer", "readLines", e);
-			
-			e.printStackTrace();
-		} catch (IOException e) {
-			logger.throwing("Indexer", "readLines", e);
-			e.printStackTrace();
-		}
-*/
-			
-			
-	return lines;
+		BufferedReader fileReader = new BufferedReader(new FileReader (inputPath + "/" + fileName));
+		for(;;) {
+			String line = fileReader.readLine();
+			if(line == null) {  // end of file
+				break;
+			}
+			if(line.length() > 0)
+				lines.add(line);
+		}			
+		fileReader.close();
+		return lines;
 	}
+	
 	
 	/**
 	 * Parses record text according to some hardcoded rules and using some settings settings, 
@@ -273,17 +251,15 @@ public class Indexer {
 	 */
 	public void indexRecord(int recordID, int bookID, int parentID, String title, 
 			String text, String textNoVoweles) throws IOException {
-		
-			Document doc = new Document();
+
+		Document doc = new Document();
 			doc.add(new Field("id", String.valueOf(recordID), Field.Store.YES, Field.Index.UN_TOKENIZED));
 			doc.add(new Field("docID", String.valueOf(bookID), Field.Store.YES, Field.Index.UN_TOKENIZED));
 			doc.add(new Field("parentID", String.valueOf(parentID), Field.Store.YES, Field.Index.UN_TOKENIZED));
 			doc.add(new Field("title", title, Field.Store.YES, Field.Index.TOKENIZED));
 			doc.add(new Field("content", text, Field.Store.YES, Field.Index.NO)); //Stored but not indexed
 			doc.add(new Field("content2", textNoVoweles, Field.Store.NO, Field.Index.TOKENIZED)); //Indexed but not stored
-			
 			indexWriter.addDocument(doc);
-	
 	}
 	
 }

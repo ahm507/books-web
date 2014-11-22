@@ -17,6 +17,9 @@ import junit.framework.Assert;
 
 public class IndexerTest {
 
+	public static final String TEST_ROOT_PATH = "/Users/Macpro/Projects/Eclipse-AlyRashed/Books2/test/";
+
+	
 	@Before
 	public void setUp() throws Exception {
 		
@@ -30,10 +33,9 @@ public class IndexerTest {
 	@Test
 	public void testIndexDoc() throws IOException, InterruptedException, Exception {
 		
-		String rootPath = "/Users/Macpro/Projects/Eclipse-AlyRashed/Books2/test/";
 
-		String dataPath = rootPath + "book1";
-		String indexPath = rootPath + "book1";
+		String dataPath = TEST_ROOT_PATH + "book1";
+		String indexPath = TEST_ROOT_PATH + "book1";
 		
 		Indexer indexer = new Indexer();
 		// Just it will be successful if not throw an exception

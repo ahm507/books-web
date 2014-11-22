@@ -12,7 +12,7 @@
 
 <%@ include file="header.jspf" %>
 
-<table cellpadding=0 cellspacing=0 border="0" width=771 align=center >
+<table cellpadding="0" cellspacing="0" border="0" width="771" align="center" >
   <tr>
     <td valign=top>
 	<table border="0" width="100%">

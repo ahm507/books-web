@@ -63,7 +63,7 @@ public class ParsedText {
 			text1 = "";
 		}
 
-		
+		//The file is ANSI in Cp1252 as latin charecters
 		title1 = new String(title1.getBytes("Cp1252"), "Cp1256");
 		text1 = new String(text1.getBytes("Cp1252"), "Cp1256");
 		
@@ -91,7 +91,7 @@ public class ParsedText {
  * @param text
  * @return
  */	
-	//TODO: Refactor remove it, it seems you have better version at Display.java 
+	//FIXME: Remove it, you have better version at Display.java 
 	static String removeVowels(String text) {
 
 		final int ARABIC_FATHATAN = 0x064B;

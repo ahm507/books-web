@@ -102,7 +102,7 @@ if(userDir.indexOf("eclipse") != -1) { //Tomcat
 <tr> <td>
 
 <%
-out.println("&nbsp;&nbsp;");
+	out.println("&nbsp;&nbsp;");
 out.println("‰« Ã «·»ÕÀ ⁄‰ :");
 out.println("\"" + query + "\"");
 
@@ -121,29 +121,29 @@ if(scope.equals("all")) {
 		int booksCount = books.getGroupBooksCount(group);
 		for(int book = 1 ; book <= booksCount ; book++) {
 //*			String bookScope = String.format("g%db%d", group, book);
-			//resin workaround {
-			Object args[] = new Object[] {new Integer(group), new Integer(book)};
-			String bookScope = String.format("g%db%d", args);
-			//resin workaround }
-			
+	//resin workaround {
+	Object args[] = new Object[] {new Integer(group), new Integer(book)};
+	String bookScope = String.format("g%db%d", args);
+	//resin workaround }
+	
 //*			String bookPath = String.format("%s/g%db%d", indexPath, group, book);
-			//resin workaround
-			Object args2[] = new Object[] {indexPath, new Integer(group), new Integer(book)};
-			String bookPath = String.format("%s/g%db%d", args2);
+	//resin workaround
+	Object args2[] = new Object[] {indexPath, new Integer(group), new Integer(book)};
+	String bookPath = String.format("%s/g%db%d", args2);
 
-			int hitsCount = Search.getBookHitsCount(bookPath, query);
+	int hitsCount = Search.getBookHitsCount(bookPath, query);
 //*			String linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td><a href=book.jsp?bid=%s>%s</a> :<td><a href=hits.jsp?scope=%s&q=%s> %d ÕœÌÀ </a>", 
 //*					bookScope, books.getBookTitle(group, book), bookScope, URLEncoder.encode(query0), hitsCount);
-			//resin workaround
-			Object args3[] = new Object[] {books.getBookTitle(group, book), bookScope, URLEncoder.encode(query, "Cp1256"), new Integer(hitsCount)};
-			String linkText = "";
-			if(hitsCount > 0) {
-				linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td>%s :<td><a href=hits.jsp?scope=%s&q=%s> %d </a>", args3);
-			} else {
-				linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td>%s :<td><!--a href=hits.jsp?scope=%s&q=%s--> %d", args3);
-			}
+	//resin workaround
+	Object args3[] = new Object[] {books.getBookTitle(group, book), bookScope, URLEncoder.encode(query, "Cp1256"), new Integer(hitsCount)};
+	String linkText = "";
+	if(hitsCount > 0) {
+		linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td>%s :<td><a href=hits.jsp?scope=%s&q=%s> %d </a>", args3);
+	} else {
+		linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td>%s :<td><!--a href=hits.jsp?scope=%s&q=%s--> %d", args3);
+	}
 
-			out.println(linkText);
+	out.println(linkText);
 		}
 	}
 	out.println("</td></tr></table><br><br>");
@@ -203,7 +203,7 @@ else {
 	Object args5[] = new Object[] {scope, query, new Integer(nextHits)};
 	if(noNextPage == false) {
 	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'><b>  «·Ì </b></a>", 
-							args5 ));
+			args5 ));
 	}
 	
 	if(noNextPage == false && noPrevPage == false) {
@@ -215,7 +215,7 @@ else {
 	Object args6[] = new Object[] {scope, query, new Integer(prevHits)};
 	if(noPrevPage == false) {
 	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'><b> ”«»ﬁ </b></a>", 
-			args6 ));
+	args6 ));
 	}
 	out.println("<br>&nbsp;&nbsp;&nbsp;⁄—÷ «·‰ «∆Ã »œ«Ì… „‰ ");
 	out.println(startWith+1);
@@ -229,14 +229,14 @@ else {
 //		Document doc = hits.doc(i);
 		String id = hits[i].id;
 		String title = hits[i].title;
-		String summery = hits[i].summery;
+		String summery = hits[i].summeryHighlighted;
 		title = Display.cleanupTitle(title);
 //*		String outText = String.format("<tr><td>%d&nbsp&nbsp</td><td><a href=book.jsp?bid=%s&id=%s> %s </a></td></tr>", 
 //*				i+1, scope, id, title);
 		//Object args7[] = new Object[] {new Integer(i+1+startWith), scope, id, title};
 		Object args7[] = new Object[] {scope, id, title};
 		String outText = String.format("<a href=book.jsp?bid=%s&id=%s> %s </a><br>", 
-				args7);
+		args7);
 
 		out.println(outText);
 		out.println(summery);
@@ -245,9 +245,6 @@ else {
 	out.println("</table><br><br>");
 	//ins.close();
 }
-
-
-
 %>
 
 

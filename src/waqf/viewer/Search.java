@@ -23,7 +23,6 @@ public class Search {
 
 	static public int getBookHitsCount(String indexPath, String queryText)
 			throws IOException, ParseException {
-
 		QueryParser qp = new QueryParser("content2", new WhitespaceAnalyzer());
 		Query q = qp.parse(queryText);
 		IndexSearcher ins = new IndexSearcher(indexPath);
@@ -38,12 +37,12 @@ public class Search {
 			this.totalCount = totalCount;
 			this.id = id;
 			this.title = title;
-			this.summery = summery;
+			this.summeryHighlighted = summery;
 		}
 		public int totalCount ;
 		public String id;
-		public String title;
-		public String summery;
+		public String title; 
+		public String summeryHighlighted;
 	}
 	
 	static public HitInfo[] SeachBook(String bookPath, String query, int startHit, int showCount) 
@@ -54,10 +53,8 @@ public class Search {
 		IndexSearcher ins = new IndexSearcher(bookPath);
 	    Hits hits = ins.search(q);
 		int hitsCount =  hits.length();
-
 		int endHit = Math.min(startHit+showCount, hitsCount);
 		showCount = endHit - startHit;
-
         Highlighter highlighter = new Highlighter(new SimpleHTMLFormatter (), new QueryScorer(q));
         WhitespaceAnalyzer analyzer = new WhitespaceAnalyzer();
         
@@ -68,7 +65,6 @@ public class Search {
 			String title = doc.get("title");
 			String text = doc.get("content"); //content2 is not saved
 			text = Display.removeDiacritics(text);
-			
 			TokenStream tokenStream = analyzer.tokenStream("content", new StringReader(text));
             // Get 3 best fragments and separate with a "..."			
 			String result = highlighter.getBestFragments(tokenStream, text, 3, "...");
@@ -76,13 +72,9 @@ public class Search {
 			result = result.replace('$', ' ');
 			
 			hitsArray[i] = new HitInfo(hitsCount, id, title, result);
-
 		}
-		
 		ins.close();	
 		return hitsArray;
-		
 	}
-	
 }
 

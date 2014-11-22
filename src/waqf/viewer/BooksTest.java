@@ -31,12 +31,7 @@ public class BooksTest {
 	@Before
 	public void setUp() throws Exception {
 		books = new Books();
-		try { 
-			books.loadSettings(booksFile);
-		} catch (Exception exp) {
-			fail("The test data folder seems to be incorrect:" + booksFile);
-		}
-	
+		books.loadSettings(booksFile);
 	}
 
 	/**
@@ -54,24 +49,18 @@ public class BooksTest {
 	@Test
 	public void testGetGroupCount() {
 		int groupCount = books.getGroupCount();
-		if(groupCount != 3) {
-			fail("Wrong group count");
-		}
+		assertEquals(3, groupCount);
 	}
-
 	
 	/**
 	 * Test method for {@link waqf.viewer.Books#getGroupTitle(int)}.
+	 * @throws UnsupportedEncodingException 
 	 */
 	@Test
-	public void testGetGroupTitle() {
-		try {
-			if( ! books.getGroupTitle(2).equals("موسوعة الحديث الشريف")) {
-				fail("Group title has a problem");
-			}
-			} catch (Exception exp) {
-				fail(exp.getMessage());
-			}
+	public void testGetGroupTitle() throws UnsupportedEncodingException {
+		String title = books.getGroupTitle(2);
+		String expected = "موسوعة الحديث الشريف";
+		assertEquals(expected, title);
 	}
 
 	/**
@@ -81,9 +70,7 @@ public class BooksTest {
 	public void testGetGroupBooksCount() {
 		
 		assertEquals(2, books.getGroupBooksCount(1));// != 1) {
-
 		assertEquals(12, books.getGroupBooksCount(2));		
-
 		assertEquals(3, books.getGroupBooksCount(3));		
 	}
 
@@ -93,9 +80,7 @@ public class BooksTest {
 	@Test
 	public void testIsBookEnabled() {
 		assertTrue(books.isBookEnabled(1, 1));
-		
 		assertFalse(books.isBookEnabled(2, 1));
-		
 	}
 
 	/**
