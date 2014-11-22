@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
-<%@ page import="waqf.viewer.*,waqf.display.Search.HitInfo,java.net.URLEncoder"%> 
+<%@ page import="waqf.viewer.*,waqf.books.*,waqf.books.Search.HitInfo,java.net.URLEncoder"%> 
 <%@ page errorPage="error.jsp"%>
 
 
@@ -127,15 +127,19 @@ if(scope.equals("all")) {
 	//resin workaround }
 	
 //*			String bookPath = String.format("%s/g%db%d", indexPath, group, book);
+
 	//resin workaround
 	Object args2[] = new Object[] {indexPath, new Integer(group), new Integer(book)};
 	String bookPath = String.format("%s/g%db%d", args2);
 
 	int hitsCount = Search.getBookHitsCount(bookPath, query);
+	
 //*			String linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td><a href=book.jsp?bid=%s>%s</a> :<td><a href=hits.jsp?scope=%s&q=%s> %d ÍÏíË </a>", 
 //*					bookScope, books.getBookTitle(group, book), bookScope, URLEncoder.encode(query0), hitsCount);
 	//resin workaround
-	Object args3[] = new Object[] {books.getBookTitle(group, book), bookScope, URLEncoder.encode(query, "Cp1256"), new Integer(hitsCount)};
+	Object args3[] = new Object[] {
+			books.getBookTitle(group, book), bookScope, URLEncoder.encode(query, "Cp1256"), new Integer(hitsCount)};
+	
 	String linkText = "";
 	if(hitsCount > 0) {
 		linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td>%s :<td><a href=hits.jsp?scope=%s&q=%s> %d </a>", args3);

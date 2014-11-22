@@ -9,9 +9,9 @@ import javax.servlet.jsp.JspWriter;
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.queryParser.ParseException;
 
-import waqf.display.Display;
-import waqf.display.Search;
-import waqf.display.Search.HitInfo2;
+import waqf.books.Display;
+import waqf.books.Search;
+import waqf.books.Search.HitInfo2;
  
 /**
  * 

@@ -1,4 +1,4 @@
-package waqf.display;
+package waqf.books;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -14,8 +14,6 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 
 //TODO: Generate text files as the original files are corrupted. generate the same pattern as the old source files
-//FIXME: Refactor to separate HTML logic from Bussiness logic from data access logic so you can easily add epub perspective above business logic.
-
 
 
 public class Display {
@@ -100,8 +98,11 @@ public class Display {
 	 */
 	static public String removeDiacritics(String str) throws UnsupportedEncodingException {
 //		$vowels = chr(0xF0).chr(0xF1).chr(0xF2).chr(0xF3).chr(0xF5).chr(0xF6).chr(0xF8).chr(0xFA);
-	    String str1252 = new String(str.getBytes("Cp1256"), "Cp1252");
-	    str1252 = str1252.replaceAll("[\\xF0-\\xFA]", ""); //1252 encoding
+
+		String str1252 = new String(str.getBytes("Cp1256"), "Cp1252");
+	    
+		str1252 = str1252.replaceAll("[\\xF0-\\xFA]", ""); //1252 encoding
+	    
 	    str = new String(str1252.getBytes("Cp1252"), "Cp1256");
 	   
 		//str = str.replaceAll("[\\x64B-\\x652]", ""); //1252 encoding
@@ -111,6 +112,45 @@ public class Display {
 
 	}
 
+
+	/**
+	 * This function return a copy from the string that has no Arabic vowels
+	 * @param text
+	 * @return
+	 */	
+		//FIXME: Remove it, you have better version at Display.java 
+		static String removeVowels(String text) {
+	
+			final int ARABIC_FATHATAN = 0x064B;
+			final int ARABIC_DAMMATAN = 0x064C; 
+			final int ARABIC_KASRATAN = 0x064D;
+			final int ARABIC_FATHA = 0x064E;
+			final int ARABIC_DAMMA = 0x064F;
+			final int ARABIC_KASRA = 0x0650;
+			final int ARABIC_SHADDA = 0x0651;
+			final int ARABIC_SUKUN = 0x0652;
+	
+			StringBuffer text2 = new StringBuffer();
+			for(int i=0 ; i < text.length(); i++) {
+				switch(text.charAt(i)) {
+				case ARABIC_FATHATAN:
+				case ARABIC_DAMMATAN: 
+				case ARABIC_KASRATAN:
+				case ARABIC_FATHA:
+				case ARABIC_DAMMA:
+				case ARABIC_KASRA:
+				case ARABIC_SHADDA:
+				case ARABIC_SUKUN:
+					break;
+				default: //other chars
+					text2.append(text.charAt(i));
+					break;
+				
+				}
+			}
+			
+			return text2.toString(); 
+		}
 
 	
 	/**
@@ -167,5 +207,6 @@ public class Display {
 			pathInfo = getItemPathInfo(indexPath, parentID);
 		}
 	}
+
 
 }

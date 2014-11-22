@@ -1,7 +1,7 @@
 /**
  * 
  */
-package waqf.display;
+package waqf.books;
 
 import java.io.IOException;
 import org.apache.lucene.analysis.WhitespaceAnalyzer;
@@ -26,6 +26,8 @@ import java.util.Vector;
  */
 public class Search {
 
+	//FIXME: Search is not working
+	
 	static public int getBookHitsCount(String indexPath, String queryText)
 			throws IOException, ParseException {
 		QueryParser qp = new QueryParser("content2", new WhitespaceAnalyzer());

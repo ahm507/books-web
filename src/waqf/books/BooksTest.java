@@ -1,7 +1,7 @@
 /**
  * 
  */
-package waqf.display;
+package waqf.books;
 
 import static org.junit.Assert.*;
 
@@ -45,7 +45,7 @@ public class BooksTest {
 
 
 	/**
-	 * Test method for {@link waqf.display.Books#getGroupCount()}.
+	 * Test method for {@link waqf.books.Books#getGroupCount()}.
 	 */
 	@Test
 	public void testGetGroupCount() {
@@ -54,7 +54,7 @@ public class BooksTest {
 	}
 	
 	/**
-	 * Test method for {@link waqf.display.Books#getGroupTitle(int)}.
+	 * Test method for {@link waqf.books.Books#getGroupTitle(int)}.
 	 * @throws UnsupportedEncodingException 
 	 */
 	@Test
@@ -65,7 +65,7 @@ public class BooksTest {
 	}
 
 	/**
-	 * Test method for {@link waqf.display.Books#getGroupBooksCount(int)}.
+	 * Test method for {@link waqf.books.Books#getGroupBooksCount(int)}.
 	 */
 	@Test
 	public void testGetGroupBooksCount() {
@@ -76,7 +76,7 @@ public class BooksTest {
 	}
 
 	/**
-	 * Test method for {@link waqf.display.Books#isBookEnabled(int, int)}.
+	 * Test method for {@link waqf.books.Books#isBookEnabled(int, int)}.
 	 */
 	@Test
 	public void testIsBookEnabled() {
@@ -85,7 +85,7 @@ public class BooksTest {
 	}
 
 	/**
-	 * Test method for {@link waqf.display.Books#getBookTitle(int, int)}.
+	 * Test method for {@link waqf.books.Books#getBookTitle(int, int)}.
 	 * @throws UnsupportedEncodingException 
 	 */
 	@Test
