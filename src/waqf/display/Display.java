@@ -1,7 +1,8 @@
-package waqf.viewer;
+package waqf.display;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.Vector;
 
 import org.apache.lucene.analysis.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
@@ -111,6 +112,7 @@ public class Display {
 	}
 
 
+	
 	/**
 	 * This is hardcoded shortcut to clean up markup tags typically #L0 to #L10
 	 * It uses regular expression
@@ -120,6 +122,50 @@ public class Display {
 	static public String cleanupTitle(String title) {
 		title = title.replaceAll("#L\\d+\\s", "");//remove #L0, #L1, and so on.
 		return title;
+	}
+
+	static Vector<String> getItemPathInfo(String indexPath, String id)
+									throws ParseException, IOException {
+		
+		Vector<String> pathInfo = new Vector<String>(); //initially empty
+		IndexSearcher ins = null;
+	
+		QueryParser qp = new QueryParser("id", new WhitespaceAnalyzer());
+		Query q = qp.parse(id);
+		
+	    ins = new IndexSearcher(indexPath);
+	    Hits hits = ins.search(q);
+	
+	    if(hits.length() == 0) {
+			ins.close();
+			return pathInfo;
+	    }
+	
+	    //Display the record
+	    Document doc = hits.doc(0);
+	    pathInfo.add(0, doc.get("id"));
+	    pathInfo.add(1, doc.get("parentID"));
+	    pathInfo.add(2, doc.get("title"));
+	    ins.close();
+	
+		return pathInfo;
+	}
+
+	public static void getTreePathData(String indexPath, String title,
+			String parentID, Vector<String> ids, Vector<String> titles)
+			throws ParseException, IOException {
+		ids.add("0");// I need not to store the read ID, I never uses it
+		titles.add(title);
+		
+		Vector<String> pathInfo = getItemPathInfo(indexPath, parentID);
+		while (pathInfo.size() > 0) {
+			ids.add(pathInfo.get(0)); // id
+			title = pathInfo.get(2);
+			title = Display.cleanupTitle(title);
+			titles.add(title); // title
+			parentID = (String) pathInfo.get(1);// parentID
+			pathInfo = getItemPathInfo(indexPath, parentID);
+		}
 	}
 
 }

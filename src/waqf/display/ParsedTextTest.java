@@ -1,7 +1,7 @@
 /**
  * 
  */
-package waqf.viewer;
+package waqf.display;
 
 import static org.junit.Assert.*;
 

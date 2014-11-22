@@ -1,7 +1,7 @@
 /** 
  * 
  */
-package waqf.viewer;
+package waqf.display;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

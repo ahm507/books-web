@@ -16,8 +16,8 @@ import org.apache.lucene.document.Field;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.store.Directory;
 
-import waqf.viewer.ParsedText;
-import waqf.viewer.Settings;
+import waqf.display.ParsedText;
+import waqf.display.Settings;
 //import org.apache.lucene.store.FSDirectory;
 import javax.servlet.jsp.*; 
 

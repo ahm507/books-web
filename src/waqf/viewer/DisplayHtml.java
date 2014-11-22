@@ -1,20 +1,17 @@
 package waqf.viewer;
 
-//import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Vector;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.jsp.JspWriter;
 
-import org.apache.lucene.analysis.WhitespaceAnalyzer;
-import org.apache.lucene.document.Document;
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.queryParser.ParseException;
-import org.apache.lucene.queryParser.QueryParser;
-import org.apache.lucene.search.Hits;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
+
+import waqf.display.Display;
+import waqf.display.Search;
+import waqf.display.Search.HitInfo2;
  
 /**
  * 
@@ -24,79 +21,6 @@ import org.apache.lucene.search.Query;
  */
 
 public class DisplayHtml {
- 
-	
-	
-	
-	/**
-	 *
-	 * Get item kids parsed as html string using the passed formatPattern.  
-	 * If you want to change the format pattern, be very carful to not break the code.
-	 * @param dir
-	 * @param id
-	 * @param formatPattern This is the default pattern "<a href=index.jsp?id=%d>%s</a><br>"
-	 * @return
-	 * @throws ParseException
-	 * @throws IOException
-	 */
-	static public String getItemKidsAsHtml(String indexPath, String id, String formatPattern) 
-					throws ParseException, IOException {
-
-		if(formatPattern.length() == 0) {
-			formatPattern = "<a href=index.jsp?id=%s>%s</a><br>";
-		}
-		StringBuffer result = new StringBuffer();
-	    QueryParser qp = new QueryParser("parentID", new WhitespaceAnalyzer());
-	    Query q = qp.parse(id);
-	    IndexSearcher ins = new IndexSearcher(indexPath);
-		Hits hits = ins.search((Query)q);
-
-		if(hits.length() == 0) {
-		    ins.close();
-		    return "";
-		}
-
-		//Display the records
-		for(int i=0;i < hits.length(); i++) {
-		    Document doc = hits.doc(i);
-		    String id2 = doc.get("id");
-		    String title2 = doc.get("title");
-		    title2 = Display.cleanupTitle(title2); //remove #L0, ...
-	  	    String title3 = title2;
-	  	    result.append(String.format(formatPattern, id2, title3));
-		}
-		ins.close();
-
-
-	    return result.toString();
-	}
-
-	static private Vector<String> getItemPathInfo(String indexPath, String id)
-									throws ParseException, IOException {
-		
-		Vector<String> v = new Vector<String>(); //initially empty
-		IndexSearcher ins = null;
-
-		QueryParser qp = new QueryParser("id", new WhitespaceAnalyzer());
-		Query q = qp.parse(id);
-		
-	    ins = new IndexSearcher(indexPath);
-	    Hits hits = ins.search(q);
-
-	    if(hits.length() == 0) {
-			ins.close();
-			return v;
-	    }
-
-	    //Display the record
-	    Document doc = hits.doc(0);
-	    v.add(0, doc.get("id"));
-	    v.add(1, doc.get("parentID"));
-	    v.add(2, doc.get("title"));
-	    ins.close();
-
-		return v;
-	}
 
 	static public String getDiacCookieStatus(Cookie[] cookies) {
 		String showDiac = "true"; //this is the default status
@@ -114,35 +38,22 @@ public class DisplayHtml {
 	
 	static public String getDisplayPathAsHtml(String bidPar, String indexPath, String title,
 			String parentID) throws ParseException, IOException {
-		// First get the path titles and IDs, Then print them in reverse order,
-		// so
-		// I used two vectors
-		StringBuffer dispPath = new StringBuffer();
 
-		// Vector<String> ids = new Vector<String>();
 		Vector<String> ids = new Vector<String>();
 		Vector<String> titles = new Vector<String>();
-		ids.add("0");// I need not to store the read ID, I never uses it
-		titles.add(title);
-		// out.println(title + "<br>");
-		Vector<String> vec = DisplayHtml.getItemPathInfo(indexPath, parentID);
-		while (vec.size() > 0) {
-			ids.add(vec.get(0)); // id
-			titles.add(vec.get(2)); // title
-			parentID = (String) vec.get(1);// parentID
-			vec = DisplayHtml.getItemPathInfo(indexPath, parentID);
-		}
+
+		Display.getTreePathData(indexPath, title, parentID, ids, titles);
 
 		// And now I am going to print the items in reverse
 		int n = 0;
+		StringBuffer dispPath = new StringBuffer();
 		for (int i = ids.size() - 1; i >= 0; i--) {
-			String spaces = getPrintSpaces(n * 4);
+			String spaces = getHtmlSpaces(n * 4);
 			dispPath.append(spaces);
 			n++;
 			title = (String) titles.get(i);
-			title = Display.cleanupTitle(title);
-			String title2 = title;// new String(title.getBytes("Cp1252"),
-									// "Cp1256");
+//			title = Display.cleanupTitle(title);
+			String title2 = title;// new String(title.getBytes("Cp1252"), "Cp1256");
 
 			if (i == 0)
 				dispPath.append(title2);
@@ -158,7 +69,7 @@ public class DisplayHtml {
 		return dispPath.toString();
 	}
 
-	static private String getPrintSpaces(int n) {
+	static private String getHtmlSpaces(int n) {
 		StringBuffer spaces = new StringBuffer();
 		while (n >= 0) {
 			spaces.append("&nbsp;");
@@ -185,16 +96,6 @@ public class DisplayHtml {
 		return result.toString();
 	}
 
-	String Highlight(String text, String searchTerm) {
-		//if Search have double quetes, remove them and treat all as one word
-		//else break words by space and treat each one as a separate word
-		//Remove diacritics
-		//Get the word number of search terms
-		//Apply highlighting on the original voweled text using word number 
-	
-		return "";
-	}
-	
 	static public void displayHtml(String indexPath, String telawaPath, String bid, String searchTerm, JspWriter out, boolean showDiacVar) throws CorruptIndexException, ParseException, IOException, Exception {
 
 		//out.println("<!--" + indexPath + "-->");
@@ -240,15 +141,9 @@ public class DisplayHtml {
 		out.println("<img align=center src=\"quran/image/"
 				+ doc.quranImage + "\">");
 		out.println("</p>");
-
-		//get the full path of real player sound
-
-//		String telawaPath = application.getRealPath("quran/telawa/");
-		//String qrnAudio = Display.fixAudioFileName(doc.quranAudio, telawaPath);
 		String qrnAudio = doc.quranAudio;
 		if (!qrnAudio.equals(doc.quranAudio)) {
-			out.println("<!-- Quran Audio FIXED:" + telawaPath
-					+ " -->");
+			out.println("<!-- Quran Audio FIXED:" + telawaPath + " -->");
 		}
 
 		out.println("<p align=center><a href=quran/telawa/"
@@ -265,14 +160,44 @@ public class DisplayHtml {
 			Display.DocInfo doc) throws IOException, ParseException {
 		//Show kids if any
 		out.println("<br>");
-		String kids = DisplayHtml.getItemKidsAsHtml(indexPath, doc.id,
-				"<a href=book.jsp?" + bidPar + "&id=%s>%s</a><br>");
+		String kids = DisplayHtml.getItemKidsAsHtml(indexPath, doc.id, "<a href=book.jsp?" + bidPar + "&id=%s>%s</a><br>");
 		if (kids.length() > 0) {
 			out.println("<hr>");
 			out.println(kids);
 		}
 	}
-
+	
+	/**
+	 *
+	 * Get item kids parsed as html string using the passed formatPattern.  
+	 * If you want to change the format pattern, be very carful to not break the code.
+	 * @param dir
+	 * @param id
+	 * @param formatPattern This is the default pattern "<a href=index.jsp?id=%d>%s</a><br>"
+	 * @return
+	 * @throws ParseException
+	 * @throws IOException
+	 */
+	static public String getItemKidsAsHtml(String indexPath, String id, String formatPattern) 
+					throws ParseException, IOException {
+		if(formatPattern.length() == 0) {
+			formatPattern = "<a href=index.jsp?id=%s>%s</a><br>";
+		}
+		ArrayList<HitInfo2>hits = Search.findItemKids(indexPath, id);
+		StringBuffer result = new StringBuffer();
+		//Display the records
+		for(int i=0;i < hits.size(); i++) {
+			Search.HitInfo2 doc = hits.get(i);
+		    String id2 = doc.id;
+		    String title2 = doc.title;
+		    //cleanupTitle should be in Display.java unless I need the dirty one sometimes ?!
+//		    title2 = Display.cleanupTitle(title2); //remove #L0, ...
+	  	    String title3 = title2;
+	  	    result.append(String.format(formatPattern, id2, title3));
+		}
+	    return result.toString();
+	}
+	
 	static public void diplayPathHtml(String indexPath, JspWriter out, String bidPar,
 			Display.DocInfo doc) throws ParseException, IOException {
 		// DISPLAY PATH

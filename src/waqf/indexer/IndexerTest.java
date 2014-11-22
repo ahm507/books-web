@@ -40,7 +40,7 @@ public class IndexerTest {
 		Indexer indexer = new Indexer();
 		// Just it will be successful if not throw an exception
 		int indexedRecordsCount = indexer.indexDoc(dataPath, indexPath, null);
-		int expected = 499;
+		int expected = 606;
 		Assert.assertEquals(expected, indexedRecordsCount);
 
 		

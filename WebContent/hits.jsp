@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
-<%@ page import="waqf.viewer.*, waqf.viewer.Search.HitInfo,java.net.URLEncoder"%> 
+<%@ page import="waqf.viewer.*,waqf.display.Search.HitInfo,java.net.URLEncoder"%> 
 <%@ page errorPage="error.jsp"%>
 
 

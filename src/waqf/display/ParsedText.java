@@ -1,4 +1,4 @@
-package waqf.viewer;
+package waqf.display;
 
 import java.io.UnsupportedEncodingException;
 
@@ -55,7 +55,6 @@ public class ParsedText {
 				} else {
 					text1 = text1 + "\r\n";
 				}
-				 
 			}
 				
 		} else {
@@ -64,11 +63,15 @@ public class ParsedText {
 		}
 
 		//The file is ANSI in Cp1252 as latin charecters
-		title1 = new String(title1.getBytes("Cp1252"), "Cp1256");
-		text1 = new String(text1.getBytes("Cp1252"), "Cp1256");
+//		title1 = adjustEncoding(title1);
+//		text1 = adjustEncoding(text1);
 		
 		return new ParsedText(title1, text1, removeVowels(text1));
 	}
+public static String adjustEncoding(String title1) throws UnsupportedEncodingException {
+	title1 = new String(title1.getBytes("Cp1252"), "Cp1256");
+	return title1;
+}
 	
 	String title;
 	String text;
