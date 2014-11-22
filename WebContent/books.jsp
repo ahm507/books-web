@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
-<%@ page import="waqf.viewer.*"%>
+<%@ page import="waqf.viewer.*, waqf.books.*"%>
 <%@ page errorPage="error.jsp"%>
 
  
@@ -10,7 +10,7 @@
 <title>«” ⁄—«÷ ﬂ » «·„ﬂ »… «·≈”·«„Ì…</title>
 <STYLE> <!--    @import url(style.css);		--> </STYLE>
 </head>
-<body dir=rtl>
+<body dir=rtl> 
 
 <%@include file="header.jspf"%>
 
@@ -96,7 +96,7 @@ for(int group = 1 ; group <= groupsCount; group++) {
 }
 	
 %>
-
+ 
 </td> </tr> </table>
 <br>
 <br>

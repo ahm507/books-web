@@ -73,6 +73,8 @@ public class Search {
 			Document doc = hits.doc(i + startHit);
 			String id = doc.get("id");
 			String title = doc.get("title");
+			title = Display.cleanupTitle(title);
+
 			String text = doc.get("content"); // content2 is not saved
 			text = Display.removeDiacritics(text);
 			TokenStream tokenStream = analyzer.tokenStream("content",

@@ -10,7 +10,7 @@
 <STYLE> <!--    @import url(../style.css);		--> </STYLE>
 </head>
 <body dir=rtl>
-
+ 
 <%@include file="header.jspf"%>
  
 <br/>

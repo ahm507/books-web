@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
-<%@ page import="waqf.indexer.*, waqf.viewer.*"%>
+<%@ page import="waqf.indexer.*, waqf.viewer.*, waqf.books.*"%>
 <%@ page errorPage="error.jsp"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -17,7 +17,7 @@ function build(bid)
 		window.location="build.jsp?bid=" + bid;
 	}
 
-}
+} 
 
 
 </script>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=Cp1256"
 	pageEncoding="Cp1256"%>
 <%@ page
-	import="javax.servlet.http.Cookie, waqf.viewer.*,waqf.viewer.DisplayHtml.DocInfo"%>
+	import="javax.servlet.http.Cookie, waqf.viewer.*"%>
 <%@ page errorPage="error.jsp"%>
 
 <%
@@ -15,7 +15,7 @@
 	if (searchTerm == null) {
 		searchTerm = "0";
 	}
-
+ 
 	//1) Get current status
 	Cookie[] cookies = request.getCookies();
 	String showDiac = DisplayHtml.getDiacCookieStatus(cookies);

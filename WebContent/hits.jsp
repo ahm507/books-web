@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
 <%@ page import="waqf.viewer.*,waqf.books.*,waqf.books.Search.HitInfo,java.net.URLEncoder"%> 
-<%@ page errorPage="error.jsp"%>
+
+
+<!-- page errorPage="error.jsp"% -->
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -38,19 +40,19 @@ String query = "";
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 //Handling stupid problem with Resin and Tomcat
-String userDir = System.getProperty("user.dir"); 
+//String userDir = System.getProperty("user.dir"); 
 //out.println(userDir);
-if(userDir.indexOf("eclipse") != -1) { //Tomcat
+//if(userDir.indexOf("eclipse") != -1) { //Tomcat
 //	String defaultEncodingName = request.getCharacterEncoding();
-	query = new String(query0.getBytes(), "Cp1256"); //"Cp1252"
+//	query = new String(query0.getBytes(), "Cp1256"); //"Cp1252"
 	
-} else {  //almost Resin
-	String defaultEncodingName = request.getCharacterEncoding();
-	query = new String(query0.getBytes(defaultEncodingName), "Cp1256"); //"Cp1252"
+//} else {  //almost Resin
+	//String defaultEncodingName = request.getCharacterEncoding();
+//	query = new String(query0.getBytes(defaultEncodingName), "Cp1256"); //"Cp1252"
 	//queryEscaped = query;
 	//queryEscaped.replaceAll("\\\"", "&quot;");
 	
-}
+//}
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 
@@ -126,12 +128,12 @@ if(scope.equals("all")) {
 	String bookScope = String.format("g%db%d", args);
 	//resin workaround }
 	
-//*			String bookPath = String.format("%s/g%db%d", indexPath, group, book);
+	String bookPath = String.format("%s/g%db%d", indexPath, group, book);
 
 	//resin workaround
-	Object args2[] = new Object[] {indexPath, new Integer(group), new Integer(book)};
+/* 	Object args2[] = new Object[] {indexPath, new Integer(group), new Integer(book)};
 	String bookPath = String.format("%s/g%db%d", args2);
-
+ */
 	int hitsCount = Search.getBookHitsCount(bookPath, query);
 	
 //*			String linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td><a href=book.jsp?bid=%s>%s</a> :<td><a href=hits.jsp?scope=%s&q=%s> %d ÍÏíË </a>", 
