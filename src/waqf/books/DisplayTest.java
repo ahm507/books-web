@@ -12,17 +12,16 @@ import org.junit.Test;
 
 public class DisplayTest {
 
-	//FIXME: fix this test or remove it
-	@Test
+	//@Test
 	public void testGetShowItemKids() throws ParseException, IOException {
-		
-		String indexPath = "";
-		String id = "";
-		String formatPattern = "";
-//		String kids = Display.getShowItemKids(indexPath, id, formatPattern);
-		
-		Properties conf = getUnitTestConfig();
-		String str = conf.elements().toString();
+//		
+//		String indexPath = "";
+//		String id = "";
+//		String formatPattern = "";
+////		String kids = Display.getShowItemKids(indexPath, id, formatPattern);
+//		
+//		Properties conf = getUnitTestConfig();
+//		String str = conf.elements().toString();
 	
 	}
 

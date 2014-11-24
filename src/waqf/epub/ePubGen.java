@@ -1,5 +1,6 @@
 package waqf.epub;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,31 +8,28 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
-
-import org.apache.lucene.index.CorruptIndexException;
-import org.apache.lucene.queryParser.ParseException;
-
-import com.sun.tools.javac.util.Paths;
-
-import sun.security.action.GetLongAction;
-
-import waqf.books.Display;
-import waqf.books.Display.DocInfo;
-import waqf.books.Search;
-import waqf.books.Search.HitInfo;
-import waqf.books.Search.HitInfo2;
 
 import nl.siegmann.epublib.domain.Author;
 import nl.siegmann.epublib.domain.Book;
 import nl.siegmann.epublib.domain.Metadata;
 import nl.siegmann.epublib.domain.Resource;
-import nl.siegmann.epublib.domain.TOCReference;
 import nl.siegmann.epublib.epub.EpubWriter;
 
-//TODO: generate a complete book in epub format
+import org.apache.lucene.index.CorruptIndexException;
+import org.apache.lucene.queryParser.ParseException;
+
+import waqf.books.Display;
+import waqf.books.Display.DocInfo;
+import waqf.books.Search;
+import waqf.books.Search.HitInfo2;
+
+//FIXME: Add cover image for each book
+//FIXME: Add copyright as creative common or whatever
+//FIXME: Add contact person in case of error or feedback
+
 public class ePubGen {
 
 	public static void main(String[] args) throws ParseException, Exception {
@@ -96,6 +94,16 @@ public class ePubGen {
 		return file;
 	}
 
+	private InputStream getResourceFromStringContents(String content) throws UnsupportedEncodingException {
+		return new ByteArrayInputStream(content.getBytes("UTF-8"));
+	}
+
+	private Resource getResourceByStringContents(String contents, String href)
+			throws IOException {
+		return new Resource(getResourceFromStringContents(contents), href);
+	}
+
+	
 	private Resource getResource(String path, String href)
 			throws IOException {
 		return new Resource(getResource(path), href);
@@ -145,7 +153,8 @@ public class ePubGen {
 
 	private void writeHtmlFile(String id, String chapterHtml) throws IOException {
 		String sourceFolder = getBookSourceRoot(bookId);
-		String chapterFileName = sourceFolder + "/chapter"+ id+ ".html";
+//		String chapterFileName = sourceFolder + "/chapter"+ id+ ".xhtml";
+		String chapterFileName = String.format("%s/chapter%s.xhtml", sourceFolder, id);
 		new FileOutputStream(chapterFileName, true).close(); //create empty file if not exist
 		PrintWriter out = new PrintWriter(chapterFileName); //create the file if not exist
 		out.println(chapterHtml);
@@ -182,24 +191,24 @@ public class ePubGen {
 		// getResource("/book1/test_cover.png", "cover.png") );
 
 		String title = "مقدمة";
-		String href = String.format("intro.html");
-		String fileName = String.format("/" + "intro.html");
-		book.addSection(title, getResource(fileName, href));
-
+		String href = String.format("intro.xhtml");
+		String fileName = String.format("/intro.xhtml");
+//		book.addSection(title, getResource(fileName, href));
+		String root = getBookSourceRoot(bookId);
+		String intoContents = readFile(root + fileName);
+		book.addSection(title, getResourceByStringContents(intoContents, "intro.xhtml"));
+		
 		//For all chapters : 
 		for(int ch = 1; ch <= chaptersCount; ch++) {
 //			title = String.format("Chapter%d", ch);
 			title = chaptersTitles.get(ch-1);
-			href = String.format("Chapter%d.html", ch);
-			fileName = String.format("/chapter%d.html", ch);
+			href = String.format("Chapter%d.xhtml", ch);
+			fileName = String.format("/chapter%d.xhtml", ch);
 			book.addSection(title, getResource(fileName, href));
 		}
-//		// Add Chapter 1
-//		book.addSection("Chapter1",
-//				getResource("/chapter1.html", "chapter1.html"));
 
-		// Add css file
-//		book.getResources().add(getResource("/book1/book1.css", "book1.css"));
+//		 Add css file
+		book.getResources().add(getResource("/style.css", "style.css"));
 
 		// Add Chapter 2
 //		TOCReference chapter2 = book.addSection("Second Chapter",
@@ -220,8 +229,6 @@ public class ePubGen {
 		// Create EpubWriter
 		EpubWriter epubWriter = new EpubWriter();
 
-		//FIXME: Add copyright as creative common or whatever
-		//FIXME: Add contact person in case of error or feedback
 		
 		// Write the Book as Epub
 		epubWriter.write(book, new FileOutputStream(getBookSourceRoot(bookId) + "/" + bookId + ".epub"));

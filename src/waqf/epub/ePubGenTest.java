@@ -6,8 +6,6 @@ import org.junit.Test;
 import waqf.test.TestConfig;
 
 
-//FIXME: remove old epub library	
-
 public class ePubGenTest {
 
 	@Test
