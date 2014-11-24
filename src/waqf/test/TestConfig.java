@@ -24,6 +24,8 @@ public class TestConfig {
 		return props;
 	}
 
+	public static final String TEST_ROOT_PATH = "/Users/Macpro/Projects/Eclipse-AlyRashed/Books2/test/";
+
 	
 	
 }

@@ -15,6 +15,7 @@ public class ParsedText {
 		this.text = text;
 		this.textNoVowels = textNoVowels;
 	}
+	
 /**
  * This function parses text according to the title separator rule.
  * @param text is the text to be parsed
@@ -68,10 +69,11 @@ public class ParsedText {
 		
 		return new ParsedText(title1, text1, Display.removeVowels(text1));
 	}
-public static String adjustEncoding(String title1) throws UnsupportedEncodingException {
-	title1 = new String(title1.getBytes("Cp1252"), "Cp1256");
-	return title1;
-}
+
+	public static String adjustEncoding(String title1) throws UnsupportedEncodingException {
+		title1 = new String(title1.getBytes("Cp1252"), "Cp1256");
+		return title1;
+	}
 	
 	String title;
 	String text;

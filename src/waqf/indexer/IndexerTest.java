@@ -1,25 +1,19 @@
 package waqf.indexer;
 
 import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-
+import waqf.test.TestConfig;
 import java.io.*;
-
 import junit.framework.Assert;
-
+import waqf.indexer.*;
 //import com.sun.java.util.jar.pack.Package.File;
 
 
 
 public class IndexerTest {
 
-	public static final String TEST_ROOT_PATH = "/Users/Macpro/Projects/Eclipse-AlyRashed/Books2/test/";
-
-	
 	@Before
 	public void setUp() throws Exception {
 		
@@ -34,8 +28,8 @@ public class IndexerTest {
 	public void testIndexDoc() throws IOException, InterruptedException, Exception {
 		
 
-		String dataPath = TEST_ROOT_PATH + "book1";
-		String indexPath = TEST_ROOT_PATH + "book1";
+		String dataPath = TestConfig.TEST_ROOT_PATH + "book1";
+		String indexPath = TestConfig.TEST_ROOT_PATH + "book1";
 		
 		Indexer indexer = new Indexer();
 		// Just it will be successful if not throw an exception

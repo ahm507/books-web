@@ -27,7 +27,6 @@ import java.util.Vector;
 public class Search {
 
 	//FIXME: Search is not working
-	
 	static public int getBookHitsCount(String indexPath, String queryText)
 			throws IOException, ParseException {
 		QueryParser qp = new QueryParser("content2", new WhitespaceAnalyzer());
@@ -53,9 +52,8 @@ public class Search {
 		public String summeryHighlighted;
 	}
 
-	static public HitInfo[] SeachBook(String bookPath, String query,
-			int startHit, int showCount) throws ParseException,
-			CorruptIndexException, IOException {
+	static public HitInfo[] SeachBook(String bookPath, String query, int startHit, int showCount) 
+			throws ParseException, CorruptIndexException, IOException {
 
 		QueryParser qp = new QueryParser("content2", new WhitespaceAnalyzer());
 		Query q = qp.parse(query);
@@ -90,7 +88,6 @@ public class Search {
 		ins.close();
 		return hitsArray;
 	}
-
 	
 	static public class HitInfo2 {
 		public HitInfo2(String id, String title) {

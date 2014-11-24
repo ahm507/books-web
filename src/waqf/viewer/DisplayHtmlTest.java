@@ -3,10 +3,8 @@ package waqf.viewer;
 import static org.junit.Assert.*;
 
 import java.io.IOException;
-
 import org.apache.lucene.queryParser.ParseException;
 import org.junit.Test;
-
 import waqf.test.TestConfig;
 
 public class DisplayHtmlTest {
