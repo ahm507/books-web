@@ -41,18 +41,13 @@ public class ePubGen {
 		System.out.println(bookId + ": Starting conversion...");
 		ePubGen gen = new ePubGen(bookId, getBookIndexRoot(bookId), getBookSourceRoot(bookId));
 		gen.generateEpubBook();
-//		gen.generateEpubBookComperhensiveToc();
 		System.out.println(bookId + ": generation is OK");
-//		gen.generateBook();
-//		System.out.println(bookId + ": epub generation is OK");
 	}
 
 	
 	String bookId;
 	String indexPath;
 	String bookPath;
-//	private int chaptersCount;
-//	private ArrayList<String> chaptersTitles;
 	private String bookTitle;
 	private Book book;
 	
@@ -86,17 +81,11 @@ public class ePubGen {
 	private static String getHtmlTemplateFileName() {
 		URL url = ClassLoader.getSystemResource("chapter-template.html");
 		String path = url.getPath();
-//		path = path.substring(0, path.lastIndexOf("/")); // truncate file name
-//		path = path.substring(0, path.lastIndexOf("/"));// truncate "/classes"
-//		path = path.substring(0, path.lastIndexOf("/"));// truncate "/build"
-//		path = path + "/WebContent/WEB-INF/index/" + bookId;
 		return path;
 	}	
 	
 	private InputStream getResource(String path) throws FileNotFoundException {
 		String fullPath = getBookSourceRoot(bookId) + path;
-		//return ePubGen.class.getResourceAsStream(fullPath);
-//		return ClassLoader.getSystemResourceAsStream(fullPath);
 		FileInputStream file = new FileInputStream(new File(fullPath));
 		return file;
 	}
@@ -109,7 +98,6 @@ public class ePubGen {
 			throws IOException {
 		return new Resource(getResourceFromStringContents(contents), href);
 	}
-
 	
 	private Resource getResource(String path, String href)
 			throws IOException {
@@ -157,56 +145,6 @@ public class ePubGen {
 		
 		finishBook();
 	}
-
-	
-	public void generateEpubBookComperhensiveToc() throws CorruptIndexException, ParseException, IOException, Exception {
-		boolean showDiac = false;
-		String searchId = "0"; //#L0
-		Display.DocInfo book = Display.getDisplay(indexPath, searchId, showDiac);
-		bookTitle = book.title;
-		initBook(); //must be after initializing book title
-		
-		//#L1
-		ArrayList<HitInfo2> kotob = Search.findItemKids(indexPath, "0");
-		String chapterHtmlTemplate = getTemplateText();
-		String hadithBabTemplate = "<div dir=\"rtl\" class=\"hadith-title\">HADITH_TITLE</div><br/>" + 
-				"<div dir=\"rtl\" class=\"hadith-content\">HADITH_CONTENT</div><br/>" + 
-				"<div dir=\"rtl\" class=\"hadith-words-meaning\">HADITH_WORDS_MEANING</div><br/>";
-		int chapter = 1;
-		for(HitInfo2 kitab : kotob) { //#L1 كتاب
-			//#L3: باب أو حديث
-			ArrayList<HitInfo2> hadiths = Search.findItemKids(indexPath, kitab.id);
-//			StringBuffer hadithAcc = new StringBuffer();
-			for(HitInfo2 hadith : hadiths) {
-				DocInfo hadith2 = Display.getDisplay(indexPath, hadith.id, showDiac);
-				String hadithBab = hadithBabTemplate.replaceAll("HADITH_TITLE", hadith2.title);
-
-				String basicText = hadith2.basicText;
-				basicText = basicText.replaceAll("\\n", "<br/>");
-				hadithBab = hadithBab.replaceAll("HADITH_CONTENT", basicText);
-				
-				String extendedtext = hadith2.extendedText;
-				extendedtext = extendedtext.replaceAll("\\n", "<br/>");
-				hadithBab = hadithBab.replaceAll("HADITH_WORDS_MEANING", extendedtext);
-				
-//				hadithAcc.append(hadithBab);
-//				hadithAcc.append("<br/><br/>");
-				
-				String chapterHtml = chapterHtmlTemplate;
-				chapterHtml = chapterHtml.replaceAll("APPLICATION_CAPTION_TITLE", book.title);
-				chapterHtml = chapterHtml.replaceAll("CHAPTER_TITLE", kitab.title);
-				chapterHtml = chapterHtml.replaceAll("AHADITH_CONTENTS", hadithBab.toString());
-				chapter++;
-				String xhtmlLinker = String.format("chapter%d.xhtml", chapter-1);
-				addBookChapter(kitab.title, chapterHtml, xhtmlLinker);
-
-				
-			}
-		}
-		
-		finishBook();
-	}
-
 	
 	private void writeHtmlFile(String id, String chapterHtml) throws IOException {
 		String sourceFolder = getBookSourceRoot(bookId);
