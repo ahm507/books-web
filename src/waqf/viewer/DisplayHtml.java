@@ -12,7 +12,7 @@ import org.apache.lucene.queryParser.ParseException;
 import waqf.books.Display;
 import waqf.books.Search;
 import waqf.books.Search.HitInfo2;
- 
+
 /**
  * 
  * Helper functions for the display related jsp files 
@@ -52,7 +52,6 @@ public class DisplayHtml {
 			dispPath.append(spaces);
 			n++;
 			title = (String) titles.get(i);
-//			title = Display.cleanupTitle(title);
 			String title2 = title;// new String(title.getBytes("Cp1252"), "Cp1256");
 
 			if (i == 0)
@@ -161,7 +160,7 @@ public class DisplayHtml {
 		//Show kids if any
 		out.println("<br>");
 		String kids = DisplayHtml.getItemKidsAsHtml(indexPath, doc.id, "<a href=book.jsp?" + bidPar + "&id=%s>%s</a><br>");
-		if (kids.length() > 0) {
+		if (kids.length() > 0) { 
 			out.println("<hr>");
 			out.println(kids);
 		}
@@ -183,15 +182,13 @@ public class DisplayHtml {
 		if(formatPattern.length() == 0) {
 			formatPattern = "<a href=index.jsp?id=%s>%s</a><br>";
 		}
-		ArrayList<HitInfo2>hits = Search.findItemKids(indexPath, id);
+		ArrayList<HitInfo2> hits = Search.findItemKids(indexPath, id);
 		StringBuffer result = new StringBuffer();
 		//Display the records
 		for(int i=0;i < hits.size(); i++) {
 			Search.HitInfo2 doc = hits.get(i);
 		    String id2 = doc.id;
 		    String title2 = doc.title;
-		    //cleanupTitle should be in Display.java unless I need the dirty one sometimes ?!
-//		    title2 = Display.cleanupTitle(title2); //remove #L0, ...
 	  	    String title3 = title2;
 	  	    result.append(String.format(formatPattern, id2, title3));
 		}
