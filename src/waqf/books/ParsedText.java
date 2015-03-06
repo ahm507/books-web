@@ -9,7 +9,11 @@ import java.io.UnsupportedEncodingException;
  */
 
 public class ParsedText {
-
+	private static final String NEW_LINE = "\r\n";
+	private final String title;
+	private final String text;
+	private final String textNoVowels;
+	
 	public ParsedText(String title, String text, String textNoVowels) {
 		this.title = title;
 		this.text = text;
@@ -25,36 +29,30 @@ public class ParsedText {
  */	
 	public static ParsedText parseText(String text, String titleSep) 
 								throws UnsupportedEncodingException {
-		titleSep = titleSep.trim();
 		String title1="", text1="";
-
-	
 		String[] splitted = text.split(titleSep);
-		
 		if(splitted != null && splitted.length == 2) {
 			title1 = splitted[0];
 			text1 = splitted[1];
 		} else if(splitted != null && splitted.length == 1) {
 			//may be there is no separator. Use NewLine as a separator
-			String[] splitted2 = text.split("\r\n");
+			String[] splitted2 = text.split(NEW_LINE);
 			title1 = splitted2[0];
 			text1 = "";
-			
 			//if last char is not new newline remove last new line
 			boolean lastCharNewLine = false;
-			if(text.lastIndexOf("\r\n") == text.length() -2) {
+			if(text.lastIndexOf(NEW_LINE) == text.length() -2) {
 				lastCharNewLine = true;
 			}
-			
 			//Collect all the other lines again
 			for(int i=1 ; i < splitted2.length ; i++) {
 				text1 = text1 + splitted2[i]; 
 				if(i == splitted2.length-1) {
 					if( lastCharNewLine == true) {
-						text1 = text1 + "\r\n";
+						text1 = text1 + NEW_LINE;
 					}
 				} else {
-					text1 = text1 + "\r\n";
+					text1 = text1 + NEW_LINE;
 				}
 			}
 				
@@ -62,22 +60,12 @@ public class ParsedText {
 			title1 = "";
 			text1 = "";
 		}
-
-		//The file is ANSI in Cp1252 as latin charecters
-//		title1 = adjustEncoding(title1);
-//		text1 = adjustEncoding(text1);
-		
 		return new ParsedText(title1, text1, Display.removeVowels(text1));
 	}
 
 	public static String adjustEncoding(String title1) throws UnsupportedEncodingException {
-		title1 = new String(title1.getBytes("Cp1252"), "Cp1256");
-		return title1;
+		return new String(title1.getBytes("Cp1252"), "Cp1256");
 	}
-	
-	String title;
-	String text;
-	String textNoVowels;
 	
 	public String getTitle() {
 		return title;

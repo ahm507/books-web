@@ -1,47 +1,22 @@
 package waqf.indexer;
 
-import static org.junit.Assert.*;
-import org.junit.After;
-import org.junit.Before;
+import junit.framework.Assert;
 import org.junit.Test;
 import waqf.test.TestConfig;
-import java.io.*;
-import junit.framework.Assert;
-import waqf.indexer.*;
-//import com.sun.java.util.jar.pack.Package.File;
 
-
+import java.io.IOException;
 
 public class IndexerTest {
 
-	@Before
-	public void setUp() throws Exception {
-		
-
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-
 	@Test
 	public void testIndexDoc() throws IOException, InterruptedException, Exception {
-		
 
-		String dataPath = TestConfig.TEST_ROOT_PATH + "book1";
-		String indexPath = TestConfig.TEST_ROOT_PATH + "book1";
-		
+		String dataPath = TestConfig.getTestRootPath() + "book1";
+		String indexPath = TestConfig.getTestRootPath() + "book1";
 		Indexer indexer = new Indexer();
 		// Just it will be successful if not throw an exception
-		int indexedRecordsCount = indexer.indexDoc(dataPath, indexPath, null);
+		int recordsCount = indexer.indexDoc(dataPath, indexPath, null);
 		int expected = 606;
-		Assert.assertEquals(expected, indexedRecordsCount);
-
-		
-		
-		
-				
+		Assert.assertEquals(expected, recordsCount);
 	}
-
-
 }

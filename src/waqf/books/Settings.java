@@ -95,7 +95,7 @@ public class Settings {
 	 * @return the titleSep
 	 */
 	public String getTitleSep() {
-		return titleSep;
+		return titleSep.trim();
 	}
 	
 }

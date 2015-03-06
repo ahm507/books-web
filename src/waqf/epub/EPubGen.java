@@ -1,42 +1,31 @@
 package waqf.epub;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.util.ArrayList;
-
 import nl.siegmann.epublib.domain.Author;
 import nl.siegmann.epublib.domain.Book;
 import nl.siegmann.epublib.domain.Metadata;
 import nl.siegmann.epublib.domain.Resource;
 import nl.siegmann.epublib.epub.EpubWriter;
-
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.queryParser.ParseException;
-
 import waqf.books.Display;
 import waqf.books.Display.DocInfo;
 import waqf.books.Search;
 import waqf.books.Search.HitInfo2;
 
+import java.io.*;
+import java.net.URL;
+import java.util.List;
+
 //FIXME: Add cover image for each book
 //FIXME: Add copyright as creative common or whatever
 //FIXME: Add contact person in case of error or feedback
-//TODO: research chm book format as it has good indexing, but it must be open source. I can also find 
-//a simple way to cluster big chapters into smaller ones. In Ahmed book, I need to group them! 
 
 public class EPubGen {
 	String bookId;
 	String indexPath;
 	String bookPath;
 	String bookTitle;
-	Book book;
+	Book book; //epub
 	static final int CHAPTER_SIZE_MAX = 25*1024; //25K
 	private static final String HADITH_TEMPLATE =  
 			"<div dir=\"rtl\" class=\"hadith-title\">HADITH_TITLE</div>\r\n" + 
@@ -65,11 +54,11 @@ public class EPubGen {
 		bookTitle = book.title;
 		initBook(); //must be after initializing book title
 		//#L1 
-		ArrayList<HitInfo2> kotob = Search.findItemKids(indexPath, "0");
+		List<HitInfo2> kotob = Search.findItemKids(indexPath, "0");
 		int chapter = 1;
 		for(HitInfo2 kitab : kotob) { //#L1 كتاب
 			//#L3: باب أو حديث
-			ArrayList<HitInfo2> hadiths = Search.findItemKids(indexPath, kitab.id);
+			List<HitInfo2> hadiths = Search.findItemKids(indexPath, kitab.id);
 			StringBuffer hadithAcc = new StringBuffer();
 			int chapterPart = 1;
 			for(HitInfo2 hadith : hadiths) {
@@ -138,14 +127,12 @@ public class EPubGen {
 
 	private static String getHtmlTemplateFileName() {
 		URL url = ClassLoader.getSystemResource("chapter-template.xhtml");
-		String path = url.getPath();
-		return path;
+		return url.getPath();
 	}	
 	
 	private InputStream getResource(String path) throws FileNotFoundException {
 		String fullPath = getBookSourceRoot(bookId) + path;
-		FileInputStream file = new FileInputStream(new File(fullPath));
-		return file;
+		return new FileInputStream(new File(fullPath));
 	}
 
 	private InputStream getResourceFromStringContents(String content) throws UnsupportedEncodingException {

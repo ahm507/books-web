@@ -6,7 +6,14 @@ I can reuse the same file if I followed exactely the same file/folder convention
 
 -->
 
+
+
   <property file="build.properties"/>
+
+
+
+<!--FIXME: you must change binary destination to binary-jv, to avoid repeating the bug of sharing the -->
+<!--same compiled classes with Eclipse.-->
 
 	
   <!-- ===============================================================================  -->
@@ -139,19 +146,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
 		svnversion . | perl -p -e "s/([\d]*:)(\d+[M|S]*).*/\$2/"
     	but require stripping the new line
     -->
-    
-    
-    <target name="revision-number" depends="check-svn-entries" if="svn.entries.present">
-      <loadfile srcfile=".svn/entries" property="revision">
-        <filterchain>
-          <headfilter lines="1" skip="3"/>
-		 <striplinebreaks />
-	    <trim />          
-        </filterchain>
-      </loadfile>
-      <echo file="REVISION.txt" message="${revision}"/>  
 
-    </target>    
     
 	<target name="zip" depends="package, revision-number">
 		<!--  Delete old revisions -->	
@@ -482,7 +477,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
     	    <file file="./binary-test/jacoco.file"/>
     	</executiondata>
                         
-    	<structure name="Finnce Code Coverage">
+    	<structure name="Code Coverage">
         	
         	<classfiles>
             	<fileset dir="binary">

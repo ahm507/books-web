@@ -1,9 +1,5 @@
 package waqf.books;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.Vector;
-
 import org.apache.lucene.analysis.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.CorruptIndexException;
@@ -13,12 +9,24 @@ import org.apache.lucene.search.Hits;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 
-//TODO: Generate text files as the original files are corrupted. generate the same pattern as the old source files
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+import java.util.Vector;
 
+//TODO: Generate text files as the original files are corrupted. generate the same pattern as the old source files
 
 public class Display {
 
 	public static class DocInfo {
+		public String id;
+		public String parentID;
+		public String title;
+		public String basicText; 
+		public String extendedText;
+		public String quranImage;
+		public String quranAudio;			
+		
 		public DocInfo(String id, String parentID, String title, String basicText, 
 				String extendedText, String quranImage, String quranAudio) {
 			this.id = id;
@@ -30,30 +38,19 @@ public class Display {
 			this.quranAudio = quranAudio;
 			
 		}
-		public String id;
-		public String parentID;
-		public String title;
-		public String basicText; 
-		public String extendedText;
-		public String quranImage;
-		public String quranAudio;			
-		
 	}
 
 	static public Display.DocInfo getDisplay(String indexPath, String searchId, boolean showDiac) 
 				throws ParseException, CorruptIndexException, IOException, Exception {
-		
-	    QueryParser qp = new QueryParser("id", new WhitespaceAnalyzer());
-	    Query q = qp.parse(searchId);
-	    
+	    QueryParser parser = new QueryParser("id", new WhitespaceAnalyzer());
+	    Query query = parser.parse(searchId);
 	    IndexSearcher ins = new IndexSearcher(indexPath); 
-	    Hits hits = ins.search(q);
+	    Hits hits = ins.search(query);
 	    if(hits.length() == 0) {
 	    	ins.close();
 	    	//throw new Exception ("No record has been founded to display in book.jsp with id=["+searchTerm+"]");
 	    	return null;
 	    }
-	
 	    //Display the record
 	    Document doc = hits.doc(0);
 	    String id = doc.get("id");
@@ -83,33 +80,21 @@ public class Display {
 	    	basicText = Display.removeDiacritics(basicText); 
 	    	extendedText = Display.removeDiacritics(extendedText);
 	    }
-	    
 	    title = cleanupTitle(title);
-	    
 	    Display.DocInfo docInfo = new Display.DocInfo(id, parentID, title, basicText, extendedText, quranImage, quranAudio);
-	    
 	    return docInfo;
-		
 	}
-
 	
 	/**
-	 * @param str The input string without Arabic diacritics
+	 * @param str The input string without Arabic vowels
 	 * @return
 	 * @throws UnsupportedEncodingException
 	 */
 	static public String removeDiacritics(String str) throws UnsupportedEncodingException {
 		//$vowels = chr(0xF0).chr(0xF1).chr(0xF2).chr(0xF3).chr(0xF5).chr(0xF6).chr(0xF8).chr(0xFA);
-
 		String str1252 = new String(str.getBytes("Cp1256"), "Cp1252");
 		str1252 = str1252.replaceAll("[\\xF0-\\xFA]", ""); //1252 encoding
-	    str = new String(str1252.getBytes("Cp1252"), "Cp1256");
-
-//		str = str.replaceAll("[\\x64B-\\x652]", ""); //does not work!
-
-		
-
-	    return str;
+		return new String(str1252.getBytes("Cp1252"), "Cp1256");
 	}
 
 	/**
@@ -117,7 +102,7 @@ public class Display {
 	 * @param text
 	 * @return
 	 */	
-	static String removeVowels(String text) {
+	static public String removeVowels(String text) {
 		final int ARABIC_FATHATAN = 0x064B;
 		final int ARABIC_DAMMATAN = 0x064C; 
 		final int ARABIC_KASRATAN = 0x064D;
@@ -153,49 +138,41 @@ public class Display {
 	 * @return
 	 */
 	static public String cleanupTitle(String title) {
-		title = title.replaceAll("#L\\d+\\s", "");//remove #L0, #L1, and so on.
-		return title;
+		return title.replaceAll("#L\\d+\\s", "");//remove #L0, #L1, and so on.
 	}
 
-	static Vector<String> getItemPathInfo(String indexPath, String id)
+	private static List<String> getItemPathInfo(String indexPath, String id)
 									throws ParseException, IOException {
-		
 		Vector<String> pathInfo = new Vector<String>(); //initially empty
 		IndexSearcher ins = null;
-	
-		QueryParser qp = new QueryParser("id", new WhitespaceAnalyzer());
-		Query q = qp.parse(id);
-		
+		QueryParser parser = new QueryParser("id", new WhitespaceAnalyzer());
+		Query query = parser.parse(id);
 	    ins = new IndexSearcher(indexPath);
-	    Hits hits = ins.search(q);
-	
+	    Hits hits = ins.search(query);
 	    if(hits.length() == 0) {
 			ins.close();
 			return pathInfo;
 	    }
-	
 	    //Display the record
 	    Document doc = hits.doc(0);
 	    pathInfo.add(0, doc.get("id"));
 	    pathInfo.add(1, doc.get("parentID"));
 	    pathInfo.add(2, cleanupTitle(doc.get("title")));
 	    ins.close();
-	
 		return pathInfo;
 	}
 
 	public static void getTreePathData(String indexPath, String title,
-			String parentID, Vector<String> ids, Vector<String> titles)
+			String parentID, List<String> ids, List<String> titles)
 			throws ParseException, IOException {
 		ids.add("0");// I need not to store the read ID, I never uses it
 		titles.add(title);
-		
-		Vector<String> pathInfo = getItemPathInfo(indexPath, parentID);
-		while (pathInfo.size() > 0) {
+		List<String> pathInfo = getItemPathInfo(indexPath, parentID);
+		while (pathInfo.size() > 0) { // is not empty
 			ids.add(pathInfo.get(0)); // id
 			title = pathInfo.get(2);
-			title = Display.cleanupTitle(title);
-			titles.add(title); // title
+//			title = Display.cleanupTitle(title);
+			titles.add(Display.cleanupTitle(title)); // title
 			parentID = (String) pathInfo.get(1);// parentID
 			pathInfo = getItemPathInfo(indexPath, parentID);
 		}

@@ -1,14 +1,12 @@
 package waqf.viewer;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 import javax.servlet.http.Cookie;
 import javax.servlet.jsp.JspWriter;
-
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.queryParser.ParseException;
-
 import waqf.books.Display;
 import waqf.books.Search;
 import waqf.books.Search.HitInfo2;
@@ -39,47 +37,40 @@ public class DisplayHtml {
 	static public String getDisplayPathAsHtml(String bidPar, String indexPath, String title,
 			String parentID) throws ParseException, IOException {
 
-		Vector<String> ids = new Vector<String>();
-		Vector<String> titles = new Vector<String>();
-
+		List<String> ids = new Vector<String>();
+		List<String> titles = new Vector<String>();
 		Display.getTreePathData(indexPath, title, parentID, ids, titles);
-
 		// And now I am going to print the items in reverse
-		int n = 0;
-		StringBuffer dispPath = new StringBuffer();
+		int count = 0;
+		StringBuffer dispPath = new StringBuffer(50);
 		for (int i = ids.size() - 1; i >= 0; i--) {
-			String spaces = getHtmlSpaces(n * 4);
+			String spaces = getHtmlSpaces(count * 4);
 			dispPath.append(spaces);
-			n++;
+			count++;
 			title = (String) titles.get(i);
 			String title2 = title;// new String(title.getBytes("Cp1252"), "Cp1256");
-
 			if (i == 0)
 				dispPath.append(title2);
 			else
 				dispPath.append("<a href=book.jsp?" + bidPar + "&id="
 						+ ids.get(i) + ">" + title2 + "</a>");
-
 			if (i != 0)
 				dispPath.append("<br>");
-
 		}
-
 		return dispPath.toString();
 	}
 
-	static private String getHtmlSpaces(int n) {
+	static private String getHtmlSpaces(int count) {
 		StringBuffer spaces = new StringBuffer();
-		while (n >= 0) {
+		while (count >= 0) {
 			spaces.append("&nbsp;");
-			n--;
+			count--;
 		}
 		return spaces.toString();
 	}
 
 	static public String getDisplayNextAndPrev(String bidPar, String searchTerm) {
-
-		StringBuffer result = new StringBuffer();
+		StringBuffer result = new StringBuffer(50);
 		int next = Integer.parseInt(searchTerm);
 		next++;
 		int previous = Integer.parseInt(searchTerm);
@@ -182,7 +173,7 @@ public class DisplayHtml {
 		if(formatPattern.length() == 0) {
 			formatPattern = "<a href=index.jsp?id=%s>%s</a><br>";
 		}
-		ArrayList<HitInfo2> hits = Search.findItemKids(indexPath, id);
+		List<HitInfo2> hits = Search.findItemKids(indexPath, id);
 		StringBuffer result = new StringBuffer();
 		//Display the records
 		for(int i=0;i < hits.size(); i++) {

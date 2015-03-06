@@ -3,7 +3,9 @@ package waqf.epub;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
+import java.util.Properties;
 
 public final class FileUtil {
 
@@ -16,6 +18,13 @@ public final class FileUtil {
 		PrintWriter out = new PrintWriter(fileName); //create the file if not exist
 		out.println(contents); 
 		out.close();
+	}
+
+	public static Properties loadProperties(String filePath) throws IOException {
+		Properties props = new Properties();
+		InputStream is = ClassLoader.getSystemResourceAsStream(filePath);
+		props.load(is);
+		return props;
 	}
 
 }

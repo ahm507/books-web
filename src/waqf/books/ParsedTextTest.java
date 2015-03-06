@@ -33,7 +33,6 @@ public class ParsedTextTest {
 	public void tearDown() throws Exception {
 	}
 
-
 	@Test
 	public void testSparationByNewLine() throws UnsupportedEncodingException {
 		
@@ -52,8 +51,6 @@ public class ParsedTextTest {
 
 		text = ptext.getText();
 		assertTrue(text.equals("This is body of the text"));
-		
-		
 	}
 
 	@Test
@@ -68,9 +65,9 @@ public class ParsedTextTest {
 		ptext = ParsedText.parseText(record, "##");
 		
 		title = ptext.getTitle();
-		assertTrue(title.equals("#L1 This is title"));
-
 		text = ptext.getText();
+
+		assertTrue(title.equals("#L1 This is title"));
 		assertTrue(text.equals("This is body of the text\r\n"));
 	}
 

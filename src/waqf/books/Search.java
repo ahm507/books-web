@@ -3,7 +3,7 @@
  */
 package waqf.books;
 
-import java.io.IOException;
+import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.CorruptIndexException;
@@ -12,13 +12,14 @@ import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.Hits;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
-import org.apache.lucene.search.highlight.*;
-import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.search.highlight.Highlighter;
+import org.apache.lucene.search.highlight.QueryScorer;
+import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 
-
+import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.Vector;
+import java.util.List;
 
 /**
  * @author ahamad
@@ -98,19 +99,17 @@ public class Search {
 		public String title;
 	}
 
-	static public ArrayList<HitInfo2> findItemKids(String indexPath, String id) throws ParseException, IOException {
+	static public List<HitInfo2> findItemKids(String indexPath, String id) throws ParseException, IOException {
 
 		ArrayList<HitInfo2> kids = new ArrayList<HitInfo2>();
-		QueryParser qp = new QueryParser("parentID", new WhitespaceAnalyzer());
-		Query q = qp.parse(id);
+		QueryParser parser = new QueryParser("parentID", new WhitespaceAnalyzer());
+		Query query = parser.parse(id);
 		IndexSearcher ins = new IndexSearcher(indexPath);
-		Hits hits = ins.search((Query) q);
-
+		Hits hits = ins.search((Query) query);
 		if (hits.length() == 0) {
 			ins.close();
 			return kids;
 		}
-
 		// Display the records
 		for (int i = 0; i < hits.length(); i++) {
 			Document doc = hits.doc(i);

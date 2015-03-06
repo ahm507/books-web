@@ -4,49 +4,29 @@
 package waqf.books;
 
 import static org.junit.Assert.*;
-
 import java.io.UnsupportedEncodingException;
-
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-
+import waqf.test.TestConfig;
 
 /**
  * @author Ahmed Hammad
  *
  */
-/////
+
 public class BooksTest {
 
-	/**
-	 * @throws java.lang.Exception
-	 */
+	Books books;
 	
-	Books books = null;
-//	String rootPath = "D:\\docs\\Dr.AlyRashed\\Search\\junit test files\\";
-	String rootPath = "/Users/Macpro/Projects/Eclipse-AlyRashed/Books2/test/";
-	
-	String booksFile = rootPath + "books.properties"; 
 	@Before
 	public void setUp() throws Exception {
+		String rootPath = TestConfig.getTestRootPath();
+		String booksFile = rootPath + "books.properties"; 
 		books = new Books();
 		books.loadSettings(booksFile);
 	}
 
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@After
-	public void tearDown() throws Exception {
-		
-	}
-
-
-	/**
-	 * Test method for {@link waqf.books.Books#getGroupCount()}.
-	 */
 	@Test
 	public void testGetGroupCount() {
 		int groupCount = books.getGroupCount();
@@ -64,13 +44,9 @@ public class BooksTest {
 		assertEquals(expected, title);
 	}
 
-	/**
-	 * Test method for {@link waqf.books.Books#getGroupBooksCount(int)}.
-	 */
 	@Test
 	public void testGetGroupBooksCount() {
-		
-		assertEquals(2, books.getGroupBooksCount(1));// != 1) {
+		assertEquals(2, books.getGroupBooksCount(1));
 		assertEquals(12, books.getGroupBooksCount(2));		
 		assertEquals(3, books.getGroupBooksCount(3));		
 	}
