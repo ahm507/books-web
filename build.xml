@@ -15,48 +15,48 @@ I can reuse the same file if I followed exactely the same file/folder convention
 <!--FIXME: you must change binary destination to binary-jv, to avoid repeating the bug of sharing the -->
 <!--same compiled classes with Eclipse.-->
 
-	
+
   <!-- ===============================================================================  -->
-   
+
    <import file="${tomcat-home}/bin/catalina-tasks.xml"/>
-    
+
     <path id="tomcat-classpath">
 		<fileset dir="./WebContent/WEB-INF/lib">
         	<include name="*.jar"/>
     	</fileset>
-    	<pathelement location="test/selenium/selenium-java-2.33.0.jar"/>	
+    	<pathelement location="test/selenium/selenium-java-2.33.0.jar"/>
     	<pathelement location="test/junit-4.11.jar"/>
 
 		<fileset dir="/Users/Macpro/Server/apache-tomcat-7.0.41/lib">
         	<include name="*.jar"/>
     	</fileset>
-    	
+
     	<pathelement location="./binary"/>
-    		
-    	
+
+
 	</path>
-    
+
     <target name="ci" description="pretend as Continuous Integration server">
     	<tstamp>
 			<format property="BUILD-FOLDER" pattern="yyyy-mm-dd_HH-mm-ss"/>
 		</tstamp>
     	<mkdir dir="${BUILD-FOLDER}"/>
-    
+
     	<exec executable="/usr/local/bin/svn">
 	    	<arg value="co" />
     		<arg value="svn://localhost/${app-name}" />
     		<arg value="./${BUILD-FOLDER}/" />
 		</exec>
-    
+
     	<ant antfile="build.xml" dir="./${BUILD-FOLDER}/">
     		<target name="compile"/>
     		<target name="package"/>
-    		<target name="test"/> 
+    		<target name="test"/>
     	</ant>
-    	
+
     </target>
-    
-    
+
+
     <target name="all" depends="clean, compile, package, deploy">
     </target>
 
@@ -70,16 +70,16 @@ I can reuse the same file if I followed exactely the same file/folder convention
 		<fileset dir="./WebContent/WEB-INF/lib">
         	<include name="*.jar"/>
     	</fileset>
-    	
+
 		<fileset dir="./test">
         	<include name="**/*.jar"/>
     	</fileset>
-    	
-    	
-    	<pathelement location="test/selenium/selenium-java-2.33.0.jar"/>	
+
+
+    	<pathelement location="test/selenium/selenium-java-2.33.0.jar"/>
     	<pathelement location="test/junit-4.11.jar"/>
     	<pathelement location="test/easymock/easymock-3.2.jar"/>
-    	
+
 	</path>
 
 	<target name="compile" depends="" description="compile">
@@ -98,9 +98,9 @@ I can reuse the same file if I followed exactely the same file/folder convention
     	</copy>
 
 		<echo message="Step 2: transalte jsp to servlet java code"/>
-		 
-			<jasper validateXml="false"  uriroot="./"  
-				outputDir="./binary-jsp" /> 
+
+			<jasper validateXml="false"  uriroot="./"
+				outputDir="./binary-jsp" />
 
 		<echo message="Step 3: compile the generated servlet code"/>
 
@@ -109,12 +109,12 @@ I can reuse the same file if I followed exactely the same file/folder convention
 		    <classpath refid="tomcat-classpath"/>
 		</javac>
 
-			
+
     </target>
 
     <target name="package" depends="compile" description="create package">
         <!-- copying lib, html, conf files and any other required files -->
-       
+
         <mkdir dir="war"/>
 
 		<copy todir="./war">
@@ -128,7 +128,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
 
     			<exclude name="**/*Test.class"/>
     			<exclude name="**/TestLib.class"/>
-    			
+
     	    </fileset>
     	</copy>
 
@@ -147,24 +147,24 @@ I can reuse the same file if I followed exactely the same file/folder convention
     	but require stripping the new line
     -->
 
-    
-	<target name="zip" depends="package, revision-number">
-		<!--  Delete old revisions -->	
+
+	<target name="zip" depends="package">
+		<!--  Delete old revisions -->
 	    <delete file="${app-name}*.zip">
 	        <fileset dir="." includes="${app-name}*.zip"/>
 	    </delete>
-	
-		<zip destfile="${app-name}-r${revision}.zip">
+
+		<zip destfile="${app-name}.zip">
 			<fileset dir="war"/>
 		</zip>
 	</target>
-	
-	
+
+
     <target name="deploy" depends="compile, package" description="deploy to tomcat, uses sync to ensure match">
     	<sync includeEmptyDirs="yes" todir="${tomcat-home}/webapps/${app-folder}">
     	  <fileset dir="war"/>
-    	</sync>    	
-    	
+    	</sync>
+
     </target>
 
 	<!-- ============================================================== -->
@@ -180,7 +180,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
 	    <taskdef name="reload" classname="org.apache.catalina.ant.ReloadTask">
 	        <classpath refid="catalina-ant-classpath"/>
 	    </taskdef>
-	
+
 	    <target name="reload" description="Reload application in Tomcat">
 	        <reload url="http://localhost:8080/manager/text"
 	                 username="admin"
@@ -210,7 +210,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
     </target>
 
 	<!-- End Tomcat tasks -->
-	
+
 	<target name="shutdown" description="Shutdown Tomcat">
 	  <exec executable="./tomcat-shutdown.sh"/>
 	</target>
@@ -226,7 +226,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
 	<target name="doc" description="Generates javadoc">
 
 		<javadoc destdir="docs/api" classpathref="app-classpath"
-		
+
              windowtitle="${app-name} Application API"
              doctitle="${app-name} Application API"
              bottom="Copyright &#169; 2012-2013 Salary Control, Inc.">
@@ -235,11 +235,11 @@ I can reuse the same file if I followed exactely the same file/folder convention
     		</fileset>
 
 	</javadoc>
-		
-	
-	
+
+
+
 	</target>
-	
+
 
 	<!-- ============================================================== -->
 	<!-- Test Target											        -->
@@ -263,7 +263,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
     	</fileset>
 
 	</path>
- 
+
 	<target name="test" depends="compile, package" description="Run unit test cases">
         <delete dir="binary-test/unit-test" quiet="true" />
     	<mkdir  dir="binary-test/unit-test"/>
@@ -272,18 +272,18 @@ I can reuse the same file if I followed exactely the same file/folder convention
 			<classpath>
 				<path refid="test-classpath"/>
 			</classpath>
-			
+
 			<formatter type="brief" usefile="false"/>
 			<formatter type="xml"/>
-					
+
 			<batchtest todir="./binary-test/unit-test">
 				<fileset dir="src">
 					<include name="**/*Test.java"/>
 				</fileset>
 			</batchtest>
 		</junit>
-	</target>	
-	
+	</target>
+
 
 
 	<!-- ============================================================== -->
@@ -305,19 +305,19 @@ I can reuse the same file if I followed exactely the same file/folder convention
 	 <pmd rulesetfiles="./pmd-rulesets.xml">
 		<sourceLanguage name="java" version="1.6"/>
 		<sourceLanguage name="ecmascript" version="3"/>
-				
+
 		<formatter type="xml" toFile="pmd_report.xml">
 			<param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
 		</formatter>
 
         <formatter type="html" toFile="pmd_report.html" toConsole="true"/>
-		
+
 		<fileset dir="./">
 			<include name="src/**/*.java"/>
 			<!--include name="pages/**/*.jsp"/-->
 		</fileset>
 	 </pmd>
-	 
+
 	</target>
 
 
@@ -341,9 +341,9 @@ I can reuse the same file if I followed exactely the same file/folder convention
 	<!-- ============================================================== -->
 	<!-- SONAR	         										        -->
 	<!-- ============================================================== -->
-	
+
 	<!-- &amp;characterEncoding=utf8 -->
-<!--	
+<!--
 	<property name="sonar.jdbc.url" value="jdbc:h2:tcp://localhost/sonar" />
 	<property name="sonar.jdbc.username" value="sonar" />
 	<property name="sonar.jdbc.password" value="sonar" /> 
@@ -357,9 +357,9 @@ I can reuse the same file if I followed exactely the same file/folder convention
 		<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
 			<classpath path="somefolder/sonar-ant-task-2.1.jar" />
 		</taskdef>
-		
+
 		<sonar:sonar />
-		
+
 	</target>
 
 -->
@@ -372,7 +372,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
   <path id="jdepend.classpath">
     <pathelement location="test/jdepend-2.9.1.jar"/>
   </path>
-   
+
   <property name="run.dir" location="war/WEB-INF/classes"/>
 
   <target name="jdepend" depends="package" description="Runs JDepend on itself">
@@ -381,7 +381,7 @@ I can reuse the same file if I followed exactely the same file/folder convention
       <classpath refid="jdepend.classpath"/>
       <arg file="${run.dir}"/>
     </java>
-    
+
   </target>
 
 
@@ -404,30 +404,30 @@ I can reuse the same file if I followed exactely the same file/folder convention
   <property name="src.dir" value="./src" />
 
   <target name="emma" >
-  
+
   	    <mkdir dir="./binary-test/emma" />
 	    <mkdir dir="./binary-test/emma/classes" />
-  	    
+
   	    <javac debug="on" srcdir="./src" destdir="./binary-test/emma/classes">
 			<classpath refid="app-classpath" />
 			<include name="**/*.java"/>
   	    </javac>
-  	    
+
 		<emmajava enabled="true" classname="Main" libclasspathref="emma.lib" classpath="emma.lib">
     	</emmajava>
-    	
-    	
+
+
        <emma enabled="true" verbosity="verbose">
 
         <instr instrpath="./binary-test/emma/classes"
-                     destdir="./binary-test/emma/out"        
+                     destdir="./binary-test/emma/out"
                      metadatafile="${coverage.dir}/metadata.em"
-                     merge="true" 
+                     merge="true"
                      mode="copy">
         </instr>
     </emma>
-  	    
-  	
+
+
   
   </target>
 
@@ -449,56 +449,56 @@ I can reuse the same file if I followed exactely the same file/folder convention
 
 	<fileset dir="test/jacoco/">
 			<include name="*.jar"/>
-		</fileset>    
+		</fileset>
   </path>
 
 	<target name="cover" depends="">
-	
+
 		<jacoco:coverage destfile="./binary-test/jacoco.file">
-			
+
 			    <junit fork="true" forkmode="once">
 					<classpath>
 						<path refid="test-classpath"/>
-					</classpath>			    
+					</classpath>
 					<batchtest todir="./test/test-result">
 						<fileset dir="src">
 							<include name="**/*Test.java"/>
 						</fileset>
 					</batchtest>
-			
+
 				</junit>
-			
+
 		</jacoco:coverage>
-	
-	
+
+
 	<jacoco:report>
-                        
+
    		 <executiondata>
     	    <file file="./binary-test/jacoco.file"/>
     	</executiondata>
-                        
+
     	<structure name="Code Coverage">
-        	
+
         	<classfiles>
             	<fileset dir="binary">
             		  <exclude name="**/*Test.class"/>
             	</fileset>
         	</classfiles>
-        	
+
 	        <sourcefiles encoding="UTF-8">
     	        <fileset dir="src">
     	        </fileset>
         	</sourcefiles>
     	</structure>
-                        
+
     	<html destdir="binary-test/coverage-report"/>
-                        
+
 	</jacoco:report>
-	
+
 	</target>
 
 
- 
+
 
 
 </project>

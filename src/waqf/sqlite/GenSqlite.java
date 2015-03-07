@@ -12,14 +12,9 @@ import java.util.List;
 public class GenSqlite {
 	String bookCode;
 	String indexPath;
-//	String bookPath;
-	String bookTitle;
-	//Book book; epub
-//	static final int CHAPTER_SIZE_MAX = 25*1024; //25K
-	private static final String PAGE_TEMPLATE =
-			"HADITH_TITLE\r\n" +
-			"HADITH_CONTENT\r\n" +
-			"HADITH_WORDS_MEANING\r\n";
+	Connection connection = null;
+	PreparedStatement statement;
+	int count = 0;
 
 	public static void main(String[] args) throws ParseException, Exception {
 
@@ -35,7 +30,6 @@ public class GenSqlite {
 		System.out.println(bookCode + ": Starting conversion...");
 		GenSqlite gen = new GenSqlite(bookCode, indexPath, bookCode);
 		gen.generateSqlite();
-		System.out.println(bookCode + ": generation is OK");
 	}
 
 	public GenSqlite(String bookId, String indexFolder, String bookCode) {
@@ -47,7 +41,6 @@ public class GenSqlite {
 
 	public void generateSqlite() throws Exception {
 
-		Connection connection = null;
 		try {
 			Class.forName("org.sqlite.JDBC");
 			connection = DriverManager.getConnection("jdbc:sqlite:sqlite.db");
@@ -70,11 +63,11 @@ public class GenSqlite {
 //			String drop = "DROP TABLE pages";
 //			stmt.executeUpdate(drop);
 
-//			"page_id, parent_id, book_code, book_title, title, main_text, footnote, image, audio, full_text );";
+//			"page_id, parent_id, book_code, page, page_fts );";
 
 			//FTS4 with no diacritics
-			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts4(" +
-					"page_id, parent_id, book_code, book_title, title, main_text, footnote, image, audio, full_text );";
+			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts3(" +
+					"page_id, parent_id, book_code, page, page_fts);";
 			stmt.executeUpdate(createFts4);
 
 			//Ensure the book has no records
@@ -83,7 +76,7 @@ public class GenSqlite {
 			ResultSet rs = stmt.executeQuery( sqlCheckExist);
 			if (rs.next()) {
 				rs.close();
-				System.out.print("Existing records exit, overwrite?[y/n]");
+				System.out.print("Existing records exit, overwrite?[y/n]: ");
 				String input = System.console().readLine();
 				if(input.equals("y")) {
 					String sqlRemove = "DELETE FROM pages where book_code='" + bookCode + "'";
@@ -95,54 +88,65 @@ public class GenSqlite {
 
 			//Start querying Lucene index
 
-			boolean showDiac = true;
-			String searchId = "0"; //#L0
-			Display.DocInfo book = Display.getDisplay(indexPath, searchId, showDiac);
-			bookTitle = book.title;
+//			boolean showDiac = true;
+//			String searchId = "0"; //#L0
+//			Display.DocInfo book = Display.getDisplay(indexPath, searchId, showDiac);
+
+
+			//#L0
 
 			//#L1
-			List<Search.HitInfo2> kotob = Search.findItemKids(indexPath, "0");
-			for (Search.HitInfo2 kitab : kotob) { //#L1 كتاب
-				//#L3: باب أو حديث
-				List<Search.HitInfo2> hadiths = Search.findItemKids(indexPath, kitab.id);
-				for (Search.HitInfo2 hadith : hadiths) {
-					showDiac = true;
-					DocInfo hadith2 = Display.getDisplay(indexPath, hadith.id, showDiac);
 
-//				"page_id, parent_id, book_code, book_title, title, main_text, footnote, image, audio, full_text );";
+			count = 0;
 
-					String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, book_title, title, main_text, footnote, image, audio, full_text ) " +
-							"VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
-					PreparedStatement statement = connection.prepareStatement(insertSql);
-					statement.setString(1, hadith2.id);
-					statement.setString(2, hadith2.parentID);
-					statement.setString(3, bookCode);
-					statement.setString(4, bookTitle);
-					statement.setString(5, hadith2.title);
-					statement.setString(6, hadith2.basicText);
-					statement.setString(7, hadith2.extendedText);
-					statement.setString(8, hadith2.quranImage);
-					statement.setString(9, hadith2.quranAudio);
-					showDiac = false;
-					DocInfo hadithNoDiac = Display.getDisplay(indexPath, hadith.id, showDiac);
-					statement.setString(10, getPageForFTS(hadithNoDiac));
-					statement.executeUpdate();
+			processLevel("0");
 
-					break;
-				}
-				break;
-			}
+//			boolean showDiac = true;
+//			List<Search.HitInfo2> kotob = Search.findItemKids(indexPath, "0");
+//			for (Search.HitInfo2 kitab : kotob) { //#L1 كتاب
+//				//#L3: باب أو حديث
+//				List<Search.HitInfo2> hits = Search.findItemKids(indexPath, kitab.id);
+//				for (Search.HitInfo2 hit : hits) {
+//					DocInfo docInfo = Display.getDisplay(indexPath, hit.id, showDiac);
+//					String page = getPage(docInfo);
+//					String pageNoDiacritics = Display.removeDiacritics(page);
+//
+////					"page_id, parent_id, book_code, page, page_fts );";
+//
+//					String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, page, page_fts ) " +
+//							"VALUES(?, ?, ?, ?, ?);";
+//					statement = connection.prepareStatement(insertSql);
+//					statement.setString(1, docInfo.id);
+//					statement.setString(2, docInfo.parentID);
+//					statement.setString(3, bookCode);
+//					statement.setString(4, page);
+//					statement.setString(5, pageNoDiacritics);
+//					statement.executeUpdate();
+//
+//					count++;
+//					if(count % 100 == 0) {
+//						System.out.print(".");
+//					}
+//
+//				}
+//				count++;
+//			}
+
+
+
+			System.out.println(".");
 
 			//just display records
-
-			String sqlDisplay = "SELECT * FROM pages";
+			String sqlDisplay = "SELECT * FROM pages where page MATCH 'حدثنا' ";
 			ResultSet displayRs = stmt.executeQuery( sqlCheckExist);
-			while (rs.next()) {
-				for(int i = 1 ; i <= 10; i++) {
+			if (displayRs.next()) {
+				for(int i = 1 ; i <= 5; i++) {
 					System.err.println(displayRs.getString(i));
 				}
 			}
 			displayRs.close();
+			System.out.println("\r\n" + count + " records of " + bookCode + ": is indexed");
+
 
 		} finally
 		{
@@ -151,6 +155,37 @@ public class GenSqlite {
 			connection.close();
 		}
 	}
+
+
+	private void processLevel(String pageId) throws Exception {
+
+		boolean showDiac = true;
+		DocInfo docInfo = Display.getDisplay(indexPath, pageId, showDiac);
+		String page = getPage(docInfo);
+		String pageNoDiacritics = Display.removeDiacritics(page);
+
+		String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, page, page_fts ) " +
+				"VALUES(?, ?, ?, ?, ?);";
+		statement = connection.prepareStatement(insertSql);
+		statement.setString(1, docInfo.id);
+		statement.setString(2, docInfo.parentID);
+		statement.setString(3, bookCode);
+		statement.setString(4, page);
+		statement.setString(5, pageNoDiacritics);
+		statement.executeUpdate();
+
+		count++;
+		if(count % 100 == 0) {
+			System.out.print(".");
+		}
+
+		//for all kids
+		List<Search.HitInfo2> hits = Search.findItemKids(indexPath, pageId);
+		for (Search.HitInfo2 hit : hits) {
+			processLevel(hit.id);
+		}
+	}
+
 
 //
 //	private void createTablesSimple(Statement stmt) throws SQLException {
@@ -184,11 +219,11 @@ public class GenSqlite {
 //	}
 
 
-	private String getPageForFTS(DocInfo page3) {
-		String template = PAGE_TEMPLATE;
-		String pageText = template.replaceAll("HADITH_TITLE", page3.title);
-		pageText = pageText.replaceAll("HADITH_CONTENT", page3.basicText);
-		pageText = pageText.replaceAll("HADITH_WORDS_MEANING", page3.extendedText);
+	private String getPage(DocInfo page3) {
+		String template = "TITLE\r\n##CONTENT\r\n##FOOTNOTE";
+		String pageText = template.replaceAll("TITLE", page3.title);
+		pageText = pageText.replaceAll("CONTENT", page3.basicText);
+		pageText = pageText.replaceAll("FOOTNOTE", page3.extendedText);
 		return pageText;
 	}
 
