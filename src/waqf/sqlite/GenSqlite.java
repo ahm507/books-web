@@ -5,6 +5,7 @@ import waqf.books.Display;
 import waqf.books.Display.DocInfo;
 import waqf.books.Search;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.*;
 import java.util.List;
 
@@ -67,7 +68,7 @@ public class GenSqlite {
 
 			//FTS4 with no diacritics
 			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts3(" +
-					"page_id, parent_id, book_code, page, page_fts);";
+					"page_id, parent_id, book_code, title, page, page_fts);";
 			stmt.executeUpdate(createFts4);
 
 			//Ensure the book has no records
@@ -101,43 +102,10 @@ public class GenSqlite {
 
 			processLevel("0");
 
-//			boolean showDiac = true;
-//			List<Search.HitInfo2> kotob = Search.findItemKids(indexPath, "0");
-//			for (Search.HitInfo2 kitab : kotob) { //#L1 كتاب
-//				//#L3: باب أو حديث
-//				List<Search.HitInfo2> hits = Search.findItemKids(indexPath, kitab.id);
-//				for (Search.HitInfo2 hit : hits) {
-//					DocInfo docInfo = Display.getDisplay(indexPath, hit.id, showDiac);
-//					String page = getPage(docInfo);
-//					String pageNoDiacritics = Display.removeDiacritics(page);
-//
-////					"page_id, parent_id, book_code, page, page_fts );";
-//
-//					String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, page, page_fts ) " +
-//							"VALUES(?, ?, ?, ?, ?);";
-//					statement = connection.prepareStatement(insertSql);
-//					statement.setString(1, docInfo.id);
-//					statement.setString(2, docInfo.parentID);
-//					statement.setString(3, bookCode);
-//					statement.setString(4, page);
-//					statement.setString(5, pageNoDiacritics);
-//					statement.executeUpdate();
-//
-//					count++;
-//					if(count % 100 == 0) {
-//						System.out.print(".");
-//					}
-//
-//				}
-//				count++;
-//			}
-
-
-
 			System.out.println(".");
 
 			//just display records
-			String sqlDisplay = "SELECT * FROM pages where page MATCH 'حدثنا' ";
+			String sqlDisplay = "SELECT * FROM pages where page_id MATCH '0' ";
 			ResultSet displayRs = stmt.executeQuery( sqlCheckExist);
 			if (displayRs.next()) {
 				for(int i = 1 ; i <= 5; i++) {
@@ -146,7 +114,6 @@ public class GenSqlite {
 			}
 			displayRs.close();
 			System.out.println("\r\n" + count + " records of " + bookCode + ": is indexed");
-
 
 		} finally
 		{
@@ -162,14 +129,16 @@ public class GenSqlite {
 		boolean showDiac = true;
 		DocInfo docInfo = Display.getDisplay(indexPath, pageId, showDiac);
 		String page = getPage(docInfo);
-		String pageNoDiacritics = Display.removeDiacritics(page);
+//		String pageNoDiacritics = Display.removeDiacritics(page);
+		String pageNoDiacritics = getPageNoDiacritics(docInfo);
 
-		String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, page, page_fts ) " +
-				"VALUES(?, ?, ?, ?, ?);";
+				String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, title, page, page_fts ) " +
+				"VALUES(?, ?, ?, ?, ?, ?);";
 		statement = connection.prepareStatement(insertSql);
 		statement.setString(1, docInfo.id);
 		statement.setString(2, docInfo.parentID);
 		statement.setString(3, bookCode);
+		statement.setString(3, docInfo.title);
 		statement.setString(4, page);
 		statement.setString(5, pageNoDiacritics);
 		statement.executeUpdate();
@@ -220,12 +189,21 @@ public class GenSqlite {
 
 
 	private String getPage(DocInfo page3) {
-		String template = "TITLE\r\n##CONTENT\r\n##FOOTNOTE";
+		String template = "CONTENT\r\n##FOOTNOTE";
 		String pageText = template.replaceAll("TITLE", page3.title);
 		pageText = pageText.replaceAll("CONTENT", page3.basicText);
 		pageText = pageText.replaceAll("FOOTNOTE", page3.extendedText);
 		return pageText;
 	}
+
+	private String getPageNoDiacritics(DocInfo page3) throws UnsupportedEncodingException {
+		String template = "TITLE\r\n##CONTENT\r\n##FOOTNOTE";
+		String pageText = template.replaceAll("TITLE", page3.title);
+		pageText = pageText.replaceAll("CONTENT", page3.basicText);
+		pageText = pageText.replaceAll("FOOTNOTE", page3.extendedText);
+		return Display.removeDiacritics(pageText);
+	}
+
 
 
 }
