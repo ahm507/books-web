@@ -10,11 +10,11 @@ import java.sql.*;
 import java.util.List;
 
 
-public class GenSqlite {
+public class GenSqlite2 {
 	String bookCode;
 	String indexPath;
 	Connection connection = null;
-	PreparedStatement statement;
+	PreparedStatement statement1, statement2;
 	int count = 0;
 
 	public static void main(String[] args) throws ParseException, Exception {
@@ -29,11 +29,11 @@ public class GenSqlite {
 		String indexPath = args[0];
 		bookCode = args[1];
 		System.out.println(bookCode + ": Starting conversion...");
-		GenSqlite gen = new GenSqlite(bookCode, indexPath, bookCode);
+		GenSqlite2 gen = new GenSqlite2(bookCode, indexPath, bookCode);
 		gen.generateSqlite();
 	}
 
-	public GenSqlite(String bookId, String indexFolder, String bookCode) {
+	public GenSqlite2(String bookId, String indexFolder, String bookCode) {
 //		super();
 		this.bookCode = bookCode;
 		this.indexPath = indexFolder;
@@ -67,44 +67,37 @@ public class GenSqlite {
 //			"page_id, parent_id, book_code, page, page_fts );";
 
 			//FTS4 with no diacritics
-			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts3(" +
-					"page_id, parent_id, book_code, title, page, page_fts);";
+//			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts3(" +
+//					"page_id, parent_id, book_code, title, page, page_fts);";
+			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts4(" +
+					"content='', page_fts);";
 			stmt.executeUpdate(createFts4);
+
+			String createTable = "CREATE TABLE IF NOT EXISTS details (" +
+					"page_id, parent_id, book_code, title, page);";
+			stmt.executeUpdate(createTable);
 
 			//Ensure the book has no records
 //			ResultSet rs = stmt.executeQuery( "select * from books where book_code = '" + this.bookCode + "'");
-			String sqlCheckExist = "SELECT * FROM pages WHERE book_code  MATCH '" + bookCode + "'";
+			String sqlCheckExist = "SELECT * FROM details WHERE book_code = '" + bookCode + "'";
 			ResultSet rs = stmt.executeQuery( sqlCheckExist);
 			if (rs.next()) {
 				rs.close();
-				System.out.print("Existing records exit, overwrite?[y/n]: ");
-				String input = System.console().readLine();
-				if(input.equals("y")) {
-					String sqlRemove = "DELETE FROM pages where book_code='" + bookCode + "'";
-					stmt.executeUpdate(sqlRemove);
-				} else {
-					System.exit(-1);
-				}
+				System.out.print("Existing records exit, overwrite is not allowed.");
+//				System.out.print("Existing records exit, overwrite?[y/n]: ");
+//				String input = System.console().readLine();
+//				if(input.equals("y")) {
+//					String sqlRemove = "DELETE FROM pages where book_code='" + bookCode + "'";
+//					stmt.executeUpdate(sqlRemove);
+//				} else {
+				System.exit(-1);
+//				}
 			}
 
-			//Start querying Lucene index
-
-//			boolean showDiac = true;
-//			String searchId = "0"; //#L0
-//			Display.DocInfo book = Display.getDisplay(indexPath, searchId, showDiac);
-
-
-			//#L0
-
-			//#L1
-
 			count = 0;
-
 			processLevel("0");
-
 			//Optimize the indexes
 			//INSERT INTO pages(pages) VALUES('optimize');
-
 			System.out.println(".");
 
 			//just display records
@@ -135,20 +128,25 @@ public class GenSqlite {
 //		String pageNoDiacritics = Display.removeDiacritics(page);
 		String pageNoDiacritics = getPageNoDiacritics(docInfo);
 
-				String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, title, page, page_fts ) " +
-				"VALUES(?, ?, ?, ?, ?, ?);";
-		statement = connection.prepareStatement(insertSql);
-		statement.setString(1, docInfo.id);
+		String insertSql = "INSERT INTO pages(page_fts) VALUES(?);";
+		statement1 = connection.prepareStatement(insertSql);
+		statement1.setString(1, pageNoDiacritics);
+		statement1.executeUpdate();
+
+		//Insert into table 2
+		String insertSql2 = "INSERT INTO details(page_id, parent_id, book_code, title, page) " +
+				"VALUES(?, ?, ?, ?, ?);";
+		statement2 = connection.prepareStatement(insertSql2);
+		statement2.setString(1, docInfo.id);
 		if(docInfo.id.equals("0")) {
-			statement.setString(2, "NO_PARENT"); //especial value for sqlite, as -1 MATCH 1
+			statement2.setString(2, "NO_PARENT"); //especial value for sqlite, as -1 MATCH 1
 		} else {
-			statement.setString(2, docInfo.parentID);
+			statement2.setString(2, docInfo.parentID);
 		}
-		statement.setString(3, bookCode);
-		statement.setString(4, docInfo.title);
-		statement.setString(5, page);
-		statement.setString(6, pageNoDiacritics);
-		statement.executeUpdate();
+		statement2.setString(3, bookCode);
+		statement2.setString(4, docInfo.title);
+		statement2.setString(5, page);
+		statement2.executeUpdate();
 
 		count++;
 		if(count % 100 == 0) {
@@ -161,38 +159,6 @@ public class GenSqlite {
 			processLevel(hit.id);
 		}
 	}
-
-
-//
-//	private void createTablesSimple(Statement stmt) throws SQLException {
-//
-//		//FTS4 with no diacritics
-//...
-//
-// 	}
-//
-//	private void createTables(Statement stmt) throws SQLException {
-//		String createSql = "CREATE TABLE IF NOT EXISTS books " +
-//                "(book_code CHAR(10) PRIMARY KEY	NOT NULL," +
-//                " title   TEXT  			 NOT NULL)";
-//		stmt.executeUpdate(createSql);
-//
-//		//Table to include contents with full diacritics
-//		String createSql2 = "CREATE TABLE IF NOT EXISTS pages " +
-//                "(page_id INT PRIMARY KEY AUTOINCREMENT NOT NULL," +
-//                "parent_page_id INT," +
-//                "book_code CHAR(10)," +
-//                "title TEXT," +
-//                "main_text TEXT," +
-//                "footnote  TEXT," +
-//                "quran_image  CHAR(20)," +
-//                "quran_audio  CHAR(20))";
-//		stmt.executeUpdate(createSql2);
-//
-//		//FTS4 with no diacritics
-//		String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages_fts USING fts4(page_id, body);";
-//		stmt.executeUpdate(createFts4);
-//	}
 
 
 	private String getPage(DocInfo page3) {

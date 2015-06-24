@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-echo "This program convert Lucene index to sqlite records"
+echo "This program convert Lucene index to sqlite records, see ex:"
 
-# ./indexer.sh WebContent/WEB-INF/index/g2b1 g2b1
+echo "#./indexer.sh WebContent/WEB-INF/index/g2b1 g2b1"
+
+read "press any key" input
 
 #java -cp MyJar.jar:lib/* com.somepackage.subpackage.Main
 ant compile
@@ -13,7 +15,7 @@ if [ $? -eq 0 ]; then
 
     # If conversion OK, copy file
     if [ $? -eq 0 ]; then
-        cp ./sqlite.db ./../Books3/sonna/www/
+        cp ./sonna.sqlite ./../Books3/sonna/www/
     fi
 fi
 
