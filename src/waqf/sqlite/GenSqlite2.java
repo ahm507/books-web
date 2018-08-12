@@ -17,6 +17,8 @@ public class GenSqlite2 {
 	PreparedStatement statement1, statement2;
 	int count = 0;
 
+	int publicId = 1;
+
 	public static void main(String[] args) throws ParseException, Exception {
 
 		String bookCode;// = "g2b1";
@@ -70,11 +72,11 @@ public class GenSqlite2 {
 //			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts3(" +
 //					"page_id, parent_id, book_code, title, page, page_fts);";
 			String createFts4 = "CREATE VIRTUAL TABLE IF NOT EXISTS pages USING fts4(" +
-					"content='', page_fts);";
+					"content='', book_code, parent_id, page_fts);";
 			stmt.executeUpdate(createFts4);
 
 			String createTable = "CREATE TABLE IF NOT EXISTS details (" +
-					"page_id, parent_id, book_code, title, page);";
+					"page_id, book_code, parent_id, title, page);";
 			stmt.executeUpdate(createTable);
 
 			//Ensure the book has no records
@@ -101,7 +103,7 @@ public class GenSqlite2 {
 			System.out.println(".");
 
 			//just display records
-			String sqlDisplay = "SELECT * FROM pages where page_id MATCH '0' ";
+			String sqlDisplay = "SELECT * FROM details where page_id = '0' ";
 			ResultSet displayRs = stmt.executeQuery( sqlCheckExist);
 			if (displayRs.next()) {
 				for(int i = 1 ; i <= 5; i++) {
@@ -128,22 +130,34 @@ public class GenSqlite2 {
 //		String pageNoDiacritics = Display.removeDiacritics(page);
 		String pageNoDiacritics = getPageNoDiacritics(docInfo);
 
-		String insertSql = "INSERT INTO pages(page_fts) VALUES(?);";
-		statement1 = connection.prepareStatement(insertSql);
-		statement1.setString(1, pageNoDiacritics);
-		statement1.executeUpdate();
+		String insertSql = "INSERT INTO pages(rowid, book_code, parent_id, page_fts) VALUES(?, ?, ?, ?);";
+		String parentID = docInfo.parentID;
+		if(docInfo.id.equals("0")) {
+			parentID = "NO_PARENT";
+		}
+//		if(docInfo.id.equals("0")) {
+//			statement2.setString(3, "NO_PARENT"); //especial value for sqlite, as -1 MATCH 1
+//		} else {
+//			statement2.setString(3, docInfo.parentID);
+//		}
 
+		statement1 = connection.prepareStatement(insertSql);
+//		statement1.setString(1, Integer.toString(publicId));
+		statement1.setInt(1, publicId);
+		statement1.setString(2, bookCode);
+		statement1.setString(3, docInfo.parentID);
+		statement1.setString(4, pageNoDiacritics);
+
+		statement1.executeUpdate();
+		publicId ++;
+
+		///////////////////////////////////////////////////////////
 		//Insert into table 2
-		String insertSql2 = "INSERT INTO details(page_id, parent_id, book_code, title, page) " +
-				"VALUES(?, ?, ?, ?, ?);";
+		String insertSql2 = "INSERT INTO details(page_id, book_code, parent_id, title, page) VALUES(?, ?, ?, ?, ?);";
 		statement2 = connection.prepareStatement(insertSql2);
 		statement2.setString(1, docInfo.id);
-		if(docInfo.id.equals("0")) {
-			statement2.setString(2, "NO_PARENT"); //especial value for sqlite, as -1 MATCH 1
-		} else {
-			statement2.setString(2, docInfo.parentID);
-		}
-		statement2.setString(3, bookCode);
+		statement2.setString(2, bookCode);
+		statement2.setString(3, docInfo.parentID);
 		statement2.setString(4, docInfo.title);
 		statement2.setString(5, page);
 		statement2.executeUpdate();

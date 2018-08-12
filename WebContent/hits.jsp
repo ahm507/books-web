@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
-<%@ page import="waqf.viewer.*,waqf.books.*,waqf.books.Search.HitInfo,java.net.URLEncoder"%> 
+<%@ page language="java"%>
+<%@ page import="waqf.viewer.*,waqf.books.*,waqf.books.Search.HitInfo,java.net.URLEncoder"%>
 
 
 <!-- page errorPage="error.jsp"% -->
@@ -8,8 +8,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>äÊÇÆÌ ÇáÈÍË Ýí ÇáãßÊÈÉ ÇáÅÓáÇãíÉ</title>
+
+<title>This is Hits page title</title>
 <STYLE> <!--    @import url(style.css);		--> </STYLE>
 </head>
 <body dir=rtl>
@@ -67,7 +67,7 @@ String query = "";
 		String error = request.getParameter("err");
 		if(error != null && error.length() != 0) {
 			if(error.equals("empty")) {
-				out.println("<font color=red>ÈÑÌÇÁ ßÊÇÈÉ ßáãÇÊ ÇáÈÍË</font><br>");
+				out.println("<font color=red>statement 1</font><br>");
 			}
 		}
  %>    
@@ -79,14 +79,13 @@ String query = "";
 		
 		  <ul>
 		  <li>  
-		  íÊã ÇáÈÍË ÈÃí ãä ÇáßáãÇÊ æíÊã ÊÑÊíÈ ÇáäÊÇÆÌ áÊÈÏÃ ÈÃßËÑ 
-		  ÇáäÊÇÆÌ ÊÚáÞÇ ÈßáãÇÊ ÇáÈÍË
+		  Paragraph 1
 		  .
 		  </li>
 		  <li>  
-		   ááÈÍË ÈßáãÇÊ ãÊØÇÈÞÉ ÅÓÊÎÏã ÚáÇãÇÊ ÇáÊäÕíÕ¡ Úáì ÓÈíá ÇáãËÇá 
+		   paragraph 1
 		   <font color="red">
-		  "ÞÇá Çááå ÚÒ æÌá" </font>
+		  "paragraph 2" </font>
 
 		  </li>
 		</ul>
@@ -105,7 +104,7 @@ String query = "";
 
 <%
 	out.println("&nbsp;&nbsp;");
-out.println("äÇÊÌ ÇáÈÍË Úä :");
+out.println("some words :");
 out.println("\"" + query + "\"");
 
 	
@@ -136,7 +135,7 @@ if(scope.equals("all")) {
  */
 	int hitsCount = Search.getBookHitsCount(bookPath, query);
 	
-//*			String linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td><a href=book.jsp?bid=%s>%s</a> :<td><a href=hits.jsp?scope=%s&q=%s> %d ÍÏíË </a>", 
+//*			String linkText = String.format("&nbsp;&nbsp;&nbsp;&nbsp;<tr><td><a href=book.jsp?bid=%s>%s</a> :<td><a href=hits.jsp?scope=%s&q=%s> %d Hits </a>",
 //*					bookScope, books.getBookTitle(group, book), bookScope, URLEncoder.encode(query0), hitsCount);
 	//resin workaround
 	Object args3[] = new Object[] {
@@ -203,12 +202,12 @@ else {
 
 	out.println("&nbsp;&nbsp;&nbsp;");
 	
-//*	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'> ÊÇáí </a> | ", 
+//*	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'> ï¿½ï¿½ï¿½ï¿½ </a> | ", 
 //*							scope, query, nextHits ));
 	//resin workaround
 	Object args5[] = new Object[] {scope, query, new Integer(nextHits)};
 	if(noNextPage == false) {
-	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'><b> ÊÇáí </b></a>", 
+	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'><b> ï¿½ï¿½ï¿½ï¿½ </b></a>", 
 			args5 ));
 	}
 	
@@ -216,16 +215,16 @@ else {
 		out.println(" | ");
 	}
 	
-//*	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'> ÓÇÈÞ </a>", 
+//*	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'> ï¿½ï¿½ï¿½ï¿½ </a>", 
 //*			scope, query, prevHits ));
 	Object args6[] = new Object[] {scope, query, new Integer(prevHits)};
 	if(noPrevPage == false) {
-	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'><b> ÓÇÈÞ </b></a>", 
+	out.println(String.format("<a href='hits.jsp?scope=%s&q=%s&start=%d'><b> ï¿½ï¿½ï¿½ï¿½ </b></a>", 
 	args6 ));
 	}
-	out.println("<br>&nbsp;&nbsp;&nbsp;ÚÑÖ ÇáäÊÇÆÌ ÈÏÇíÉ ãä ");
+	out.println("<br>&nbsp;&nbsp;&nbsp;some text 1 ");
 	out.println(startWith+1);
-	out.println("<br>&nbsp;&nbsp;&nbsp;ÇáÚÏÏ Çáßáí ááäÊÇÆÌ  ");
+	out.println("<br>&nbsp;&nbsp;&nbsp;some text 2  ");
 	out.println(hitsCount);
 	
 	

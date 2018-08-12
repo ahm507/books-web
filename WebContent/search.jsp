@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=Cp1256" pageEncoding="Cp1256"%>
+<%@ page language="java"%>
 <%@ page errorPage="error.jsp"%>
 
 
@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>ÈÍË Ýí ÇáãßÊÈÉ ÇáÅÓáÇãíÉ</title>
+<title>Search</title>
 <STYLE> <!--    @import url(style.css);		--> </STYLE>
 
 </head>
@@ -17,13 +17,13 @@
 <table width=771 align=center>
 	<tr><td>
 		
-		  <p>ÇáÈÍË:</p>
+		  <p>Some word:</p>
 		  <form method="GET" name="SearchForm" action=hits.jsp>
 		  <%
 		String error = request.getParameter("err");
 		if(error != null && error.length() != 0) {
 			if(error.equals("empty")) {
-				out.println("<font color=red>ÈÑÌÇÁ ßÊÇÈÉ ßáãÇÊ ÇáÈÍË</font><br>");
+				out.println("<font color=red>some other words</font><br>");
 			}
 		}
 		%>    
@@ -38,14 +38,13 @@
 		  <br>
 		  <ul>
 		  <li>  
-		  íÊã ÇáÈÍË ÈÃí ãä ÇáßáãÇÊ æíÊã ÊÑÊíÈ ÇáäÊÇÆÌ áÊÈÏÃ ÈÃßËÑ 
-		  ÇáäÊÇÆÌ ÊÚáÞÇ ÈßáãÇÊ ÇáÈÍË
+		  This is paragraph1.
 		  .
 		  </li>
 		  <li>  
-		   ááÈÍË ÈßáãÇÊ ãÊØÇÈÞÉ ÅÓÊÎÏã ÚáÇãÇÊ ÇáÊäÕíÕ¡ Úáì ÓÈíá ÇáãËÇá 
+		   paragraph 2
 		   <font color="red">
-		  "ÞÇá Çááå ÚÒ æÌá" </font>
+		  "Red Text" </font>
 
 		  </li>
 		</ul>
@@ -59,3 +58,4 @@
 
 </body>
 </html>
+
