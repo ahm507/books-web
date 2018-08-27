@@ -5,4 +5,7 @@ binary-test
 build
 .idea
 .eclipse*
+WebContent/WEB-INF/data-generated/
+WebContent/WEB-INF/index/
+tags
 

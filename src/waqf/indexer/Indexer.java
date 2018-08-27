@@ -36,7 +36,7 @@ public class Indexer {
 	
 /**
  * Index a complete document using its build properties file
- * @param buildFile the full path of the porpoerties file, see tha example build file to know
+ * @param inputPath the full path of the porpoerties file, see tha example build file to know
  * about the mandatory structure: It has only 4 files, and 3 levels. You can add more by 
  * adding more sequential files.
  * 
@@ -243,7 +243,7 @@ public class Indexer {
 	 * be the first line. 
 	 * @param recordID unique ID that starts with 0
 	 * @param bookID ID that starts with 0
-	 * @param partentID parent ID to be able to get the tree reationship
+	 * @param parentID parent ID to be able to get the tree reationship
 	 * @param title 
 	 * @param text text with the Arabic vowels
 	 * @param textNoVoweles text without the Arabic vowels
