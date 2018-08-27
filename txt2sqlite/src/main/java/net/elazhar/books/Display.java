@@ -39,6 +39,12 @@ public class Display {
 			
 		}
 	}
+
+    //function stripAccents(text) {
+    //    return text.replace(new RegExp('[\u064B-\u065F]*', 'g'), '');
+    //}
+
+
 	/**
 	 * @param str The input string without Arabic vowels
 	 * @return

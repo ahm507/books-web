@@ -9,10 +9,7 @@ package net.elazhar.books;
 //import org.apache.lucene.store.Directory;
 //import org.apache.lucene.store.FSDirectory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
@@ -194,7 +191,11 @@ public class Indexer {
 	private Vector<String> readLines(String inputPath, String fileName) 
 							throws FileNotFoundException,  IOException{
 	    Vector<String> lines = new Vector<String>(); 
-		BufferedReader fileReader = new BufferedReader(new FileReader (inputPath + "/" + fileName));
+		
+        String encoding = "Cp1256";
+        BufferedReader fileReader = new BufferedReader(new InputStreamReader(
+                new FileInputStream (inputPath + "/" + fileName), encoding));
+
 		for(;;) {
 			String line = fileReader.readLine();
 			if(line == null) {  // end of file
