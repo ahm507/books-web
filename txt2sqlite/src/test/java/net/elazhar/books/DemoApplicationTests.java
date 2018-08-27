@@ -1,4 +1,4 @@
-package com.example.demo;
+package net.elazhar.books;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
