@@ -23,11 +23,14 @@ public class TextToSQLiteApplication implements CommandLineRunner {
 
 
         Indexer indexer = new Indexer();
+        int indexed = 0;
         try {
-            indexer.indexDoc();
+            indexed = indexer.indexDoc();
         } catch (FileNotFoundException e) {
             LOG.info("build.properties file not found");
         }
+
+        LOG.info("Indexed records count: " + String.valueOf(indexed));
 
 //        loadBuildProperties();
 //

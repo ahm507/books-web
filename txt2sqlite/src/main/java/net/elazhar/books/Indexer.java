@@ -24,20 +24,21 @@ import java.util.logging.Logger;
  *
  */
 public class Indexer {
-	Settings settings = new Settings();
-	Logger logger = Logger.getLogger("Indexer");
-	
+	private Settings settings = new Settings();
+	private Logger logger = Logger.getLogger("Indexer");	
+	private int indexedRecordsCount; 
+
 //	IndexWriter indexWriter = null;
 //   	Directory indexDirectory = null;
 	
 
-	public int indexDoc()
-						throws Exception, IOException, InterruptedException {
+	public int indexDoc() throws Exception, IOException, InterruptedException {
+
+        indexedRecordsCount = 0;
 
 	    String inputPath  = new java.io.File( "." ).getCanonicalPath();
         String indexPath = inputPath;
 
-		int indexedRecordsCount = 0; 
 		settings.loadSettings(inputPath + "/build.properties");
 
 //		indexWriter = new IndexWriter(indexPath, new SimpleAnalyzer());
@@ -79,12 +80,11 @@ public class Indexer {
 					
 					indexRecord(recordID, bookID, parentID, ptext.getTitle(), 
 							ptext.getText(), ptext.getTextNoVowels());
-					indexedRecordsCount ++;
 					outCounter++;
-					if(outCounter % 100 == 0) { 
-                        logger.info(String.format("Record number %d is indexed", outCounter));
-			            //Thread.sleep(500); //!!!
-					}
+					//if(outCounter % 100 == 0) { 
+                    //    logger.info(String.format("Record number %d is indexed", outCounter));
+			        //    //Thread.sleep(500); //!!!
+					//}
 					
 					recordID++;
 				
@@ -235,6 +235,7 @@ public class Indexer {
 			//This should be injected to SQLite record
 
         logger.info("insert record: " + title);
+		indexedRecordsCount ++;
 
 	}
 	
