@@ -1,0 +1,1 @@
+Text To SQLite converter, based on Spring Boot.
