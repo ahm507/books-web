@@ -20,6 +20,13 @@ public class DemoApplication implements CommandLineRunner {
     @Override 
     public void run(String... args) {
         LOG.info("Hello commands. Here you have full spring power inside the console application");
+
+//        loadBuildProperties();
+//
+//        verifyBuildProperties();
+//
+//        parseTextFiles(new TextLineReader(), new SQLiteAppender());
+
         for (int i = 0; i < args.length; ++i) {
             LOG.info("args[{}]: {}", i, args[i]);
         }
