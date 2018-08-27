@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class DemoApplication implements CommandLineRunner {
+public class TextToSQLiteApplication implements CommandLineRunner {
 
     private static Logger LOG = LoggerFactory
-            .getLogger(DemoApplication.class);
+            .getLogger(TextToSQLiteApplication.class);
 
     public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(TextToSQLiteApplication.class, args);
 	}
 
     @Override 
