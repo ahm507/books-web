@@ -61,10 +61,7 @@ public class Indexer {
 		for(int i =0 ; i < filesNames.length ; i++) {
 			String fileName =  filesNames[i];
 			Vector<String> lines = readLines(inputPath, fileName);
-			System.out.println(String.format("File is started to be indexed: %s", fileName));
-//			if(out != null)
-//				out.println(String.format("File is started to be indexed: %s<br>", fileName));
-			logger.info(String.format("File is started to be indexed: %s<br>", fileName));
+			logger.info(String.format("File is started to be indexed: %s", fileName));
 			String record = "";
 			for(int j = 0 ; j < lines.size() ; j++) {
 				
@@ -85,9 +82,8 @@ public class Indexer {
 					indexedRecordsCount ++;
 					outCounter++;
 					if(outCounter % 100 == 0) { 
-                        logger.info(String.format("Record number %d is indexed<br/>", outCounter));
-						System.out.println(String.format("Record number %d is indexed", outCounter));
-			            Thread.sleep(500); //!!!
+                        logger.info(String.format("Record number %d is indexed", outCounter));
+			            //Thread.sleep(500); //!!!
 					}
 					
 					recordID++;
