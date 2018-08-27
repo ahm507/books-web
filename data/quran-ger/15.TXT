@@ -1,0 +1,605 @@
+
+#L1 15. Sure "Al-Hidschr" "Al-Hidschr"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 99 Verse zählende Sure wurde in Mekka offenbart. Sie beginnt mit den Buchstaben Alif, Lâm, Râ' - A, L, R, - einem Hinweis an die Menschen, daß der Koran aus den Buchstaben besteht, aus denen auch ihre Sprache besteht. Er stellt aber ein Wunder dar, da es eine Offenbarung Gottes, des Allmächtigen, ist. Die Ungläubigen, die dem Koran nicht zuhören wollen, werden dadurch angeregt, den vorgetragenen Versen Gehör zu schenken, damit sie daraus Nutzen ziehen und rechtgeleitet werden. Die Sure, die ihren Namen vom Hidschr-Tal, wo die Thamûd gelebt haben, erhielt, berichtet über die qualvolle Strafe, die sich frühere Völker durch hartnäckigen Unglauben zugezogen hatten und über die früheren Propheten, die den Trotz ihrer Völker zu ertragen hatten. Gottes Zeichen werden zum Nachdenken angeführt: der hohe Himmel mit den Konstellationen der Sterne, die ausgedehnte in den Dienst der Menschen gestellte Erde, die hohen Berge und die Winde, die regenträchtige Wolken vor sich hertreiben und den Blütenstaub zur Befruchtung der Pflanzen tragen. Die Sure geht auf die Versuchung Adams und Evas durch Satan ein und den Kampf zwischen dem Guten und dem Bösen, der seitdem anhält bis zum Jüngsten Tag, an dem die Rechtschaffenen belohnt und die Frevler bestraft werden. Die Sure enthält Nachrichten über die Propheten Abraham und Lot und über die Thamûd, die im Hidschr-Tal zwischen Medina und Syrien gelebt haben und wegen ihres Trotzes bestraft wurden. Das sollte jedem Trotzigen zur Lehre gereichen, der dem Propheten Muhammad nicht glaubt. Der Prophet wird getröstet. Er habe die Botschaft zu verkünden, die in dem offenbarten Koran enthalten ist. Er habe zu beten, Geduld zu üben und auszuharren, bis Gott Seine Verheißung erfüllt. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 15_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Alif, Lâm, Râ'. Dies sind die Verse des offenbarten, klaren und eindeutigen Buches. 
+
+$ 15_001
+
+$ S15a1
+
+#L2 verse  2 ## 2. Die Ungläubigen werden oftmals im Jenseits wünschen, sie hätten an Gott geglaubt und sich Ihm ergeben. 
+
+$ 15_002
+
+$ S15a2
+
+#L2 verse  3 ## 3. Laß sie essen und genießen und sich der falschen Hoffnung hingeben! Sie werden am Jüngsten Tag erkennen, was auf sie zukommt. 
+
+$ 15_003
+
+$ S15a3
+
+#L2 verse  4 ## 4. Wir haben nie eine städtische Gemeinschaft vernichtet, ohne den Zeitpunkt genau vorbestimmt zu haben. 
+
+$ 15_004
+
+$ S15a4
+
+#L2 verse  5 ## 5. Keine Gemeinschaft kann diese Frist vorverlegen oder hinausschieben. 
+
+$ 15_005
+
+$ S15a5
+
+#L2 verse  6 ## 6. Sie sprachen: "Du, der dir das ermahnende Buch herabgesandt worden ist, du bist geistesgestört! 
+
+$ 15_006
+
+$ S15a6
+
+#L2 verse  7 ## 7. Könntest du uns nicht die Engel als Beweis holen, wenn du die Wahrheit sagst?" 
+
+$ 15_007
+
+$ S15a7
+
+#L2 verse  8 ## 8. Wir senden aber die Engel nur mit der endgültigen Meldung der unwiderlegbaren Wahrheit herab, der die vernichtende Strafe unverzüglich folgt. 
+
+$ 15_008
+
+$ S15a8
+
+#L2 verse  9 ## 9. Wir haben die Ermahnung herabgesandt, und Wir bewahren sie für immer und ewig. 
+
+$ 15_009
+
+$ S15a9
+
+#L2 verse  10 ## 10. Wir haben vor dir Gesandte an Völker geschickt, (die für das Falsche Partei ergriffen und nun untergegangen sind). 
+
+$ 15_010
+
+$ S15a10
+
+#L2 verse  11 ## 11. Es kam kein Gesandter zu ihnen, über den sie nicht spotteten. 
+
+$ 15_011
+
+$ S15a11
+
+#L2 verse  12 ## 12. So setzen Wir den Unglauben in den Herzen der Frevler ihren Absichten entsprechend fest. 
+
+$ 15_012
+
+$ S15a12
+
+#L2 verse  13 ## 13. Sie glauben nicht an die Offenbarung. Gott belangt sie gemäß Seinem Gesetz, wie Er die früheren Völker belangte. 
+
+$ 15_013
+
+$ S15a13
+
+#L2 verse  14 ## 14. Selbst, wenn Wir ihnen ein Himmelstor öffnen würden, durch das sie immer wieder hinaufsteigen könnten, um zu sehen, was es dort gibt, 
+
+$ 15_014
+
+$ S15a14
+
+#L2 verse  15 ## 15. würden sie sagen: "Unsere Augen sind geblendet, und wir sind ein verzaubertes Volk." 
+
+$ 15_015
+
+$ S15a15
+
+#L2 verse  16 ## 16. Wir haben am Himmel Sternkonstellationen geschaffen, ihn für die Betrachter schön gestaltet 
+
+$ 15_016
+
+$ S15a16
+
+#L2 verse  17 ## 17. und ihn vor jedem verfluchten Satan geschützt. 
+
+$ 15_017
+
+$ S15a17
+
+#L2 verse  18 ## 18. Wollte ein Satan die Konstellationen belauschen, würde ihn eine hell leuchtende Flamme verfolgen. 
+
+$ 15_018
+
+$ S15a18
+
+#L2 verse  19 ## 19. Die Erde haben Wir ausgedehnt, darauf Berge verankert und alle Arten von Pflanzen nach genauem Maß wachsen lassen. 
+
+$ 15_019
+
+$ S15a19
+
+#L2 verse  20 ## 20. Und Wir haben euch auf der Erde Lebensmöglichkeiten geschaffen, auch für die, die ihr nicht zu versorgen habt. 
+
+$ 15_020
+
+$ S15a20
+
+#L2 verse  21 ## 21. Es gibt nichts, von dem Wir nicht Schätze haben, doch Wir schicken davon nur nach bestimmtem Maß herab. 
+
+$ 15_021
+
+$ S15a21
+
+#L2 verse  22 ## 22. Und die Winde treiben Wir zur Befruchtung hin und verfügen, daß sie regenträchtige Wolken und Blütenstaub tragen. Auch lassen Wir Wasser herabregnen, das Wir euch zum Trinken und Bewässern geben, und ihr könnt es nicht in eurer Gewalt verwahren. 
+
+$ 15_022
+
+$ S15a22
+
+#L2 verse  23 ## 23. Wir sind es, die Wir Leben schenken und sterben lassen, und Wir werden dereinst alles erben. 
+
+$ 15_023
+
+$ S15a23
+
+#L2 verse  24 ## 24. Wir wissen um die, die früher und um die, die später abberufen werden. 
+
+$ 15_024
+
+$ S15a24
+
+#L2 verse  25 ## 25. Dein Herr wird sie am Jüngsten Tag versammeln. Seine Weisheit und Sein Wissen sind unermeßlich. 
+
+$ 15_025
+
+$ S15a25
+
+#L2 verse  26 ## 26. Wir haben den Menschen aus trockenem Lehm und feuchtem Schlamm geschaffen. 
+
+$ 15_026
+
+$ S15a26
+
+#L2 verse  27 ## 27. Und die Dschinn schufen Wir vorher aus glühendem, durchdringendem Feuer. 
+
+$ 15_027
+
+$ S15a27
+
+#L2 verse  28 ## 28. Einst sagte Dein Herr zu den Engeln: "Ich schaffe einen Menschen aus trockenem Lehm und feuchtem Schlamm. 
+
+$ 15_028
+
+$ S15a28
+
+#L2 verse  29 ## 29. Wenn Ich ihn geformt und ihm von Meinem Geist eingehaucht habe, sollt ihr euch vor ihm niederwerfen. 
+
+$ 15_029
+
+$ S15a29
+
+#L2 verse  30 ## 30. Alle Engel warfen sich vor ihm nieder, 
+
+$ 15_030
+
+$ S15a30
+
+#L2 verse  31 ## 31. ausgenommen Iblîs (Satan), der sich weigerte, unter den Engeln zu sein, die sich niederwarfen. 
+
+$ 15_031
+
+$ S15a31
+
+#L2 verse  32 ## 32. Gott sprach: "Warum bist du nicht unter denen gewesen, die sich niederwarfen?" 
+
+$ 15_032
+
+$ S15a32
+
+#L2 verse  33 ## 33. Er sprach: "Es ziemt mir nicht, mich vor einem Menschen niederzuwerfen, den Du aus trockenem Lehm und feuchtem Schlamm erschaffen hast." 
+
+$ 15_033
+
+$ S15a33
+
+#L2 verse  34 ## 34. Gott sprach: "Tritt aus meiner Gnade heraus, du bist es wert, gesteinigt zu werden! 
+
+$ 15_034
+
+$ S15a34
+
+#L2 verse  35 ## 35. Auf  dir soll der Fluch bis zum Jüngsten Tag lasten!" 
+
+$ 15_035
+
+$ S15a35
+
+#L2 verse  36 ## 36. Da sagte er: "Gott, gewähre mir eine Frist bis zum Tag der Auferstehung!" 
+
+$ 15_036
+
+$ S15a36
+
+#L2 verse  37 ## 37. Gott sprach: "Dir wird Aufschub  gewährt 
+
+$ 15_037
+
+$ S15a37
+
+#L2 verse  38 ## 38. bis zu dem bestimmten Tag." 
+
+$ 15_038
+
+$ S15a38
+
+#L2 verse  39 ## 39. Da sagte er: "Gott, da Du mich der Verführung ausgesetzt hast, werde ich den Menschen auf Erden das Böse schön erscheinen lassen und sie alle verführen, 
+
+$ 15_039
+
+$ S15a39
+
+#L2 verse  40 ## 40. deine aufrichtigen Diener ausgenommen." 
+
+$ 15_040
+
+$ S15a40
+
+#L2 verse  41 ## 41. Gott sprach: "Der Weg, den sie gehen, ist der gerade Weg, den Ich nicht übertreten  kann. 
+
+$ 15_041
+
+$ S15a41
+
+#L2 verse  42 ## 42. Über Meine aufrichtigen Diener hast du keine Macht, außer über die Verführten, die dir folgen." 
+
+$ 15_042
+
+$ S15a42
+
+#L2 verse  43 ## 43. Die Hölle ist der Treffpunkt für sie alle. 
+
+$ 15_043
+
+$ S15a43
+
+#L2 verse  44 ## 44. Sie hat sieben Tore; jedem Tor ist eine bestimmte Schar zugeteilt. 
+
+$ 15_044
+
+$ S15a44
+
+#L2 verse  45 ## 45. Die Frommen aber kommen im Jenseits in herrliche Gärten mit Quellen. 
+
+$ 15_045
+
+$ S15a45
+
+#L2 verse  46 ## 46. "Tretet   ein  in Frieden und Sicherheit!" 
+
+$ 15_046
+
+$ S15a46
+
+#L2 verse  47 ## 47. Und Wir werden ihre Herzen von jeglichem Neid befreien und sie sich wie Brüder auf Lagern einander gegenüber setzen lassen. 
+
+$ 15_047
+
+$ S15a47
+
+#L2 verse  48 ## 48. Sie werden von Müdigkeit nichts spüren, und sie werden von dort niemals vertrieben werden. 
+
+$ 15_048
+
+$ S15a48
+
+#L2 verse  49 ## 49. Verkünde Meinen Dienern, daß Ich der Allvergebende und der Allbarmherzige bin, 
+
+$ 15_049
+
+$ S15a49
+
+#L2 verse  50 ## 50. und daß Meine Strafe eine äußerst qualvolle Strafe ist. 
+
+$ 15_050
+
+$ S15a50
+
+#L2 verse  51 ## 51. Berichte ihnen über Abrahams Gäste, 
+
+$ 15_051
+
+$ S15a51
+
+#L2 verse  52 ## 52. wie sie zu ihm eintraten und sagten: "Friede!" Er aber sagte darauf: "Wir  fürchten uns vor euch!" 
+
+$ 15_052
+
+$ S15a52
+
+#L2 verse  53 ## 53. Da sprachen sie: "Fürchte dich nicht! Wir bringen dir die frohe Botschaft, daß du einen Sohn haben wirst, der über großes Wissen verfügen wird." 
+
+$ 15_053
+
+$ S15a53
+
+#L2 verse  54 ## 54. Er erwiderte: "Wie könnt ihr mir diese frohe Botschaft bringen, da ich ein hohes Alter erreicht habe?" 
+
+$ 15_054
+
+$ S15a54
+
+#L2 verse  55 ## 55. Da sprachen sie: "Wir haben dir die wahre frohe Botschaft gebracht. Reihe dich nicht unter die Menschen, die die Hoffnung auf Gottes Barmherzigkeit verlieren!" 
+
+$ 15_055
+
+$ S15a55
+
+#L2 verse  56 ## 56. Er sprach: "Nur die Verirrten verlieren die Hoffnung auf Gottes Barmherzigkeit." 
+
+$ 15_056
+
+$ S15a56
+
+#L2 verse  57 ## 57. Dann sagte er: "Was habt ihr sonst vor, ihr Gesandten?" 
+
+$ 15_057
+
+$ S15a57
+
+#L2 verse  58 ## 58. Sie sagten: "Wir sind zu einem frevelhaften Volk entsandt worden, das wir vernichten werden, 
+
+$ 15_058
+
+$ S15a58
+
+#L2 verse  59 ## 59. ausgenommen Lots Angehörige, die wir alle retten werden, 
+
+$ 15_059
+
+$ S15a59
+
+#L2 verse  60 ## 60. nur Lots Frau nicht, die wir zu denen zählen, die untergehen werden." 
+
+$ 15_060
+
+$ S15a60
+
+#L2 verse  61 ## 61. Als die Gesandten zu Lot kamen, 
+
+$ 15_061
+
+$ S15a61
+
+#L2 verse  62 ## 62. sagte er: "Ihr seid verdächtige Leute." 
+
+$ 15_062
+
+$ S15a62
+
+#L2 verse  63 ## 63. Darauf sagten sie: "Nein, wir bringen dir vielmehr die Meldung über die Strafe, die sie für eine Lüge hielten. 
+
+$ 15_063
+
+$ S15a63
+
+#L2 verse  64 ## 64. Wir bringen dir die wahre Gerechtigkeit, und wir sagen nur die Wahrheit. 
+
+$ 15_064
+
+$ S15a64
+
+#L2 verse  65 ## 65. Gehe mit deinen Familienangehörigen hinaus, wenn die Nacht vorangeschritten ist, und gehe du hinter ihnen her! Keiner von euch darf sich umschauen. Geht dorthin, wohin euch befohlen worden ist!" 
+
+$ 15_065
+
+$ S15a65
+
+#L2 verse  66 ## 66. Wir gaben Lot ein: "Wir haben die Entscheidung getroffen, daß diese Frevler am Morgen vernichtet werden." 
+
+$ 15_066
+
+$ S15a66
+
+#L2 verse  67 ## 67. Die Stadtbewohner kamen erfreut herbei und machten sich frohlockend Hoffnungen. 
+
+$ 15_067
+
+$ S15a67
+
+#L2 verse  68 ## 68. Lot sprach: "Diese sind meine Gäste. Macht mir keine Schande! 
+
+$ 15_068
+
+$ S15a68
+
+#L2 verse  69 ## 69. Fürchtet Gott und laßt mich keine Schmach erleiden!" 
+
+$ 15_069
+
+$ S15a69
+
+#L2 verse  70 ## 70. Sie sagten: "Haben wir dir nicht verboten, Menschen in deiner Nähe zu haben?" 
+
+$ 15_070
+
+$ S15a70
+
+#L2 verse  71 ## 71. Da antwortete er: "Hier sind die Mädchen der Stadt, die wie meine Töchter sind. Heiratet sie, wenn ihr entschlossen seid, der Natur zu folgen!" 
+
+$ 15_071
+
+$ S15a71
+
+#L2 verse  72 ## 72. Die Wahrheit ist, sie waren berauscht und ahnten nicht, was sie erwartete. 
+
+$ 15_072
+
+$ S15a72
+
+#L2 verse  73 ## 73. Der ungeheure, vernichtende Schrei ergriff sie, als die Sonne aufging. 
+
+$ 15_073
+
+$ S15a73
+
+#L2 verse  74 ## 74. Und wir stellten die Stadt auf den Kopf und ließen einen Hagel aus hartem Lehm, dem Regenfall gleich, auf sie niedergehen. 
+
+$ 15_074
+
+$ S15a74
+
+#L2 verse  75 ## 75. Darin liegen Zeichen für Menschen, die denken können. 
+
+$ 15_075
+
+$ S15a75
+
+#L2 verse  76 ## 76. Die Stadt liegt an einer noch bestehenden Straße und regt zur Besinnung an. 
+
+$ 15_076
+
+$ S15a76
+
+#L2 verse  77 ## 77. Darin ist ein Zeichen für die Gläubigen. 
+
+$ 15_077
+
+$ S15a77
+
+#L2 verse  78 ## 78. Auch die Leute des Waldes  waren  ungerecht. 
+
+$ 15_078
+
+$ S15a78
+
+#L2 verse  79 ## 79. Wir bestraften sie. Ihre Überreste liegen an einer sichtbaren  Straße, die weithin erkennbar ist. 
+
+$ 15_079
+
+$ S15a79
+
+#L2 verse  80 ## 80. Auch die Leute vom Hidschr bezichtigten die Gesandten der Lüge. 
+
+$ 15_080
+
+$ S15a80
+
+#L2 verse  81 ## 81. Wir übermittelten ihnen Unsere Zeichen. Sie wandten sich aber davon ab. 
+
+$ 15_081
+
+$ S15a81
+
+#L2 verse  82 ## 82. Sie  meißelten sich in den Bergen sichere Wohnstätten. 
+
+$ 15_082
+
+$ S15a82
+
+#L2 verse  83 ## 83. Der ungeheure, vernichtende Schrei ergriff sie am Morgen. 
+
+$ 15_083
+
+$ S15a83
+
+#L2 verse  84 ## 84. Alles, was sie erworben hatten, gewährte ihnen  keinen Schutz. 
+
+$ 15_084
+
+$ S15a84
+
+#L2 verse  85 ## 85. Wir haben die Himmel und die Erde und, was zwischen beiden ist, nur der Wahrheit nach geschaffen. Die Stunde des Jüngsten Tages wird ganz gewiß kommen. Sei deshalb in diesem Leben nachsichtig mit ihnen! 
+
+$ 15_085
+
+$ S15a85
+
+#L2 verse  86 ## 86. Dein Herr ist der Schöpfer und der Allwissende. 
+
+$ 15_086
+
+$ S15a86
+
+#L2 verse  87 ## 87. Wir haben dir die sieben Verse (der Fâtiha) und den Großen Koran gegeben. 
+
+$ 15_087
+
+$ S15a87
+
+#L2 verse  88 ## 88. Blick nicht verlangend zu den Genüssen, die Wir manchen gewährt haben, denn sie sind nichts gegen die Huld, die Wir dir erwiesen haben, und sei nicht betrübt über die Trotzigen! Sei sanft und langmütig mit den Gläubigen! 
+
+$ 15_088
+
+$ S15a88
+
+#L2 verse  89 ## 89. Und sage: "Ich bin der Warner, der mit klaren Beweisen die Offenbarung verkündet." 
+
+$ 15_089
+
+$ S15a89
+
+#L2 verse  90 ## 90. Auch warnen Wir jene Ungläubigen, die den Koran (in Poesie, Orakel und Legenden) einteilen, 
+
+$ 15_090
+
+$ S15a90
+
+#L2 verse  91 ## 91. die den Koran, der in sich geschlossen ist, auseinanderreißen. 
+
+$ 15_091
+
+$ S15a91
+
+#L2 verse  92 ## 92. Bei deinem Herrn, Wir werden sie alle am Jüngsten Tag  verantwortlich machen 
+
+$ 15_092
+
+$ S15a92
+
+#L2 verse  93 ## 93. für das, was sie an Untaten begangen haben. 
+
+$ 15_093
+
+$ S15a93
+
+#L2 verse  94 ## 94. Verkünde öffentlich, was dir befohlen ist, und wende dich von den Götzendienern ab, die Gott Gefährten beigesellen! 
+
+$ 15_094
+
+$ S15a94
+
+#L2 verse  95 ## 95. Wir schützen dich vor den Spöttern, 
+
+$ 15_095
+
+$ S15a95
+
+#L2 verse  96 ## 96. die Gott andere Gottheiten beigesellen. Sie werden erfahren, was sie sich zugezogen haben. 
+
+$ 15_096
+
+$ S15a96
+
+#L2 verse  97 ## 97. Wir wissen, daß du dich über ihr Gerede grämst. 
+
+$ 15_097
+
+$ S15a97
+
+#L2 verse  98 ## 98. Preise Deinen Herrn, und reihe dich unter die Betenden, die sich vor Gott niederwerfen! 
+
+$ 15_098
+
+$ S15a98
+
+#L2 verse  99 ## 99. Und diene Deinem Herrn, bis dir die Gewißheit des Jüngsten Tages gegenwärtig ist! 
+
+$ 15_099
+
+$ S15a99
+

@@ -1,0 +1,137 @@
+
+#L1 92. Sure Die Nacht "Al-Lail"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 21 Verse zählende, mekkanische Sure beginnt mit einem Schwur bei der Nacht - daher der Name der Sure. Gott schwört bei einigen Seiner Zeichen, die Seine Allmacht bezeugen, so bei der Nacht und dem Tag, daß die verschiedenen Werke der Menschen verschieden vergolten werden. Wer Spenden gibt, sich der Frömmigkeit befleißigt und an der höchsten Tugend festhält, den leitet Gott den leichten Weg. Wer geizt, sich überheblich gebärdet und die höchste Tugend leugnet, den führt Er den beschwerlichsten Weg. Wenn er in die Hölle abgeführt wird, kann ihm sein Vermögen nicht helfen. Gott zeigt den Weg der Rechtleitung. Er ist der Herr über Diesseits und Jenseits, und Er warnt vor der Hölle, die die Frevler erleiden und vor der die Gottesfürchtigen verschont bleiben. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 92_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Bei der Nacht, wenn sie Dunkelheit verhängt! 
+
+$ 92_001
+
+$ S92a1
+
+#L2 verse  2 ## 2. Beim Tag, wenn er hell erstrahlt! 
+
+$ 92_002
+
+$ S92a2
+
+#L2 verse  3 ## 3. Beim Wissen um die Erschaffung vom Männlichen und Weiblichen bei allen Lebewesen! 
+
+$ 92_003
+
+$ S92a3
+
+#L2 verse  4 ## 4. Eure Werke sind verschieden (gut und übel). 
+
+$ 92_004
+
+$ S92a4
+
+#L2 verse  5 ## 5. Wer Spenden gibt, sich der Frömmigkeit befleißigt 
+
+$ 92_005
+
+$ S92a5
+
+#L2 verse  6 ## 6. und an die höchste Tugend (an das Bekenntnis zu Gott) glaubt, 
+
+$ 92_006
+
+$ S92a6
+
+#L2 verse  7 ## 7. dem werden Wir den Weg zum Heil leicht machen. 
+
+$ 92_007
+
+$ S92a7
+
+#L2 verse  8 ## 8. Wer aber geizt, (Gottes Pflichtabgaben nicht leistet) sich so gebärdet, als wäre er auf Gott nicht angewiesen, 
+
+$ 92_008
+
+$ S92a8
+
+#L2 verse  9 ## 9. und die höchste Tugend für eine Lüge hält, 
+
+$ 92_009
+
+$ S92a9
+
+#L2 verse  10 ## 10. dem machen Wir den beschwerlichen Weg zum ewigen Leiden leicht. 
+
+$ 92_010
+
+$ S92a10
+
+#L2 verse  11 ## 11. Wenn er in die Hölle abgeführt wird, wird ihm sein Hab und Gut nicht gegen die qualvolle Strafe helfen. 
+
+$ 92_011
+
+$ S92a11
+
+#L2 verse  12 ## 12. Uns obliegt die Rechtleitung, 
+
+$ 92_012
+
+$ S92a12
+
+#L2 verse  13 ## 13. und Uns gehören das Dieseits und das Jenseits. 
+
+$ 92_013
+
+$ S92a13
+
+#L2 verse  14 ## 14. Ich warne euch vor dem auflodernden Höllenfeuer, 
+
+$ 92_014
+
+$ S92a14
+
+#L2 verse  15 ## 15. das nur der schlimmste Frevler, der Ungläubige, erleidet, 
+
+$ 92_015
+
+$ S92a15
+
+#L2 verse  16 ## 16. der den Gesandten der Lüge zeiht und sich von der Wahrheit abwendet. 
+
+$ 92_016
+
+$ S92a16
+
+#L2 verse  17 ## 17. Verschont davon ist der Fromme, 
+
+$ 92_017
+
+$ S92a17
+
+#L2 verse  18 ## 18. der für die Sache Gottes sein Vermögen gibt, um sich zu läutern. 
+
+$ 92_018
+
+$ S92a18
+
+#L2 verse  19 ## 19. Niemand hat bei ihm eine Gabe gut, die er zu begleichen hat. 
+
+$ 92_019
+
+$ S92a19
+
+#L2 verse  20 ## 20. Er gibt nur Gott, dem Allerhöchsten zuliebe. 
+
+$ 92_020
+
+$ S92a20
+
+#L2 verse  21 ## 21. Ihm wird Gottes Wohlgefallen gewiß zuteil werden. 
+
+$ 92_021
+
+$ S92a21
+

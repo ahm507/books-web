@@ -1,0 +1,65 @@
+
+#L1 104. Sure Der Stichler "Al-Humaza"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 9 Verse zählende, mekkanische Sure warnt den Stichler  -daher ihr Name . Das üble Verhalten des Stichlers und Nörglers, der glaubt, seine Mitmenschen mit bösen Wörtern und Verhaltensweisen kränken zu können, weil er vermögend ist, wird verurteilt. Er dürfe nicht glauben, daß sein Vermögen ihn dazu berechtigt und ihm ewiges Leben auf Erden möglich macht. Er müßte wissen, daß auf ihn die Hölle wartet, in der er ewig bleibt. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 104_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Wehe jedem Stichler und Nörgler, 
+
+$ 104_001
+
+$ S104a1
+
+#L2 verse  2 ## 2. der viel Vermögen zusammenträgt und es immer wieder zählt! 
+
+$ 104_002
+
+$ S104a2
+
+#L2 verse  3 ## 3. Er meint, daß sein Vermögen ihm ewiges Leben verschafft. 
+
+$ 104_003
+
+$ S104a3
+
+#L2 verse  4 ## 4. O nein! Er wird gewiß in die vernichtende Hölle gestoßen werden. 
+
+$ 104_004
+
+$ S104a4
+
+#L2 verse  5 ## 5. Woher kannst du wissen, was die vernichtende Hölle ist? 
+
+$ 104_005
+
+$ S104a5
+
+#L2 verse  6 ## 6. Sie ist Gottes glühendes, aufloderndes Feuer, 
+
+$ 104_006
+
+$ S104a6
+
+#L2 verse  7 ## 7. das die Herzen ergreift. 
+
+$ 104_007
+
+$ S104a7
+
+#L2 verse  8 ## 8. Es hält sie fest umschlossen, 
+
+$ 104_008
+
+$ S104a8
+
+#L2 verse  9 ## 9. und sie sind an langgestreckte Säulen gefesselt. 
+
+$ 104_009
+
+$ S104a9
+

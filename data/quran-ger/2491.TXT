@@ -1,0 +1,185 @@
+
+#L1 191. Die Feinde (die euch als erste angreifen) sollt ihr überall dort schlagen, wo ihr sie findet und sie aus den Stätten vertreiben, aus denen sie euch vertrieben haben.  ##
+
+#L2 Verfolgung (und der Versuch, ##
+
+Verfolgung (und der Versuch, die Gläubigen vom wahren Glauben abzubringen) ist schwerwiegender als ein Krieg. Ihr sollt nicht mit ihnen bei der Heiligen Moschee zu Mekka kämpfen. Doch wenn sie euch dort angreifen, dann dürft ihr sie dort bekämpfen. Das ist die Strafe, die die Ungläubigen verdienen.
+
+$ 2_000
+
+$ S1a1
+
+#L2 verse  192 ## 192. Wenn sie ihre feindseligen Handlungen einstellen und sich Gottes Willen beugen, wird Gott ihnen vergeben. Er ist der Allbarmherzige und der Allverzeihende. 
+
+$ 2_192
+
+$ S2a192
+
+#L2 verse  193 ## 193. Ihr sollt diese Feinde bekämpfen, damit die Gläubigen nicht verfolgt werden und damit der Glaube an Gott vorherrscht. Wenn sie die Feindseligkeiten einstellen, dürft ihr sie nicht angreifen. Nur die Ungerechten dürfen angegriffen werden. 
+
+$ 2_193
+
+$ S2a193
+
+#L2 verse  194 ## 194. Hat der Feind euch in einem heiligen Monat angegriffen, dürft ihr ebenfalls in einem heiligen Monat angreifen. Verbrechen, die die Heiligtümer antasten, sind entsprechend zu bestrafen. Wer sich gegen euch vergeht, gegen den geht in gleichem Maße vor! Fürchtet Gott und bedenket, daß Gott mit den Frommen  ist. 
+
+$ 2_194
+
+$ S2a194
+
+#L2 verse  195 ## 195. Für die Sache Gottes sollt ihr Spenden geben, und stürzt euch nicht mit eigener Hand ins Verderben! Bemüht euch stets, gute Taten auf die schönste Art zu vollbringen! Gott liebt diejenigen, die gute Werke auf die schönste Art vollenden. 
+
+$ 2_195
+
+$ S2a195
+
+#L2 verse  196 ## 196. Vollzieht die Hadsch-Pilgerfahrt und die 'Umra-Pilgerfahrt, um Gott zu dienen. Sollte euch (nach den einleitenden Ihrâm-Riten) der Feind den Weg abschneiden, könnt ihr euch (vom Ihrâm, dem einleitenden Weihezustand der Pilgerfahrt) dadurch loslösen, daß ihr irgendein Tier, das ihr gerade findet (ein Schaf, eine Kuh oder ein Kamel) schlachtet (und dessen Fleisch an die Armen verteilt). Ihr dürft euch die Haare nicht eher schneiden, bis ihr die Hadsch-Riten abgeschlossen habt. Ist einer aber krank, oder hat er ein Leiden am Kopf, braucht er sich die Haare nicht zu schneiden. Er hat aber dafür einen Ersatz durch Fasten, Almosen oder eine Opfergabe zu leisten (: drei Tage fasten auf die übliche Weise oder sechs Arme jeweils einen Tag verköstigen oder ein Schaf schlachten und an die Armen verteilen). Ist während der Pilgerfahrt Friedenszeit, und ihr habt zuerst die 'Umra vor der Hadsch-Pilgerfahrt verrichtet und wollt bleiben bis zur Pilgerfahrt, so schlachtet ein erschwingliches Opfertier! Wer kein Opfertier findet oder es sich nicht leisten kann, hat drei Tage während der Pilgerfahrt und sieben Tage nach der Heimkehr zu fasten, das sind im ganzen zehn volle Tage. Diese Vorschriften gelten für diejenigen, deren Familien nicht in der Nähe von Mekka wohnen. Haltet euch gottesfürchtig daran und wißt, daß Gott schwer bestrafen kann! 
+
+$ 2_196
+
+$ S2a196
+
+#L2 verse  197 ## 197. Die Pilgerfahrt wird in Monaten verrichtet, die euch (seit Abraham) bekannt sind, (das sind die Monate Schawwal, Zu-l-Qa'da und Zu-l-Hidscha). Wer sich entschließt, die Pilgerfahrt zu verrichten, hat die Verhaltensvorschriften einzuhalten: kein Geschlechtsverkehr, keine bösen Werke und kein Streiten mit den Mitmenschen. Was ihr Gutes tut, das weiß Gott. Sorgt für den Jüngsten Tag vor und wißt, daß die beste Vorsorge die Frömmigkeit ist! So fürchtet Mich, o ihr, die ihr vernünftig seid! 
+
+$ 2_197
+
+$ S2a197
+
+#L2 verse  198 ## 198. In der Pilgerzeit dürft ihr Handel treiben und von Gottes Gaben profitieren. Wenn ihr vom Berg 'Arafat (nach verrichtetem Ritus) abzieht und euch bei der Heiligen Stätte al-Masch'ar al-Harâm (am Berg al-Muzdalifa) aufhaltet, so gedenkt Gottes, wie Er euch zum rechten Weg geleitet hat, nachdem ihr lange zu den Verirrten  gezählt worden wart! 
+
+$ 2_198
+
+$ S2a198
+
+#L2 verse  199 ## 199. Ihr sollt alle Riten gemeinsam mit den anderen Menschen verrichten! Bittet Gott um Vergebung! Gott ist der Allverzeihende, Allbarmherzige. 
+
+$ 2_199
+
+$ S2a199
+
+#L2 verse  200 ## 200. Wenn ihr die Riten der Pilgerfahrt absolviert habt, sollt ihr Gottes so gedenken, wie ihr eurer Väter gedenkt oder noch gebührender. Es gibt Menschen, die sagen: "Herr, gib uns Gutes im Diesseits!" So haben sie keinen Anteil am Jenseits. 
+
+$ 2_200
+
+$ S2a200
+
+#L2 verse  201 ## 201. Aber es gibt auch Menschen, die sagen: "Unser Herr! Gewähre uns Gutes im Diesseits und Gutes im Jenseits, und bewahre uns vor der Höllenstrafe!" 
+
+$ 2_201
+
+$ S2a201
+
+#L2 verse  202 ## 202. Diese belohnt Gott für ihre guten Werke. Gott rechnet schnell ab. 
+
+$ 2_202
+
+$ S2a202
+
+#L2 verse  203 ## 203. Huldigt Gott bei der Pilgerfahrt an den bestimmten (drei)  Tagen (nach dem Werfen der Steine in Mina)! Hat einer sich beeilt und die Zeit auf zwei Tage gekürzt oder verlängert, so ist das kein Vergehen, sofern er gottesfürchtig ist. Gott sollt ihr ehrfürchtig dienen und wissen, daß ihr vor Ihm (am Jüngsten Tag) versammelt werdet. 
+
+$ 2_203
+
+$ S2a203
+
+#L2 verse  204 ## 204. Manch einer könnte dir mit seinen schönen Worten gefallen (mit denen er sich nur Vorteile im Leben verschaffen will). Er ruft Gott zum Zeugen für seine Herzenstreue an. In Wirklichkeit aber ist er dein ärgster Feind. 
+
+$ 2_204
+
+$ S2a204
+
+#L2 verse  205 ## 205. Wenn ein solcher an die Macht kommt, zieht er umher und stiftet Unheil auf Erden und fügt dem Ackerbau und der Nachkommenschaft vernichtende Schäden zu. Gott liebt kein Unheil. 
+
+$ 2_205
+
+$ S2a205
+
+#L2 verse  206 ## 206. Sagt man ihm: "Fürchte dich vor Gott!" treibt ihn sein Hochmut zur Sünde. Ihm kann nur die Höllenstrafe genügen. Wehe dem, dem die Hölle zur Wohnstätte wird! 
+
+$ 2_206
+
+$ S2a206
+
+#L2 verse  207 ## 207. Es gibt auch Menschen, die sich selbst verkaufen würden, um Gott zu gefallen (wenn diese die Führung übernehmen. Das ist ein Zeichen von Gottes Barmherzigkeit den Menschen gegenüber.) 
+
+$ 2_207
+
+$ S2a207
+
+#L2 verse  208 ## 208. O ihr Gläubigen! Nehmt alle den Frieden an! Seid friedlich miteinander, und folgt nicht den Machenschaften des Teufels, denn er ist euer  offenkundiger Feind! 
+
+$ 2_208
+
+$ S2a208
+
+#L2 verse  209 ## 209. Wenn ihr vom geraden Weg abgeht, nachdem euch die klaren Beweise bekannt geworden sind, müßt ihr euch dessen bewußt sein, daß Gott allmächtig  und unendlich  weise ist. 
+
+$ 2_209
+
+$ S2a209
+
+#L2 verse  210 ## 210. Oder wollen die Ungläubigen etwa Gott von Nebel und Engeln umgeben mit eigenen Augen sehen, damit sie glauben? Die Entscheidung Gottes ist gefallen. Gott ist es, Der über alles entscheidet. 
+
+$ 2_210
+
+$ S2a210
+
+#L2 verse  211 ## 211. Frage die Kinder Israels, wieviele eindeutige Beweiszeichen Wir ihnen (über den wahren Glauben) unterbereitet haben! Wer die Gaben Gottes verdreht, nachdem er sie klar verstanden hat, dem steht eine schwere Strafe Gottes bevor. 
+
+$ 2_211
+
+$ S2a211
+
+#L2 verse  212 ## 212. Die Ungläubigen werden durch das scheinbar schöne Leben auf Erden verführt. Sie machen sich lustig über die Gläubigen. Diese werden aber über ihnen stehen am Tag der Auferstehung. Gott gibt uneingeschränkt, wem Er will, ohne zu rechnen. 
+
+$ 2_212
+
+$ S2a212
+
+#L2 verse  213 ## 213. Die Menschen waren einst eine einzige Gemeinschaft. Dann sandte Gott die Propheten als Warner und Freudenboten zu ihnen. Er sandte ihnen die Schrift mit der Wahrheit herab, um unter den Menschen über ihre Kontroversen zu urteilen. Kontroversen haben nur die Schriftbesitzer böswillig verursacht, nachdem sie die eindeutigen Beweiszeichen bekommen hatten. Die Gläubigen hat Gott Seiner Verfügung gemäß zur Wahrheit über die Kontroversen geleitet. Gott leitet wen Er will zum geraden Weg. 
+
+$ 2_213
+
+$ S2a213
+
+#L2 verse  214 ## 214. Oder denkt ihr etwa, daß ihr ins Paradies kommt, ohne geprüft zu werden wie die früheren Völker? Diese wurden so hart von schweren Nöten heimgesucht und so heftig erschüttert, daß ihre Gesandten zusammen mit den treuen Gläubigen fragten: "Wann kommt Gottes versprochener Sieg?" Gottes versprochener Sieg ist wahrlich nahe. 
+
+$ 2_214
+
+$ S2a214
+
+#L2 verse  215 ## 215. Die Gläubigen fragen dich, was und wem sie spenden sollen. Sprich: "Ihr sollt vom wohlverdienten Gut den Eltern, den Verwandten, den Waisen, den Armen und den mittellosen Wanderern geben. Was ihr Gutes tut, das weiß Gott genau." 
+
+$ 2_215
+
+$ S2a215
+
+#L2 verse  216 ## 216. Euch ist vorgeschrieben zu kämpfen (um den Glauben zu verteidigen und das Leben zu schützen), obwohl ihr den Kampf haßt. Es kann sein, daß man etwas haßt, was einem nützt oder etwas liebt, was einem schadet. Gott allein weiß alles, und ihr wißt nichts. 
+
+$ 2_216
+
+$ S2a216
+
+#L2 verse  217 ## 217. Die Gläubigen fragen dich, wie es um den Kampf im heiligen Monat steht. Sprich: "Das Kämpfen im heiligen Monat ist eine schwerwiegende Sünde! Aber schwerwiegender sind die Vergehen der Ungläubigen, die ihre Mitmenschen vom Weg Gottes abhalten, an Gott nicht glauben, die Heilige Moschee (zu Mekka) mißachten und die Bewohner (aus ihrer Stadt Mekka) vertreiben. Die Verführung von Gläubigen jedoch ist schwerwiegender als Morden. " Die Ungläubigen werden solange gegen euch kämpfen, bis sie euch von eurem Glauben abbringen, wenn sie könnten. Diejenigen, die nachgeben, vom Glauben abkommen und als Ungläubige sterben, denen werden im Diesseits und im Jenseits keine guten Werken nützen. Sie sind Bewohner der Hölle, wo sie ewig verweilen werden. 
+
+$ 2_217
+
+$ S2a217
+
+#L2 verse  218 ## 218. Diejenigen, die wahrhaftig glauben, um des Glaubens Willen ausgewandert sind und für Gottes Sache gekämpft haben, können fest mit Gottes Barmherzigkeit rechnen. Gott ist voller Vergebung und Barmherzigkeit. 
+
+$ 2_218
+
+$ S2a218
+
+#L2 verse  219 ## 219. Sie fragen dich nach dem Wein und dem Glücksspiel. Sprich: "In beiden liegt zwar etwas Nutzen für die Menschen, aber viel Übel. Das Übel überwiegt den Nutzen." Sie fragen dich, was sie spenden sollen. Sprich: "Was man leicht erübrigen kann, ohne sich übermäßig anzustrengen." So erläutert euch Gott Seine offenbarten Zeichen, damit ihr darüber nachdenkt. 
+
+$ 2_219
+
+$ S2a219
+
+#L2 verse  220 ## 220. Ihr sollt über das Diesseits und das Jenseits nachdenken. Sie fragen dich, wie sie die Waisen behandeln sollen. Sprich: "Ihr sollt das tun, was für sie gut ist. Wenn ihr mit ihnen verkehrt, so sollt ihr sie wie eure Geschwister behandeln (mit dem Ziel, ihnen zu nützen und nicht zu schaden)!" Gott weiß, wer gute Absichten und wer böse hegt. Wenn Gott gewollt hätte, hätte Er es euch (durch Pflichten) schwer gemacht. (Die schlecht geleiteten Waisen wären eine schwere Bürde, unter der ihr leiden müßtet.) Gott ist allmächtig und allwissend. 
+
+$ 2_220
+
+$ S2a220
+

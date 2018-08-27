@@ -1,0 +1,29 @@
+
+#L1 108. Sure Die Gabenfülle "Al-Kauthar"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 3 Verse zählende, mekkanische Sure hat zum Thema die Gabenfülle, die Gott Seinem Gesandten gewährte. Für die vielen  Gaben, die Er ihm im Diesseits und im Jenseits beschert, soll er seinem Herrn Dankbarkeit erweisen. So soll er unablässig mit tiefster Hingabe beten und Opfertiere schlachten und verteilen. Gott meldet ihm, daß sein Hasser seinen Zweck nicht erreichen und keinen Erfolg, weder im Diesseits noch im Jenseits, erzielen wird. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 108_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Wir haben dir die Gabenfülle beschert. 
+
+$ 108_001
+
+$ S108a1
+
+#L2 verse  2 ## 2. Bete deinen Herrn an und schlachte zum Dank Opfertiere! 
+
+$ 108_002
+
+$ S108a2
+
+#L2 verse  3 ## 3. Dein Hasser ist es, dem alle Bande zum Guten abgeschnitten sind. 
+
+$ 108_003
+
+$ S108a3
+

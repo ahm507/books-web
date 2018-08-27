@@ -1,0 +1,263 @@
+
+#L1 80. Sure Er runzelte die Stirn " 'Abasa"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 42 Verse zählende, mekkanische Sure beginnt mit einem an den Propheten gerichteten Tadel, weil er die Stirn runzelte, als der blinde Ibn Umm Maktûm ihn mit Fragen die Rechtleitung betreffend in einer Zeit aufsuchte, in der er mit Notabeln der Quraischiten sprach, um sie zum Islam einzuladen. Diesen Unterschied zwischen hochgestellten Herren und einfachen Menschen gibt es im Islam nicht. Die Sure geht dann darauf ein, daß Gott dem Menschen unzählige Gaben gewährt hat, für die er Gott danken muß. Die Undankbarkeit Gott gegenüber gleicht dem Unglauben, der am Jüngsten Tag mit ewig währender Strafe belegt wird. Während die Ungläubigen in die Hölle abgeführt werden, erfreuen sich die Gläubigen der Glückseligkeit im ewigen Paradies. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 80_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Er runzelte die Stirn und wandte sich ab, 
+
+$ 80_001
+
+$ S80a1
+
+#L2 verse  2 ## 2. als der Blinde ihn aufsuchte. 
+
+$ 80_002
+
+$ S80a2
+
+#L2 verse  3 ## 3. Wie kannst du wissen, ob er sich läutert, wenn du ihn belehrst? 
+
+$ 80_003
+
+$ S80a3
+
+#L2 verse  4 ## 4. Oder ob er sich so ermahnen läßt, daß ihm die Ermahnung nützt? 
+
+$ 80_004
+
+$ S80a4
+
+#L2 verse  5 ## 5. Der aber, der (wegen seines Reichtums und seiner Macht) überheblich ist, 
+
+$ 80_005
+
+$ S80a5
+
+#L2 verse  6 ## 6. auf den gehst du zu. 
+
+$ 80_006
+
+$ S80a6
+
+#L2 verse  7 ## 7. Was schadet es dir, wenn er sich nicht läutert? 
+
+$ 80_007
+
+$ S80a7
+
+#L2 verse  8 ## 8. Der aber, der dich eifrig aufsucht 
+
+$ 80_008
+
+$ S80a8
+
+#L2 verse  9 ## 9. und der Gott fürchtet, 
+
+$ 80_009
+
+$ S80a9
+
+#L2 verse  10 ## 10. von dem wendest  du dich ab. 
+
+$ 80_010
+
+$ S80a10
+
+#L2 verse  11 ## 11. O nein! Diese Verse sind eine Ermahnung. 
+
+$ 80_011
+
+$ S80a11
+
+#L2 verse  12 ## 12. Wer will, soll sich durch den Koran ermahnen lassen. 
+
+$ 80_012
+
+$ S80a12
+
+#L2 verse  13 ## 13. Er ist bei Gott auf in Ehren gehaltenen Blättern, 
+
+$ 80_013
+
+$ S80a13
+
+#L2 verse  14 ## 14. von hohem Rang und rein 
+
+$ 80_014
+
+$ S80a14
+
+#L2 verse  15 ## 15. in den Händen von Engeln, die Gott zu Boten bestimmt, 
+
+$ 80_015
+
+$ S80a15
+
+#L2 verse  16 ## 16. edel und rechtschaffen sind sie. 
+
+$ 80_016
+
+$ S80a16
+
+#L2 verse  17 ## 17. Tod dem Menschen! Wie richtet sich der Mensch zugrunde durch schlimmste Undankbarkeit gegen Gott! 
+
+$ 80_017
+
+$ S80a17
+
+#L2 verse  18 ## 18. Woraus erschuf Er ihn? 
+
+$ 80_018
+
+$ S80a18
+
+#L2 verse  19 ## 19. Aus einem Samentropfen erschuf Er ihn und ließ ihn Seinem Ermessen nach Entwicklungsphasen durchlaufen. 
+
+$ 80_019
+
+$ S80a19
+
+#L2 verse  20 ## 20. Dann machte Er ihm den Weg zum Glauben leicht zugänglich. 
+
+$ 80_020
+
+$ S80a20
+
+#L2 verse  21 ## 21. Dann beruft Er ihn ab und läßt ihn würdig begraben. 
+
+$ 80_021
+
+$ S80a21
+
+#L2 verse  22 ## 22. Dann, so Er will, wird Er ihn wieder auferwecken. 
+
+$ 80_022
+
+$ S80a22
+
+#L2 verse  23 ## 23. Doch er geht den Geboten nicht nach, die Gott ihm vorschrieb. 
+
+$ 80_023
+
+$ S80a23
+
+#L2 verse  24 ## 24. Der Mensch soll seine Nahrung betrachten. 
+
+$ 80_024
+
+$ S80a24
+
+#L2 verse  25 ## 25. Wir lassen  das Wasser in Strömen regnen, 
+
+$ 80_025
+
+$ S80a25
+
+#L2 verse  26 ## 26. Dann spalten Wir die Erde in unzählige Furchen 
+
+$ 80_026
+
+$ S80a26
+
+#L2 verse  27 ## 27. und lassen Korn wachsen 
+
+$ 80_027
+
+$ S80a27
+
+#L2 verse  28 ## 28. und Weinreben und frisch genießbare Früchte, 
+
+$ 80_028
+
+$ S80a28
+
+#L2 verse  29 ## 29. Olivenbäume und Palmen, 
+
+$ 80_029
+
+$ S80a29
+
+#L2 verse  30 ## 30. dichtbewachsene Gärten, 
+
+$ 80_030
+
+$ S80a30
+
+#L2 verse  31 ## 31. Obst und Futter 
+
+$ 80_031
+
+$ S80a31
+
+#L2 verse  32 ## 32. zu eurem Nutzen und für euer Vieh. 
+
+$ 80_032
+
+$ S80a32
+
+#L2 verse  33 ## 33. Wenn der ohrenbetäubende Schrei (am Jüngsten Tag) ertönt, 
+
+$ 80_033
+
+$ S80a33
+
+#L2 verse  34 ## 34. an dem Tag, an dem jeder vor seinem Bruder flieht 
+
+$ 80_034
+
+$ S80a34
+
+#L2 verse  35 ## 35. und vor seiner Mutter und seinem Vater, 
+
+$ 80_035
+
+$ S80a35
+
+#L2 verse  36 ## 36. vor seiner Frau und seinen Kindern, 
+
+$ 80_036
+
+$ S80a36
+
+#L2 verse  37 ## 37. an diesem Tag hat jeder etwas, was ihn voll beschäftigt. 
+
+$ 80_037
+
+$ S80a37
+
+#L2 verse  38 ## 38. An diesem Tag werden manche Gesichter strahlen, 
+
+$ 80_038
+
+$ S80a38
+
+#L2 verse  39 ## 39. lachend und froh sein. 
+
+$ 80_039
+
+$ S80a39
+
+#L2 verse  40 ## 40. Andere werden trüb und staubbedeckt erscheinen, 
+
+$ 80_040
+
+$ S80a40
+
+#L2 verse  41 ## 41. von Düsterkeit umhüllt. 
+
+$ 80_041
+
+$ S80a41
+
+#L2 verse  42 ## 42. Das sind die in abscheuliche Sünden verstrickten Ungläubigen. 
+
+$ 80_042
+
+$ S80a42
+

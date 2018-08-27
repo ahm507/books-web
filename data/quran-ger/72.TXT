@@ -1,0 +1,179 @@
+
+#L1 72. Sure Die Dschinn "Al-Dschinn"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 28 Verse zählende, mekkanische Sure berichtet über einige Dschinn, die dem Koran zuhörten, dem Aufruf zum Glauben folgten und an Gott glaubten. Unter den Dschinn gibt es böse und gute. Die bösen haben früher am Himmel gelauscht, und nun können sie es nicht mehr, sonst würden sie vernichtet. Die Sure geht auf die Moscheen ein, die Gott allein gehören. Nur Gott allein soll angebetet werden. Gottes Gesandter verkündet die ihm herabgesandte Offenbarung. Er kann selbst keinem schaden oder nützen. Die Ungläubigen enden in der Hölle, in der sie ewig bleiben werden. Gott allein weiß um das Verborgene. Etwas davon läßt Er dem auserwählten Gesandten zukommen und umgibt ihn mit Engeln, die ihn beschützen. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 72_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Sprich: "Mir wurde offenbart, daß eine Schar Dschinn mir zuhörten und zu ihren Angehörigen sagten: "Wir haben einen wunderbaren Koran gehört, 
+
+$ 72_001
+
+$ S72a1
+
+#L2 verse  2 ## 2. der zum rechten Weg führt, und wir haben daran geglaubt. Wir werden unserem Herrn niemals einen Gefährten beigesellen. 
+
+$ 72_002
+
+$ S72a2
+
+#L2 verse  3 ## 3. Erhaben ist unser allmächtiger Herr. Er hat weder eine Gefährtin noch einen Sohn. 
+
+$ 72_003
+
+$ S72a3
+
+#L2 verse  4 ## 4. Ein Törichter unter uns sagte Falsches über Gott. 
+
+$ 72_004
+
+$ S72a4
+
+#L2 verse  5 ## 5. Wir dachten, die Menschen und die Dschinn würden über Gott nichts Erlogenes sagen. 
+
+$ 72_005
+
+$ S72a5
+
+#L2 verse  6 ## 6. Es hat Männer vom Menschengeschlecht gegeben, die den Beistand von Männern des Dschinngeschlechts erbaten. Diese bürdeten ihnen schlimme Lasten auf. 
+
+$ 72_006
+
+$ S72a6
+
+#L2 verse  7 ## 7. Die Menschen dachten, wie ihr (Dschinn), daß Gott niemanden auferstehen läßt (und keinen Gesandten schickt). 
+
+$ 72_007
+
+$ S72a7
+
+#L2 verse  8 ## 8. Wir wollten den Himmel erreichen und fanden, daß er voller strenger Hüter (Engel)  und Feuerkörper ist. 
+
+$ 72_008
+
+$ S72a8
+
+#L2 verse  9 ## 9. Wir hatten einst (zum Himmel hin) Posten eingenommen, um zu lauschen. Wer nun zu lauschen versucht, findet dort einen Feuerkörper, der auf ihn lauert. 
+
+$ 72_009
+
+$ S72a9
+
+#L2 verse  10 ## 10. Wir wissen nicht, ob die Erdenbewohner heimgesucht werden, oder ob ihr Herr sie rechtleiten will. 
+
+$ 72_010
+
+$ S72a10
+
+#L2 verse  11 ## 11. Unter uns gibt es Rechtschaffene und solche, die nicht rechtschaffen sind. Wir gehen verschiedene Wege. 
+
+$ 72_011
+
+$ S72a11
+
+#L2 verse  12 ## 12. Wir sind dessen sicher, daß wir Gottes Allmacht auf der Erde nicht entgehen können und daß wir Seiner Allmacht nicht (gen Himmel)  entfliehen können. 
+
+$ 72_012
+
+$ S72a12
+
+#L2 verse  13 ## 13. Als wir der koranischen Rechtleitung zuhörten, glaubten wir daran. Wer an seinen Herrn glaubt, hat (beim Gericht) weder Schmälerung noch Überbelastung  zu befürchten. 
+
+$ 72_013
+
+$ S72a13
+
+#L2 verse  14 ## 14. Manche unter uns sind gottergeben, und manche unter uns sind Frevler." Diejenigen, die sich Gott ergaben und den Islam annahmen, gingen den rechten Weg. 
+
+$ 72_014
+
+$ S72a14
+
+#L2 verse  15 ## 15. Diejenigen aber, die vom rechten Weg abgewichen sind, werden der Brennstoff der Hölle sein. 
+
+$ 72_015
+
+$ S72a15
+
+#L2 verse  16 ## 16. Wenn sie den geraden Weg (des Islam) eingehalten hätten, hätten Wir sie reichlich mit Wasser und Segen bedacht, 
+
+$ 72_016
+
+$ S72a16
+
+#L2 verse  17 ## 17. damit Wir sie auf Dankbarkeit hin prüfen. Wer sich davon abwendet, Gottes im Gebet zu gedenken, dem erlegt Gott schwere Strafe auf. 
+
+$ 72_017
+
+$ S72a17
+
+#L2 verse  18 ## 18. Die Moscheen gehören Gott. Darum betet niemand neben Gott an! 
+
+$ 72_018
+
+$ S72a18
+
+#L2 verse  19 ## 19. Als Gottes Diener (Muhammad) aufstand und Gott anbetete, bildeten die Dschinn dichte Kreise um ihn und hörten mit Bewunderung zu. 
+
+$ 72_019
+
+$ S72a19
+
+#L2 verse  20 ## 20. Sprich: "Ich bete nur meinen Herrn an und geselle Ihm niemand bei." 
+
+$ 72_020
+
+$ S72a20
+
+#L2 verse  21 ## 21. Sprich: "Ich kann euch weder Schaden zufügen, noch euch rechtleiten." 
+
+$ 72_021
+
+$ S72a21
+
+#L2 verse  22 ## 22. Sprich: "Von mir kann niemand Gottes Strafe abwenden, und ich werde außer bei Ihm keinen Zufluchtsort finden. 
+
+$ 72_022
+
+$ S72a22
+
+#L2 verse  23 ## 23. Ich kann nur von Gott und Seinen Botschaften verkünden. Denjenigen, die sich Gott und Seinem Gesandten widersetzen, steht das Feuer der Hölle zu, in der sie ewig bleiben werden. 
+
+$ 72_023
+
+$ S72a23
+
+#L2 verse  24 ## 24. Wenn sie der ihnen angedrohten Strafe ansichtig werden, bekommen sie zu wissen, wer den schwächeren Helfer hat und wer weniger an Zahl ist." 
+
+$ 72_024
+
+$ S72a24
+
+#L2 verse  25 ## 25. Sprich: "Ich weiß nicht, ob die euch angedrohte qualvolle Strafe bald kommt, oder ob mein Herr dafür eine lange Frist gesetzt hat. 
+
+$ 72_025
+
+$ S72a25
+
+#L2 verse  26 ## 26. Er allein weiß um das Verborgene und weiht niemanden in das Verborgene ein. 
+
+$ 72_026
+
+$ S72a26
+
+#L2 verse  27 ## 27. Es sei denn, es handelt sich um einen Gesandten, dem Er Sein Wohlgefallen erweist. Dann aber setzt Er vor und hinter ihm einen Hüter ein. 
+
+$ 72_027
+
+$ S72a27
+
+#L2 verse  28 ## 28. So weiß Gott, daß die Gesandten die Botschaften ihres Herrn überbracht haben. Er weiß genau, was sie haben und hat alles genau gezählt. 
+
+$ 72_028
+
+$ S72a28
+

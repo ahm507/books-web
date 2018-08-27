@@ -1,0 +1,569 @@
+
+#L1 27. Sure Die Ameisen "An-Naml"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 93 Verse zählende mekkanische Sure beginnt mit Buchstaben, die darauf hinweisen, daß der Koran, der ein unnachahmbares Wunder darstellt, aus dem normalen arabischen Sprachmaterial besteht. Sie bewirken darüber hinaus, daß die Unaufmerksamen aufmerksam werden. Die Bedeutung des Korans wird unterstrichen. Die Sure erzählt dann die Geschichte von Moses und einigen seiner wunderbaren Zeichen, von David, Salomo - Davids Sohn  -, dem Gott die Dschinn, Menschen und Vögel dienstbar machte, und der die Sprache der Tiere verstand. Es folgt die Geschichte von Salomo mit dem Wiedehopf, den Salomo eines Tages vermißte. Als der Wiedehopf zurückkam, brachte er Nachrichten über die Königin von Saba, die die Sonne anbetete. Salomo schickte ihr ein Schreiben, worauf sie nach Beratung mit den Notabeln ihres Volkes freundlich antwortete. Salomo beauftragte einen seiner Helfer, der über besonderes Wissen verfügte, die Königin von Saba schnell herbeizubringen. Er brachte sie in weniger als einem Augenblick mit ihrem Thron. Sie besichtigte den Palast Salomos und bewunderte ihn. Die Königin von Saba glaubte sodann an Salomo. Andere Propheten, wie Sâlih und Lot, die es schwer hatten mit ihren Völkern, werden angeführt. Gott steht den Gläubigen bei und belohnt sie mit dem Paradiesgarten im Jenseits. Die Ungläubigen, die dem Gesandten Gottes trotzen, werden im Diesseits schwer bestraft, und im Jenseits enden sie in der Hölle. Der Koran ist ein Zeichen Gottes, und trotzdem wenden sich viele davon ab und glauben nicht an ihn. Die Menschen werden ermahnt, die Schöpfung zu betrachten und ihr die Allmacht Gottes abzulesen. Die Berge, wie die Sure lehrt, bewegen sich wie die Wolken. Der Prophet wird ermahnt, Gott zu lobpreisen. Im Namen Gottes, des Gnädigen, des Bermherzigen.
+
+$ 27_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Ta, Sîn. Dies sind die Verse des Korans, der vorgetragen wird und ein deutliches Buch ist, 
+
+$ 27_001
+
+$ S27a1
+
+#L2 verse  2 ## 2. Rechtleitung und frohe Botschaft für die Gläubigen, 
+
+$ 27_002
+
+$ S27a2
+
+#L2 verse  3 ## 3. die die Gebete verrichten, die Zakat-Abgaben entrichten und sich des Jenseits gewiß sind. 
+
+$ 27_003
+
+$ S27a3
+
+#L2 verse  4 ## 4. Die Ungläubigen, die nicht an das Jenseits glauben, haben Wir ihre Werke schön finden lassen, so wissen sie nicht, woran sie sind. 
+
+$ 27_004
+
+$ S27a4
+
+#L2 verse  5 ## 5. Ihrer harrt die schlimmste Strafe, und im Jenseits werden sie die größten Verlierer sein. 
+
+$ 27_005
+
+$ S27a5
+
+#L2 verse  6 ## 6. Du empfängst den Koran von Dem, Dessen Weisheit und Wissen unermeßlich sind. 
+
+$ 27_006
+
+$ S27a6
+
+#L2 verse  7 ## 7. Einst sagte Moses zu seinen Angehörigen: "Ich habe Feuer erblickt. Ich gehe hin und bringe euch Nachricht über den Weg oder hole euch eine leuchtende Fackel daher, damit ihr euch wärmt." 
+
+$ 27_007
+
+$ S27a7
+
+#L2 verse  8 ## 8. Als er es erreicht hatte, wurde ihm zugerufen: "Gesegnet sind die, die an der Feuerstelle und in deren Umgebung sind, und gepriesen sei Gott, der Herr der Welten! 
+
+$ 27_008
+
+$ S27a8
+
+#L2 verse  9 ## 9. O Moses! Ich bin es, Gott, Allah, der Allmächtige, der Weise. 
+
+$ 27_009
+
+$ S27a9
+
+#L2 verse  10 ## 10. Wirf hin deinen Stock!" Als er sah, daß er sich wand, als wäre er eine flinke Schlange, wandte er sich um, lief davon und kam nicht wieder zurück. Da hörte er: "O Moses! Fürchte dich nicht! Bei Mir sollen sich die Gesandten nicht fürchten. 
+
+$ 27_010
+
+$ S27a10
+
+#L2 verse  11 ## 11. Wenn aber jemand eine unrechte Tat begangen hat und dann das Böse durch das Gute ersetzt, bin ich voller Vergebung, voller Barmherzigkeit. 
+
+$ 27_011
+
+$ S27a11
+
+#L2 verse  12 ## 12. Stecke deine Hand durch den Gewandschlitz, so kommt sie ohne Krankheit weiß heraus. Das ist eines von neun Zeichen, mit denen du zu Pharao und seinem Volk gehen sollst, denn sie sind Frevler. 
+
+$ 27_012
+
+$ S27a12
+
+#L2 verse  13 ## 13. Als Unsere deutlichen Zeichen zu ihnen kamen, sagten sie: "Das ist offenkundiger Zauber." 
+
+$ 27_013
+
+$ S27a13
+
+#L2 verse  14 ## 14. Doch sie lehnten Gottes Zeichen ab, ungerecht und überheblich wie sie waren, obwohl sie innerlich davon überzeugt waren. Sieh, wie das Ende der Unheilstifter war! 
+
+$ 27_014
+
+$ S27a14
+
+#L2 verse  15 ## 15. Wir haben David und Salomo Wissen gewährt. Sie sagten: "Gott sei gepriesen, Der uns vielen Seiner gläubigen Diener vorgezogen hat." 
+
+$ 27_015
+
+$ S27a15
+
+#L2 verse  16 ## 16. Salomo war der Erbe Davids. Er sagte: "O ihr Menschen! Uns wurde die Sprache der Vögel gelehrt, und wir haben von allen Gaben bekommen. Das ist die offenkundige Huld." 
+
+$ 27_016
+
+$ S27a16
+
+#L2 verse  17 ## 17. Vor Salomo wurden seine Streiter - Dschinn, Menschen und Vögel  - versammelt und in Reih und Glied aufgestellt. 
+
+$ 27_017
+
+$ S27a17
+
+#L2 verse  18 ## 18. Als sie ins Tal der Ameisen kamen, sagte eine Ameise: "O ihr Ameisen! Geht in eure Wohnungen, sonst zertreten euch Salomo und seine Streiter, ohne es zu merken." 
+
+$ 27_018
+
+$ S27a18
+
+#L2 verse  19 ## 19. Er lächelte über das, was sie gesagt hatte und sprach: "O mein Herr! Halte mich dazu an, Dir für Deine Gnade, die Du mir und meinen Eltern erwiesen hast, zu danken und gute Werke zu verrichten, die Dir gefallen, und nimm mich durch Deine Barmherzigkeit unter Deine rechtschaffenen Diener auf!" 
+
+$ 27_019
+
+$ S27a19
+
+#L2 verse  20 ## 20. Er musterte die Vögel und sprach: "Warum sehe ich den Wiedehopf nicht? Oder ist er abwesend? 
+
+$ 27_020
+
+$ S27a20
+
+#L2 verse  21 ## 21. Ich werde ihn schwer bestrafen oder schlachten, es sei denn, er bringt mir einen unwiderlegbaren Beweis." 
+
+$ 27_021
+
+$ S27a21
+
+#L2 verse  22 ## 22. Der Wiedehopf hatte sich nicht weit davon aufgehalten und sprach: "Ich habe etwas erfahren, was du nicht weißt. Ich bringe dir aus Saba eine wichtige zuverlässige Nachricht. 
+
+$ 27_022
+
+$ S27a22
+
+#L2 verse  23 ## 23. Ich habe dort gesehen, daß eine Frau als Königin über das Volk herrscht, die von allen Gaben hat und einen gewaltigen mächtigen Thron besitzt. 
+
+$ 27_023
+
+$ S27a23
+
+#L2 verse  24 ## 24. Ich sah sie und ihr Volk sich vor der Sonne anstatt vor Gott niederwerfen. Der Satan hat ihnen ihre Übeltaten schön erscheinen lassen und sie vom rechten Weg abgebracht, so daß sie nicht zur Rechtleitung finden. 
+
+$ 27_024
+
+$ S27a24
+
+#L2 verse  25 ## 25. Warum werfen sie sich nicht vor Gott nieder, Der das Verborgene in den Himmeln und auf der Erde hervorholt und alles weiß, was ihr geheimhaltet und was ihr äußert? 
+
+$ 27_025
+
+$ S27a25
+
+#L2 verse  26 ## 26. Gott, Allah, außer Dem es keinen Gott gibt, dem Herrn der höchsten Allmacht." 
+
+$ 27_026
+
+$ S27a26
+
+#L2 verse  27 ## 27. Er sagte: "Wir werden sehen, ob du die Wahrheit gesagt oder gelogen hast. 
+
+$ 27_027
+
+$ S27a27
+
+#L2 verse  28 ## 28. Gehe mit diesem Brief von mir zu ihnen und wirf ihn hin, dann wende dich von ihnen ab und höre, was sie einander sagen!" 
+
+$ 27_028
+
+$ S27a28
+
+#L2 verse  29 ## 29. Alsdann sprach die Königin: "Ihr Notabeln! Mir ist ein vortreffliches Schreiben zugeworfen worden. 
+
+$ 27_029
+
+$ S27a29
+
+#L2 verse  30 ## 30. Es ist von Salomo und lautet: 'Im Namen Gottes, des Gnädigen, des Barmherzigen! 
+
+$ 27_030
+
+$ S27a30
+
+#L2 verse  31 ## 31. Seid mir gegenüber nicht hochmütig, und kommt ergeben zu mir!' 
+
+$ 27_031
+
+$ S27a31
+
+#L2 verse  32 ## 32. O ihr Notabeln!" sprach sie, "beratet mich! Ich treffe keine Entscheidung, bevor ihr zu mir kommt und sagt, was ihr denkt." 
+
+$ 27_032
+
+$ S27a32
+
+#L2 verse  33 ## 33. Sie sagten: "Wir haben Macht und verfügen über eine starke Schlagkraft. Du hast zu befehlen. Überlege dir, was du befiehlst!" 
+
+$ 27_033
+
+$ S27a33
+
+#L2 verse  34 ## 34. Sie sprach: "Wenn die Könige mit ihren Truppen in eine Stadt einziehen, zerstören sie sie und erniedrigen die Mächtigen unter ihren Bewohnern. So verfahren sie immer. 
+
+$ 27_034
+
+$ S27a34
+
+#L2 verse  35 ## 35. Ich werde ihnen ein Geschenk schicken und abwarten, mit welcher Antwort die Boten zurückkommen werden." 
+
+$ 27_035
+
+$ S27a35
+
+#L2 verse  36 ## 36. Als die Boten zu Salomo kamen, sagte er: "Bietet ihr mir Güter an? Was Gott mir gegeben hat, ist bei weitem besser als was Er euch gab. Ihr freut euch über euer Geschenk und eure irdischen Güter." 
+
+$ 27_036
+
+$ S27a36
+
+#L2 verse  37 ## 37. "Kehre zu ihnen zurück!" sagte er dem Hauptboten. "Wir werden Streitkräfte gegen sie aufbieten, denen sie nichts entgegensetzen können und sie aus ihrer Heimat vertreiben, sie erniedrigen und  unterwerfen." 
+
+$ 27_037
+
+$ S27a37
+
+#L2 verse  38 ## 38. Dann sagte er zu seinen Würdenträgern: "Ihr Hochrangigen! Wer von euch kann mir ihren Thron bringen, bevor sie ergeben zu mir kommen?" 
+
+$ 27_038
+
+$ S27a38
+
+#L2 verse  39 ## 39. Da sagte einer von den Dschinn, ein Ifrit: "Ich werde ihn dir bringen, bevor du von hier aufstehst. Ich bin stark und zuverlässig und kann das bewerkstelligen." 
+
+$ 27_039
+
+$ S27a39
+
+#L2 verse  40 ## 40. Da sprach einer, dem Gott Wissen um das Buch gewährt hatte: "Ich werde ihn dir in einem Augenblick bringen." Als Salomo sah, daß der Thron vor ihm stand, sagte er: "Das ist durch Gottes Huld. Er prüft mich, ob ich dankbar oder undankbar bin. Wer Gott dankt, dankt Ihm für sich selbst. Wer undankbar ist, schadet Gott nicht, ist Er doch reich und freigebig." 
+
+$ 27_040
+
+$ S27a40
+
+#L2 verse  41 ## 41. Er sagte seinen Leuten: "Macht den Thron nicht leicht erkennbar, damit wir sehen, ob sie ihn erkennt oder nicht!" 
+
+$ 27_041
+
+$ S27a41
+
+#L2 verse  42 ## 42. Als sie gekommen war, wurde ihr gesagt: "Ist dein Thron so ähnlich?" Sie antwortete: "Das könnte er fast sein." Salomo sprach: "Uns ist das Wissen um Gott lange vor ihr gegeben worden; wir haben uns Ihm aber ergeben." 
+
+$ 27_042
+
+$ S27a42
+
+#L2 verse  43 ## 43. Was sie vom rechten Glauben abgehalten hatte, das war der Dienst, den sie den Götzen anstatt Gott erwies. Sie gehörte zu einem Volk von Ungläubigen. 
+
+$ 27_043
+
+$ S27a43
+
+#L2 verse  44 ## 44. Ihr wurde gesagt: "Tritt ein in das Schloß (mit dem Glasboden)!" Als sie ihn sah, hielt sie ihn für ein tiefes Wasser und entblößte ihre Beine. Er sprach: "Das ist ein Schloß, ausgelegt mit Glas." Da sagte sie: "Ich habe mir selbst unrecht getan. Ich glaube mit Salomo an Gott, den Herrn der Welten." 
+
+$ 27_044
+
+$ S27a44
+
+#L2 verse  45 ## 45. Einst entsandten Wir zu den Thamûd ihren Bruder Sâlih, (der sagte): "Dient Gott allein!" Da teilten sie sich in zwei Gruppen, die miteinander stritten  (die Gläubigen und die Ungläubigen). 
+
+$ 27_045
+
+$ S27a45
+
+#L2 verse  46 ## 46. Er sagte ihnen: "Ihr Leute! Warum wollt ihr die qualvolle Strafe schneller haben als die gute Belohnung? Ihr sollt eher um Vergebung bitten, auf daß ihr in Gottes Barmherzigkeit aufgenommen werdet." 
+
+$ 27_046
+
+$ S27a46
+
+#L2 verse  47 ## 47. Sie sagten: "Wir sehen in dir und deinen Anhängern ein böses Omen." Er sprach: "Euer Omen ist bei Gott. Die Wahrheit ist, daß ihr geprüft werden sollt." 
+
+$ 27_047
+
+$ S27a47
+
+#L2 verse  48 ## 48. In der Stadt gab es eine Bande mit neun Raufbolden, die Unheil anrichteten und nichts Gutes taten. 
+
+$ 27_048
+
+$ S27a48
+
+#L2 verse  49 ## 49. Sie sagten einander: "Schwört bei Gott, daß wir ihn und seine Angehörigen bei Nacht töten werden, und seinem rechtlichen Erben werden wir sagen: 'Wir haben nicht gesehen, wie seine Familie  vernichtet wurde. Wir sagen dir die Wahrheit.' " 
+
+$ 27_049
+
+$ S27a49
+
+#L2 verse  50 ## 50. Sie planten und auch Wir planten, aber sie merkten es nicht. 
+
+$ 27_050
+
+$ S27a50
+
+#L2 verse  51 ## 51. Sieh, wie ihr böser Plan dazu führte, daß Wir sie und ihr Volk samt und sonders vernichteten. 
+
+$ 27_051
+
+$ S27a51
+
+#L2 verse  52 ## 52. Da sind ihre Häuser, wüst und leer, weil sie Unrecht begingen. Darin ist ein Zeichen für Menschen, die bestrebt sind, die Allmacht Gottes zu ergründen. 
+
+$ 27_052
+
+$ S27a52
+
+#L2 verse  53 ## 53. Wir erretteten die Gläubigen, die gottesfürchtig waren. 
+
+$ 27_053
+
+$ S27a53
+
+#L2 verse  54 ## 54. Gedenke Lots, als er zu seinem Volk sagte: "Begeht ihr die abscheuliche Untat und schaut dem Übel einfach zu? 
+
+$ 27_054
+
+$ S27a54
+
+#L2 verse  55 ## 55. Ihr gebt euch lüstern mit den Männern anstatt mit den Frauen  ab. Ihr seid unwissende Menschen." 
+
+$ 27_055
+
+$ S27a55
+
+#L2 verse  56 ## 56. Sein Volk wußte keine Antwort darauf als spöttisch zu sagen: "Vertreibt Lots Familie aus eurer Stadt, sie sind Menschen, die rein bleiben möchten." 
+
+$ 27_056
+
+$ S27a56
+
+#L2 verse  57 ## 57. Also erretteten Wir ihn und seine Angehörigen, ausgenommen seine Frau, die Wir  den Untergehenden zuordneten. 
+
+$ 27_057
+
+$ S27a57
+
+#L2 verse  58 ## 58. Wir ließen einen vernichtenden Regen auf sie herabfallen. Welch schlimmer Regen ereilte die Gewarnten! 
+
+$ 27_058
+
+$ S27a58
+
+#L2 verse  59 ## 59. Sage: "Gepriesen sei Gott, und Friede sei mit Seinen Dienern, die Er auserwählt hat!" Ist Gott besser oder die Ihm beigesellten Götzen? 
+
+$ 27_059
+
+$ S27a59
+
+#L2 verse  60 ## 60. Ist Der, Der die Himmel und die Erde erschaffen hat und euch vom Himmel Wasser herabsandte, mit dem Wir euch prächtige Gärten wachsen lassen, deren Bäume ihr nie hättet sprießen lassen können, etwa ein Gott beigesellter Götze? Nein, sie sind  Menschen, die sich  dem Irrtum zuwenden. 
+
+$ 27_060
+
+$ S27a60
+
+#L2 verse  61 ## 61. Ist Der, Der die Erde zum Leben ebnete mit Flüssen dazwischen, festgegründeten Bergen und einer Schranke zwischen den beiden großen Wassern (dem süßen und dem salzigen) etwa ein Gott beigesellter Götze? Nein, die meisten von ihnen wissen es nicht.sind Unwissende. 
+
+$ 27_061
+
+$ S27a61
+
+#L2 verse  62 ## 62. Ist Der, Der das Gebet des Notleidenden erhört und die Not abwehrt und euch zu den Nachfolgern der Früheren macht, etwa ein Gott beigesellter Götze? Aber ihr Ungläubigen denkt wenig darüber nach. 
+
+$ 27_062
+
+$ S27a62
+
+#L2 verse  63 ## 63. Ist Der, Der euch in der Finsternis auf See und an Land rechtleitet, Der den Wind als Freudenboten Seiner Barmherzigkeit schickt, etwa ein Gott beigesellter Götze? Erhaben ist Gott über all dem, was sie Ihm beigesellen. 
+
+$ 27_063
+
+$ S27a63
+
+#L2 verse  64 ## 64. Ist Der, Der die Schöpfung begonnen hat und sie wiederholen kann und euch vom Himmel und von der Erde versorgt, etwa ein Gott beigesellter Götze? Sprich: "Bringt eure Beweise vor, wenn ihr die Wahrheit sagt!" 
+
+$ 27_064
+
+$ S27a64
+
+#L2 verse  65 ## 65. Sprich: "Niemand in den Himmeln und auf der Erde weiß um das Verborgene. Sie haben keine Ahnung davon, wann sie auferweckt werden. 
+
+$ 27_065
+
+$ S27a65
+
+#L2 verse  66 ## 66. Ihr Wissen um das Jenseits ist verworren. Nein, sie zweifeln eher daran. Sie stehen ihm blind gegenüber. 
+
+$ 27_066
+
+$ S27a66
+
+#L2 verse  67 ## 67. Die Ungläubigen sagen: "Wenn wir wie unsere Väter und Ahnen zu Staub geworden sind: wie sollen wir wieder ins Leben gerufen werden? 
+
+$ 27_067
+
+$ S27a67
+
+#L2 verse  68 ## 68. Das ist uns und unseren Vätern versprochen worden. Das sind nur Legenden der Vorfahren." 
+
+$ 27_068
+
+$ S27a68
+
+#L2 verse  69 ## 69. Sprich: "Geht auf der Erde umher und seht, wie das Ende der Frevler war!" 
+
+$ 27_069
+
+$ S27a69
+
+#L2 verse  70 ## 70. Sei nicht traurig über sie, und gräme dich nicht wegen ihrer heimtückischen Absichten! 
+
+$ 27_070
+
+$ S27a70
+
+#L2 verse  71 ## 71. Sie sagen: "Wann erfüllt sich dieses Versprechen, wenn ihr die Wahrheit sagt?" 
+
+$ 27_071
+
+$ S27a71
+
+#L2 verse  72 ## 72. Sprich: "Vielleicht trifft euch bald etwas von dem, was ihr vorzeitig erleben möchtet." 
+
+$ 27_072
+
+$ S27a72
+
+#L2 verse  73 ## 73. Dein Herr überhäuft die Menschen mit seiner Gunst und seinen Gaben, doch die meisten danken nicht. 
+
+$ 27_073
+
+$ S27a73
+
+#L2 verse  74 ## 74. Dein Herr weiß, was sie verborgen halten und was sie äußern. 
+
+$ 27_074
+
+$ S27a74
+
+#L2 verse  75 ## 75. Es gibt nichts Verborgenes in den Himmeln und auf Erden, was Gott nicht in einem klaren Buch verzeichnet hat. 
+
+$ 27_075
+
+$ S27a75
+
+#L2 verse  76 ## 76. Dieser Koran erstattet den Kindern Israels Bericht über die meisten ihrer Streitfragen. 
+
+$ 27_076
+
+$ S27a76
+
+#L2 verse  77 ## 77. Er ist Rechtleitung und Barmherzigkeit für die Gläubigen. 
+
+$ 27_077
+
+$ S27a77
+
+#L2 verse  78 ## 78. Dein Herr urteilt Seiner Gerechtigkeit gemäß zwischen ihnen. Er ist der Allmächtige, Allwissende. 
+
+$ 27_078
+
+$ S27a78
+
+#L2 verse  79 ## 79. Verlaß dich auf Gott, denn du verfichst die eindeutige Wahrheit! 
+
+$ 27_079
+
+$ S27a79
+
+#L2 verse  80 ## 80. Du kannst weder die, die tot sind, noch die, die sich taub stellen, hörend machen, wenn sie dir den Rücken kehren und fortgehen. 
+
+$ 27_080
+
+$ S27a80
+
+#L2 verse  81 ## 81. Du kannst die, die sich blind stellen, nicht vom Irrtum abbringen und rechtleiten. Du kannst nur die hören lassen, die gewillt sind, an Unsere Zeichen zu glauben und sich Uns zu ergeben. 
+
+$ 27_081
+
+$ S27a81
+
+#L2 verse  82 ## 82. Wenn das Urteil über sie fällt, lassen Wir zahlreiche gläubige Menschen auf die Erde strömen, die ihnen sagen: "Die Ungläubigen wollten an Unsere Zeichen nicht zuversichtlich glauben." 
+
+$ 27_082
+
+$ S27a82
+
+#L2 verse  83 ## 83. Gedenke des Tages, an dem Wir aus jeder Gemeinschaft eine Schar derer versammeln, die Unsere Zeichen für Lügen halten, und Wir lassen sie in Reih und Glied vorangehen. 
+
+$ 27_083
+
+$ S27a83
+
+#L2 verse  84 ## 84. Wenn sie Uns vorgeführt werden, sagen Wir ihnen: "Habt ihr meine Zeichen für Lügen erklärt, ohne darüber Bescheid zu wissen? Oder was habt ihr gemacht?" 
+
+$ 27_084
+
+$ S27a84
+
+#L2 verse  85 ## 85. Das Urteil über sie ist wegen des Unrechts, das sie begingen, gefallen. So werden sie sprachlos sein. 
+
+$ 27_085
+
+$ S27a85
+
+#L2 verse  86 ## 86. Sehen sie nicht, daß Wir ihnen die Nacht zum Ruhen und den Tag zum Sehen gemacht haben? Darin sind Zeichen für Leute, die zu glauben willens sind. 
+
+$ 27_086
+
+$ S27a86
+
+#L2 verse  87 ## 87. Denke an den Tag, an dem ins Horn geblasen wird, so daß alle in den Himmeln und auf Erden erschrecken, außer denjenigen, mit denen Gottes Wille anderes vorhat. Alle werden demütig zu Ihm kommen. 
+
+$ 27_087
+
+$ S27a87
+
+#L2 verse  88 ## 88. Du schaust zu den Bergen und meinst, sie bewegten sich nicht, doch sie ziehen dahin wie die Wolken. Das ist das Werk Gottes, Der alles vollkommen erschaffen hat. Er weiß genau, was ihr tut. 
+
+$ 27_088
+
+$ S27a88
+
+#L2 verse  89 ## 89. Wer ein gutes Werk verrichtet, wird mit Besserem belohnt werden. Die Rechtschaffenen sind vor dem Schrecken des Jüngsten Tages sicher. 
+
+$ 27_089
+
+$ S27a89
+
+#L2 verse  90 ## 90. Diejenigen, die böse Taten begangen haben, werden kopfüber in die Hölle gesteckt, und sie werden hören: "Euch wird nur vergolten, was ihr begangen habt." 
+
+$ 27_090
+
+$ S27a90
+
+#L2 verse  91 ## 91. Sprich: "Mir wurde nur befohlen, Dem Herrn dieser Stadt (Mekka), Der sie heiligte und Dem alles gehört, zu dienen. Auch wurde mir befohlen, einer der Gott Ergebenen zu sein 
+
+$ 27_091
+
+$ S27a91
+
+#L2 verse  92 ## 92. und den Koran unablässig vorzutragen." Wer sich rechtleiten läßt, tut es für sich selbst, und wer irregeht, dem sagst du: "Ich bin nur ein Warner!" 
+
+$ 27_092
+
+$ S27a92
+
+#L2 verse  93 ## 93. Und sprich: "Gepriesen sei Gott! Er wird euch Seine Zeichen deutlich zeigen, so daß ihr sie erkennt." Deinem Herrn entgeht nichts, von dem, was ihr tut. 
+
+$ 27_093
+
+$ S27a93
+

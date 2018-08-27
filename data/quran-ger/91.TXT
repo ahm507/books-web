@@ -1,0 +1,101 @@
+
+#L1 91. Sure Die Sonne "Asch-Schams"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 15 Verse zählende, mekkanische Sure leitet ihren Namen von dem Schwur bei der Sonne ab, mit dem sie beginnt. Der Schöpfer schwört bei der Sonne, dem Mond und anderen Zeichen, die Seine Allmacht bezeugen, daß der Mensch, der sich durch Glauben und gute Werke läutert, Gewinner sein wird und daß der Ungläubige, der sich durch Gottesleugnung und Frevel die schwersten Lasten aufbürdet, der Verlierer sein wird. Als Beispiel wird das Volk von Sâlih, die Thamûd, angeführt. Sie beharrten auf dem Unglauben und erschlugen die Kamelstute. Deswegen wurden sie vernichtend bestraft. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 91_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Bei der Sonne und ihrem Morgenlicht! 
+
+$ 91_001
+
+$ S91a1
+
+#L2 verse  2 ## 2. Bei dem Mond, wenn er ihr folgt (und nach ihrem Untergang Licht spendet)! 
+
+$ 91_002
+
+$ S91a2
+
+#L2 verse  3 ## 3. Bei dem Tag, wenn er die Sonne  in vollem Glanz zeigt! 
+
+$ 91_003
+
+$ S91a3
+
+#L2 verse  4 ## 4. Bei der Nacht, wenn sie sie verhüllt! 
+
+$ 91_004
+
+$ S91a4
+
+#L2 verse  5 ## 5. Bei dem Himmel und Dem, Der ihn erbaute! 
+
+$ 91_005
+
+$ S91a5
+
+#L2 verse  6 ## 6. Bei der Erde und Dem, Der sie ebnete! 
+
+$ 91_006
+
+$ S91a6
+
+#L2 verse  7 ## 7. Bei der Seele und Dem, Der sie gestaltete 
+
+$ 91_007
+
+$ S91a7
+
+#L2 verse  8 ## 8. und Der ihr die Erkenntnis von Frevel und Frömmigkeit eingab! 
+
+$ 91_008
+
+$ S91a8
+
+#L2 verse  9 ## 9. Gewinn erzielt, wer sie durch den Glauben und gute Taten läutert. 
+
+$ 91_009
+
+$ S91a9
+
+#L2 verse  10 ## 10. Verlust erleidet, wer ihre Neigung zum Guten vergeudet. 
+
+$ 91_010
+
+$ S91a10
+
+#L2 verse  11 ## 11. Die Thamûd ziehen in vermessenem Frevlergeist ihren Gesandten der Lüge. 
+
+$ 91_011
+
+$ S91a11
+
+#L2 verse  12 ## 12. Da erhob sich der Vermessenste unter ihnen. 
+
+$ 91_012
+
+$ S91a12
+
+#L2 verse  13 ## 13. Der Gesandte Gottes sagte ihnen: "Laßt die Kamelstute Gottes und hütet euch davor, sie an ihrem Trinktag am Trinken zu hindern!" 
+
+$ 91_013
+
+$ S91a13
+
+#L2 verse  14 ## 14. Sie ziehen ihn der Lüge und erschlugen sie. Ihr Herr vernichtete sie wegen ihrer Schuld und machte ihre Stadt dem Erdboden gleich. 
+
+$ 91_014
+
+$ S91a14
+
+#L2 verse  15 ## 15. Er machte sich nichts aus den Folgen dieser Strafe (da sie doch gerecht war). 
+
+$ 91_015
+
+$ S91a15
+

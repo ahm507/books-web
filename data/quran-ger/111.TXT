@@ -1,0 +1,41 @@
+
+#L1 111. Sure Die Palmfasern "Al-Masad"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 5 Verse zählende, mekkanische Sure meldet dem Propheten das nahe Ende von Abu Lahab und seiner Frau, den Feinden Gottes und Seines Gesandten, die dem Propheten viel Böses antaten. Sie kommen beide in die Hölle und werden das höllische Feuer erleiden. Die Frau bekommt einen Strick aus Palmfasern um den Hals. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 111_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Dem Verderben geweiht seien die Hände von Abu Lahab, und dem Verderben geweiht sei er! 
+
+$ 111_001
+
+$ S111a1
+
+#L2 verse  2 ## 2. Von ihm hält die Strafe weder sein Vermögen ab, noch sein erworbenes Ansehen. 
+
+$ 111_002
+
+$ S111a2
+
+#L2 verse  3 ## 3. Er wird verbrennen im auflodernden Feuer. 
+
+$ 111_003
+
+$ S111a3
+
+#L2 verse  4 ## 4. Desgleichen seine Frau, die Verleumdungen wie Brennholz- ladungen herumtrug. 
+
+$ 111_004
+
+$ S111a4
+
+#L2 verse  5 ## 5. Um ihren Hals hat sie einen Strick aus Palmfasern. 
+
+$ 111_005
+
+$ S111a5
+

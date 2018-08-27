@@ -1,0 +1,41 @@
+
+#L1 97. Sure Die Herrlichkeit "Al-Qadr"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 5 Verse zählende, mekkanische Sure leitet ihren Namen von der Nacht der Herrlichkeit ab, in der der Koran herabgesandt wurde. Sie ist besser als tausend Monate. In der Nacht kommen die Engel und Gabriel auf die Erde mit Gottes Befehl über alle Entscheidungsfragen. Sie ist voller Frieden bis zum Anbruch  der Morgenröte. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 97_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Wir sandten ihn (den Koran) in der Nacht der Herrlichkeit herab. 
+
+$ 97_001
+
+$ S97a1
+
+#L2 verse  2 ## 2. Woher kannst du wissen, was die Nacht der Herrlichkeit ist? 
+
+$ 97_002
+
+$ S97a2
+
+#L2 verse  3 ## 3. Die Nacht der Herrlichkeit ist besser als tausend Monate. 
+
+$ 97_003
+
+$ S97a3
+
+#L2 verse  4 ## 4. Die Engel kommen mit Gabriel auf die Erde hinunter mit Gottes Befehl und Befugnis. 
+
+$ 97_004
+
+$ S97a4
+
+#L2 verse  5 ## 5. Sie ist voller Frieden bis zum Anbruch der Morgenröte. 
+
+$ 97_005
+
+$ S97a5
+

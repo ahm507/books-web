@@ -1,0 +1,59 @@
+
+#L1 99. Sure Die Erschütterung "Az-Zalzala"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 8 Verse zählende, in Medina offenbarte Sure schildert die Auferstehung. Die Erde wird heftig erschüttert - daher der Name der Sure. Alles, was die Erde an Menschen und Schätzen verbirgt, kommt heraus. Der Mensch fragt sich verwundert nach dem überraschenden, überwältigenden Ereignis. Alle Toten werden wieder lebendig und stellen sich einzeln Gottes gerechtem Gericht. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 99_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Wenn die Erde heftig erschüttert wird, 
+
+$ 99_001
+
+$ S99a1
+
+#L2 verse  2 ## 2. und ihre schweren Lasten (an Menschen und Gegenständen) herausgibt 
+
+$ 99_002
+
+$ S99a2
+
+#L2 verse  3 ## 3. und der Mensch sagt: "Was ist mit ihr?" 
+
+$ 99_003
+
+$ S99a3
+
+#L2 verse  4 ## 4. An jenem Tag wird die Erde ihre Nachrichten melden, 
+
+$ 99_004
+
+$ S99a4
+
+#L2 verse  5 ## 5. daß dein Herr ihr eingab (sich zu erschüttern). 
+
+$ 99_005
+
+$ S99a5
+
+#L2 verse  6 ## 6. An jenem Tag eilen die Menschen einzeln hin, wo sie ihre Werke z u sehen bekommen. 
+
+$ 99_006
+
+$ S99a6
+
+#L2 verse  7 ## 7. Wer ein gutes Werk im Gewicht eines Stäubchens verrichtet hat, wird es dann sehen. 
+
+$ 99_007
+
+$ S99a7
+
+#L2 verse  8 ## 8. Und wer ein böses Werk im Gewicht eines Stäubchens verrichtet hat, wird es dann sehen. 
+
+$ 99_008
+
+$ S99a8
+

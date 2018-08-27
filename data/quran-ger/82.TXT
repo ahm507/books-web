@@ -1,0 +1,125 @@
+
+#L1 82. Sure Die Spaltung "Al-Infitâr"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 19 Verse zählende, mekkanische Sure schildert einige Schrecken des Jüngsten Tages, wie die Spaltung des Himmels  - daher der Name der Sure. An diesem Tag werden alle Menschen vom Tod auferweckt und vor Gottes Gericht geführt. Sie werden ein genaues Verzeichnis über ihre Taten erhalten. Der Mensch wird davor gewarnt, auf der Täuschung zu beharren. Gott ist allmächtig. Er erschuf den Menschen, und er beauftragte Engel, über ihn zu wachen. Ob er sich zu den Guten oder zu den Frevlern gesellt, ist seine Entscheidung. Die guten werden mit dem Paradies belohnt, und die Frevler enden in der Hölle. Am Jüngsten Tag fällt Gott das endgültige Urteil, und kein Mensch kann dem anderen helfen. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 82_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Wenn sich der Himmel spaltet, 
+
+$ 82_001
+
+$ S82a1
+
+#L2 verse  2 ## 2. wenn die Sterne (herabstürzen und) sich zerstreuen, 
+
+$ 82_002
+
+$ S82a2
+
+#L2 verse  3 ## 3. wenn die Meere wüten und alle Sperren sprengen, 
+
+$ 82_003
+
+$ S82a3
+
+#L2 verse  4 ## 4. wenn die Gräber aufgewühlt werden, 
+
+$ 82_004
+
+$ S82a4
+
+#L2 verse  5 ## 5. dann bekommt jede Seele zu wissen, was sie tat und was sie versäumte. 
+
+$ 82_005
+
+$ S82a5
+
+#L2 verse  6 ## 6. O Mensch! Warum hast du dich in deinem gnadenreichen Herrn getäuscht? 
+
+$ 82_006
+
+$ S82a6
+
+#L2 verse  7 ## 7. Er hat dich erschaffen und dich ebenmäßig gestaltet. 
+
+$ 82_007
+
+$ S82a7
+
+#L2 verse  8 ## 8. Er hat dich nach dem Bild geformt, das Er wollte. 
+
+$ 82_008
+
+$ S82a8
+
+#L2 verse  9 ## 9. O nein! Ihr haltet das Gericht (am Jüngsten Tag) für eine Lüge. 
+
+$ 82_009
+
+$ S82a9
+
+#L2 verse  10 ## 10. Über euch wachen Hüter, 
+
+$ 82_010
+
+$ S82a10
+
+#L2 verse  11 ## 11. ehrwürdige Engel, die eure Werke aufschreiben 
+
+$ 82_011
+
+$ S82a11
+
+#L2 verse  12 ## 12. und die genau wissen, was ihr tut. 
+
+$ 82_012
+
+$ S82a12
+
+#L2 verse  13 ## 13. Die Rechtschaffenen werden im  Paradies in Glückseligkeit sein. 
+
+$ 82_013
+
+$ S82a13
+
+#L2 verse  14 ## 14. Die Frevler (die abscheuliche Taten begangen haben) werden gewiß in der Hölle sein, 
+
+$ 82_014
+
+$ S82a14
+
+#L2 verse  15 ## 15. die sie am  Tag des Gerichts erleiden werden. 
+
+$ 82_015
+
+$ S82a15
+
+#L2 verse  16 ## 16. Aus ihr kommen sie nie heraus. 
+
+$ 82_016
+
+$ S82a16
+
+#L2 verse  17 ## 17. Woher kannst du wissen, wie unheimlich  der Tag des Gerichts ist? 
+
+$ 82_017
+
+$ S82a17
+
+#L2 verse  18 ## 18. Ja, woher kannst du wissen, wie unheimlich der Tag des Gerichts ist? 
+
+$ 82_018
+
+$ S82a18
+
+#L2 verse  19 ## 19. An diesem Tag kann niemand für einen anderen etwas tun. Die Entscheidung obliegt an diesem Tag Gott allein. 
+
+$ 82_019
+
+$ S82a19
+

@@ -1,0 +1,77 @@
+
+#L1 100. Sure Die Rennenden "Al-'Âdiyât"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 11 Verse zählende, mekkanische Sure leitet ihren Namen von den rennenden, schnaubenden Pferden ab, die zum Schlachtfeld stürzen. Gott schwört bei ihnen, daß der Mensch, wenn er nicht wirklich gläubig ist, seinem Herrn gegenüber undankbar ist und daß er über sich selbst am Jüngsten Tag Zeugnis ablegt. Er liebt den Besitz so sehr, daß er für die von Gott genannten Zwecke nichts gibt. Die Sure ermahnt, darüber nachzudenken, daß es die Auferstehung gibt, wo jeder die von ihm begangenen Taten, auch wenn sie verborgen zu sein scheinen, zu sehen bekommt und daß Gott, Der über alles Bescheid weiß, das gerechte Urteil fällt. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 100_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Bei den rennenden, schnaubenden Pferden! 
+
+$ 100_001
+
+$ S100a1
+
+#L2 verse  2 ## 2. die Funken schlagend 
+
+$ 100_002
+
+$ S100a2
+
+#L2 verse  3 ## 3. schon vor Sonnenaufgang anstürmen, 
+
+$ 100_003
+
+$ S100a3
+
+#L2 verse  4 ## 4. den Staub unter dem Feind  aufwirbeln 
+
+$ 100_004
+
+$ S100a4
+
+#L2 verse  5 ## 5. und den Staub mitten unter die versammelten feindlichen Heerscharen treiben. 
+
+$ 100_005
+
+$ S100a5
+
+#L2 verse  6 ## 6. Der Mensch ist gegen seinen Herrn sehr undankbar. 
+
+$ 100_006
+
+$ S100a6
+
+#L2 verse  7 ## 7. Er ist (am Jüngsten Tag) über sich selbst Zeuge. 
+
+$ 100_007
+
+$ S100a7
+
+#L2 verse  8 ## 8. Er liebt die irdischen Güter zu sehr. 
+
+$ 100_008
+
+$ S100a8
+
+#L2 verse  9 ## 9. Weiß er denn nicht, was ihn erwartet, wenn aus den Gräbern alle sterblichen Reste herausgewühlt  werden 
+
+$ 100_009
+
+$ S100a9
+
+#L2 verse  10 ## 10. und aus der Brust eines jeden Menschen das Verborgene herausgeholt wird? 
+
+$ 100_010
+
+$ S100a10
+
+#L2 verse  11 ## 11. An jenem Tag weiß ihr Herr genau über sie Bescheid. 
+
+$ 100_011
+
+$ S100a11
+

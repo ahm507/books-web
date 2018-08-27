@@ -1,0 +1,77 @@
+
+#L1 101. Sure Die Pochende "Al-Qâri'a"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 11 Verse zählende, mekkanische Sure schildert die Auferstehung, die mit einem heftigen, pochenden, ohrenbetäubenden Schrei beginnt - daher der Name der Sure. Die Schrecken, die sie begleiten, sind unheimlich. Die Berge sehen wie flockige Wolle aus. Alle Menschen kommen zur Abrechnung vor Gott. Wessen gute Werke schwer wiegen, der geht ins Paradies, wo er sich ewiger Glückseligkeit erfreut. Wessen gute Werke leicht sind, der kommt in den Abgrund der Hölle, wo er das ewige Höllenfeuer erleidet. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 101_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Die Pochende! 
+
+$ 101_001
+
+$ S101a1
+
+#L2 verse  2 ## 2. Wie unheimlich ist die Pochende! 
+
+$ 101_002
+
+$ S101a2
+
+#L2 verse  3 ## 3. Woher kannst du wissen, wie unheimlich die Pochende ist? 
+
+$ 101_003
+
+$ S101a3
+
+#L2 verse  4 ## 4. An jenem Tag sind die Menschen wie unzählige Schwärme von Motten. 
+
+$ 101_004
+
+$ S101a4
+
+#L2 verse  5 ## 5. Die Berge sind wie Flocken farbiger Wolle. 
+
+$ 101_005
+
+$ S101a5
+
+#L2 verse  6 ## 6. Wessen  gute Werke schwer sind, 
+
+$ 101_006
+
+$ S101a6
+
+#L2 verse  7 ## 7. der ist im wohlgefälligen ewigen Leben. 
+
+$ 101_007
+
+$ S101a7
+
+#L2 verse  8 ## 8. Wessen gute Werke aber leicht sind, 
+
+$ 101_008
+
+$ S101a8
+
+#L2 verse  9 ## 9. dem gereicht der höllische Abgrund zur Aufenthaltsstätte. 
+
+$ 101_009
+
+$ S101a9
+
+#L2 verse  10 ## 10. Woher kannst du wissen, was das ist? 
+
+$ 101_010
+
+$ S101a10
+
+#L2 verse  11 ## 11. Es ist ein glühendes, aufloderndes Feuer. 
+
+$ 101_011
+
+$ S101a11
+

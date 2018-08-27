@@ -1,0 +1,41 @@
+
+#L1 105. Sure Der Elefant "Al-Fîl"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 5 Verse zählende mekkanische Sure erzählt die Geschichte des  abessinischen Heeres, das vom Jemen aus mit Hilfe einiger Elefanten im Jahre 570 oder 571 die Kaaba zerstören wollte. Die Araber, die seit Abraham und Ismael dorthin pilgerten, sollten kein Gotteshaus haben. Die Truppen, die in der Nähe Mekkas angekommen waren, wurden, wie die Sure berichtet, durch Gottes Streiter vernichtend geschlagen. Sie bewarfen sie mit höllischen Steinen, so daß die Angreifer wie zerfressenes Laub auf dem Erdboden lagen. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 105_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Hast du nicht erfahren, was dein Herr mit den Leuten des Elefanten machte? 
+
+$ 105_001
+
+$ S105a1
+
+#L2 verse  2 ## 2. Hat Er nicht ihren heimtückischen Plan vereitelt? 
+
+$ 105_002
+
+$ S105a2
+
+#L2 verse  3 ## 3. Er sandte Schwärme von Vögeln über sie, 
+
+$ 105_003
+
+$ S105a3
+
+#L2 verse  4 ## 4. die sie mit höllischen Steinen bewarfen. 
+
+$ 105_004
+
+$ S105a4
+
+#L2 verse  5 ## 5. So machte Gott sie zu zerfressenem Laub. 
+
+$ 105_005
+
+$ S105a5
+

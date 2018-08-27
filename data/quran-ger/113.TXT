@@ -1,0 +1,41 @@
+
+#L1 113. Sure Das anbrechende Morgenlicht "Al-Falaq"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 5 Verse zählende, mekkanische Sure hebt unter den Zeichen Gottes, das anbrechende Morgenlicht hervor, das die Allmacht des Schöpfers bezeugt. Der Gläubige soll Gott um Beistand ersuchen, wann immer er Angst verspürt, sei es vor Geschöpfen, vor Dunkelheit, vor Übeltätern oder vor von Neid getriebenen Menschen. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 113_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Sprich: "Ich ersuche um Beistand des Herrn des anbrechenden Morgenlichts 
+
+$ 113_001
+
+$ S113a1
+
+#L2 verse  2 ## 2. vor dem Übel Seiner Geschöpfe, 
+
+$ 113_002
+
+$ S113a2
+
+#L2 verse  3 ## 3. vor dem Übel der Nacht, wenn sie hereinbricht, 
+
+$ 113_003
+
+$ S113a3
+
+#L2 verse  4 ## 4. vor den Übeltaten der bösen Menschen, die Zwietracht unter den Menschen säen, 
+
+$ 113_004
+
+$ S113a4
+
+#L2 verse  5 ## 5. und vor dem Übel des Neiders, der dem Neid verfällt." 
+
+$ 113_005
+
+$ S113a5
+

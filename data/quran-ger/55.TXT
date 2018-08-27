@@ -1,0 +1,479 @@
+
+#L1 55. Sure Der Gnädige "Ar-Rahmân"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 78 Verse zählende in Medina offenbarte Sure zählt Gottes Zeichen und Gaben auf. Sie fängt mit dem Namen Gottes - ar-Rahmân, der Gnädige - an, daher der Name der Sure, und würdigt den Koran, die Schöpfung des Menschen, der Himmel und der Erde. Die Ungläubigen gehören in die Hölle und die Gläubigen ins Paradies. Die Freuden im Paradies werden ausführlich beschrieben. Die Wendung "Welche der Wohltaten eures Herrn wollt ihr beide da leugnen?" kommt einunddreißigmal vor. Dadurch unterstreicht die Sure die Undankbarkeit der Ungläubigen. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 55_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Der Gnädige, 
+
+$ 55_001
+
+$ S55a1
+
+#L2 verse  2 ## 2. lehrte den Koran, 
+
+$ 55_002
+
+$ S55a2
+
+#L2 verse  3 ## 3. erschuf den Menschen, 
+
+$ 55_003
+
+$ S55a3
+
+#L2 verse  4 ## 4. und lehrte ihn, sich auszudrücken. 
+
+$ 55_004
+
+$ S55a4
+
+#L2 verse  5 ## 5. Die Sonne und der Mond entsprechen genauen Berechnungen. 
+
+$ 55_005
+
+$ S55a5
+
+#L2 verse  6 ## 6. Die Pflanzen und die Bäume unterliegen Gottes Willen. 
+
+$ 55_006
+
+$ S55a6
+
+#L2 verse  7 ## 7. Den Himmel erschuf Er hoch und stellte die Waage der Gerechtigkeit auf, 
+
+$ 55_007
+
+$ S55a7
+
+#L2 verse  8 ## 8. damit ihr die Waage der Gerechtigkeit nicht überschreitet. 
+
+$ 55_008
+
+$ S55a8
+
+#L2 verse  9 ## 9. Bei allem sollt ihr gerecht, genau auf Gewicht und Maß achten und nichts vermindern. 
+
+$ 55_009
+
+$ S55a9
+
+#L2 verse  10 ## 10. Die Erde hat Er für die Menschen hergerichtet. 
+
+$ 55_010
+
+$ S55a10
+
+#L2 verse  11 ## 11. Auf der Erde gibt es Früchte aller Art und Palmen mit Fruchtbüscheln, 
+
+$ 55_011
+
+$ S55a11
+
+#L2 verse  12 ## 12. Korn in Ähren und duftende Pflanzen. 
+
+$ 55_012
+
+$ S55a12
+
+#L2 verse  13 ## 13. Welche  der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_013
+
+$ S55a13
+
+#L2 verse  14 ## 14. Er hat den Menschen aus trockenem Lehm erschaffen, wie Töpferware, 
+
+$ 55_014
+
+$ S55a14
+
+#L2 verse  15 ## 15. und Er hat die Dschinn aus reinem, loderndem Feuer geschaffen. 
+
+$ 55_015
+
+$ S55a15
+
+#L2 verse  16 ## 16. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_016
+
+$ S55a16
+
+#L2 verse  17 ## 17. Er ist der Herr der beiden Sonnenaufgänge und der beiden Sonnenuntergänge (vom Sommer und vom Winter). 
+
+$ 55_017
+
+$ S55a17
+
+#L2 verse  18 ## 18. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_018
+
+$ S55a18
+
+#L2 verse  19 ## 19. Er ließ beide Gewässer (das Süßwasser und das Salzwasser)  fließen und einander  begegnen, 
+
+$ 55_019
+
+$ S55a19
+
+#L2 verse  20 ## 20. doch zwischen beiden ist eine Trennwand, die sie nicht überschreiten. 
+
+$ 55_020
+
+$ S55a20
+
+#L2 verse  21 ## 21. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_021
+
+$ S55a21
+
+#L2 verse  22 ## 22. Aus beiden kommen Perlen und Korallen hervor. 
+
+$ 55_022
+
+$ S55a22
+
+#L2 verse  23 ## 23. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_023
+
+$ S55a23
+
+#L2 verse  24 ## 24. Ihm unterstehen die von euch gebauten hochragenden Schiffe, die auf dem Meer wie Berge  dahinfahren. 
+
+$ 55_024
+
+$ S55a24
+
+#L2 verse  25 ## 25. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_025
+
+$ S55a25
+
+#L2 verse  26 ## 26. Alle, die es auf der Erde gibt, sind vergänglich. 
+
+$ 55_026
+
+$ S55a26
+
+#L2 verse  27 ## 27. Unvergänglich bleibt Gott allein, Dem Erhabenheit und Huld gehören. 
+
+$ 55_027
+
+$ S55a27
+
+#L2 verse  28 ## 28. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_028
+
+$ S55a28
+
+#L2 verse  29 ## 29. Ihn bitten alle, die in den Himmeln und auf der Erde sind. Zu jeder Zeit offenbart Er sich. 
+
+$ 55_029
+
+$ S55a29
+
+#L2 verse  30 ## 30. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_030
+
+$ S55a30
+
+#L2 verse  31 ## 31. Wir werden Uns eurem Gericht am Jüngsten Tag widmen, ihr Dschinn und ihr Menschen! 
+
+$ 55_031
+
+$ S55a31
+
+#L2 verse  32 ## 32. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_032
+
+$ S55a32
+
+#L2 verse  33 ## 33. Ihr Dschinn und ihr Menschen! Wenn ihr aus den Sphären der Himmel und der Erde entkommen könnt, tut es! Ihr würdet eine unheimliche Gewalt benötigen, um ihnen entweichen zu können. 
+
+$ 55_033
+
+$ S55a33
+
+#L2 verse  34 ## 34. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_034
+
+$ S55a34
+
+#L2 verse  35 ## 35. Er sendet über euch Feuerflammen und geschmolzenes Kupfer, und ihr werdet euch dagegen nicht wehren können. 
+
+$ 55_035
+
+$ S55a35
+
+#L2 verse  36 ## 36. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_036
+
+$ S55a36
+
+#L2 verse  37 ## 37. Wenn sich der Himmel spaltet und dunkelrot wie verbranntes Öl wird. 
+
+$ 55_037
+
+$ S55a37
+
+#L2 verse  38 ## 38. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_038
+
+$ S55a38
+
+#L2 verse  39 ## 39. An diesem Tag wird kein Mensch und kein Dschinn nach seiner Schuld gefragt. 
+
+$ 55_039
+
+$ S55a39
+
+#L2 verse  40 ## 40. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_040
+
+$ S55a40
+
+#L2 verse  41 ## 41. Die Schuldigen werden an ihren Merkmalen erkannt und an Schopf und Füßen gepackt und in die Hölle geworfen. 
+
+$ 55_041
+
+$ S55a41
+
+#L2 verse  42 ## 42. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_042
+
+$ S55a42
+
+#L2 verse  43 ## 43. Hier ist die Hölle, die die Schuldigen verleugnen. 
+
+$ 55_043
+
+$ S55a43
+
+#L2 verse  44 ## 44. Sie wandeln darin zwischen Feuer und siedendem Höllenwasser. 
+
+$ 55_044
+
+$ S55a44
+
+#L2 verse  45 ## 45. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_045
+
+$ S55a45
+
+#L2 verse  46 ## 46. Wer aber die Allmacht seines Herrn fürchtet, dem kommen zwei Paradiesgärten zu. 
+
+$ 55_046
+
+$ S55a46
+
+#L2 verse  47 ## 47. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_047
+
+$ S55a47
+
+#L2 verse  48 ## 48. Mit prächtigem Zweigwerk. 
+
+$ 55_048
+
+$ S55a48
+
+#L2 verse  49 ## 49. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_049
+
+$ S55a49
+
+#L2 verse  50 ## 50. Und zwei Quellen, die dort fließen. 
+
+$ 55_050
+
+$ S55a50
+
+#L2 verse  51 ## 51. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_051
+
+$ S55a51
+
+#L2 verse  52 ## 52. Dort gibt es von jeder Fruchtart ein Paar. 
+
+$ 55_052
+
+$ S55a52
+
+#L2 verse  53 ## 53. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_053
+
+$ S55a53
+
+#L2 verse  54 ## 54. Sie sitzen behaglich angelehnt auf Lagern, die mit Istabraq-Brokat gefüttert sind. Die Früchte der Gärten sind griffbereit. 
+
+$ 55_054
+
+$ S55a54
+
+#L2 verse  55 ## 55. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_055
+
+$ S55a55
+
+#L2 verse  56 ## 56. Dort sind Jungfrauen, die weder von Menschen noch von Dschinn berührt wurden und deren Blicke nur ihren Gatten gelten. 
+
+$ 55_056
+
+$ S55a56
+
+#L2 verse  57 ## 57. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_057
+
+$ S55a57
+
+#L2 verse  58 ## 58. Sie sind, als wären sie Rubine und Korallen. 
+
+$ 55_058
+
+$ S55a58
+
+#L2 verse  59 ## 59. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_059
+
+$ S55a59
+
+#L2 verse  60 ## 60. Ist das gute Werk mit etwas anderem zu vergelten als mit gutem Lohn? 
+
+$ 55_060
+
+$ S55a60
+
+#L2 verse  61 ## 61. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_061
+
+$ S55a61
+
+#L2 verse  62 ## 62. Außer den beiden Gärten gibt es zwei andere Gärten. 
+
+$ 55_062
+
+$ S55a62
+
+#L2 verse  63 ## 63. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_063
+
+$ S55a63
+
+#L2 verse  64 ## 64. Dunkelgrüne. 
+
+$ 55_064
+
+$ S55a64
+
+#L2 verse  65 ## 65. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_065
+
+$ S55a65
+
+#L2 verse  66 ## 66. Mit zwei sprudelnden Quellen. 
+
+$ 55_066
+
+$ S55a66
+
+#L2 verse  67 ## 67. elche der Wohltaten eures Herrn wollt ihr beide da  leugnen? 
+
+$ 55_067
+
+$ S55a67
+
+#L2 verse  68 ## 68. Dort gibt es allerlei Früchte, Palmen und Granatäpfel. 
+
+$ 55_068
+
+$ S55a68
+
+#L2 verse  69 ## 69. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_069
+
+$ S55a69
+
+#L2 verse  70 ## 70. Dort gibt es schöne und gute Gattinnen. 
+
+$ 55_070
+
+$ S55a70
+
+#L2 verse  71 ## 71. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_071
+
+$ S55a71
+
+#L2 verse  72 ## 72. Mit schönen, großen Augen, wohlbehütet in Zelten. 
+
+$ 55_072
+
+$ S55a72
+
+#L2 verse  73 ## 73. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_073
+
+$ S55a73
+
+#L2 verse  74 ## 74. Die weder Mensch noch Dschinn vor ihnen berührt hat. 
+
+$ 55_074
+
+$ S55a74
+
+#L2 verse  75 ## 75. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_075
+
+$ S55a75
+
+#L2 verse  76 ## 76. Sie sitzen behaglich angelehnt auf grünbezogenen Lagern mit wunderschönen  Teppichen. 
+
+$ 55_076
+
+$ S55a76
+
+#L2 verse  77 ## 77. Welche der Wohltaten eures Herrn wollt ihr beide da leugnen? 
+
+$ 55_077
+
+$ S55a77
+
+#L2 verse  78 ## 78. Erhaben ist der Name deines Herrn, voller Segen und Huld. 
+
+$ 55_078
+
+$ S55a78
+

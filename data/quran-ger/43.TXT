@@ -1,0 +1,545 @@
+
+#L1 43. Sure Die Pracht "Az-Zukhruf"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 89 Verse zählende mekkanische Sure beginnt wie andere Suren mit Buchstaben. Sie weisen daraufhin, daß der Koran, der das wunderbare Zeichen Gottes darstellt, aus den üblichen sprachlichen Elementen besteht. Sie sollen die Aufmerksamkeit der Zuhörer auf sich ziehen. Die Sure unterstreicht die Bedeutung des Korans, den Gott Seinem Gesandten Muhammad offenbarte. Die Ungläubigen führen falsche Argumente an, um ihre widerspenstige Haltung zu begründen. Teils wollen sie den Glauben ihrer Väter nicht aufgeben, teils gesellen sie Gott Gefährten bei. Sie wundern sich, daß Gott für Seine Offenbarung keinen der Prominenten von Mekka und at-Tâ'if als Gesandten ausgesucht hat. Gott ist es, Der allein Seine Huld verteilt. Die Ungläubigen denken nur an das irdische Leben. Wollte Gott, würde Er ihnen alles geben, was es an Freuden, Pracht und Prunk auf der Erde gibt, damit sie weiter irregehen. Die Versuchung wäre aber für alle Menschen zu groß, nicht nur für die Ungläubigen. Demjenigen, der sich dem wahren Glauben trotzig widersetzt, wird ein Teufel beigesellt, der ihn in den Abgrund treibt. Die Sure berichtet ferner über Abraham, Moses und Jesus. Sie sind Gottes Gesandte, die zum rechten Weg aufriefen. Die Ungläubigen werden mit dem ewigen Feuer in der Hölle bestraft, und die Gläubigen kommen ins Paradies, in dem sie alles bekommen, wonach sie sich sehnen. Der Prophet Muhammad wird ermahnt, sich von den Ungläubigen nicht beirren zu lassen und die Wahrheit beharrlich zu verkünden. Im  Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 43_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Hâ, Mîm. 
+
+$ 43_001
+
+$ S43a1
+
+#L2 verse  2 ## 2. Bei dem klaren Buch! 
+
+$ 43_002
+
+$ S43a2
+
+#L2 verse  3 ## 3. Wir haben es zu einem arabischen Koran gemacht, auf daß ihr  darüber nachdenken möget. 
+
+$ 43_003
+
+$ S43a3
+
+#L2 verse  4 ## 4. Er ist bei Uns, im Ur-Buch (Umm al-Kitâb) erhaben und voller Weisheit. 
+
+$ 43_004
+
+$ S43a4
+
+#L2 verse  5 ## 5. Sollten Wir euch etwa den ermahnenden Koran vorenthalten, weil ihr ein maßloses Volk seid? 
+
+$ 43_005
+
+$ S43a5
+
+#L2 verse  6 ## 6. Wieviele Propheten entsandten Wir zu den früheren Völkern! 
+
+$ 43_006
+
+$ S43a6
+
+#L2 verse  7 ## 7. Es kam zu ihnen kein Prophet, den sie nicht verspotteten. 
+
+$ 43_007
+
+$ S43a7
+
+#L2 verse  8 ## 8. Wir haben ungläubige Völker vernichtet, die noch mächtiger als sie (die Mekkaner) waren. Wir haben das Beispiel der früheren Ungläubigen bereits angeführt. 
+
+$ 43_008
+
+$ S43a8
+
+#L2 verse  9 ## 9. Wenn du sie fragst, wer die Himmel und die Erde erschaffen hat, werden sie sagen: "Der Allmächtige, der Allwissende hat sie erschaffen." 
+
+$ 43_009
+
+$ S43a9
+
+#L2 verse  10 ## 10. Er ist es, Der euch die Erde geebnet und euch darauf Wege gemacht hat, damit ihr euch zurechtfindet, 
+
+$ 43_010
+
+$ S43a10
+
+#L2 verse  11 ## 11. und Der vom Himmel Wasser nach Maß herabregnen läßt, mit dem Wir eine tote Gegend ins Leben rufen. Ebenso werdet auch ihr zum Jüngsten Tag auferweckt werden. 
+
+$ 43_011
+
+$ S43a11
+
+#L2 verse  12 ## 12. Und Der alle Arten erschaffen und euch Schiffe und Vieh zur Beförderung gemacht hat. 
+
+$ 43_012
+
+$ S43a12
+
+#L2 verse  13 ## 13. So werdet ihr sie leicht besteigen, und wenn ihr es euch bequem darauf gemacht habt, sollt ihr der Gnade eures Herrn gedenken und sagen: "Gepriesen sei Der, Der uns dieses alles dienstbar gemacht hat! Das hätten wir allein niemals bewirken können. 
+
+$ 43_013
+
+$ S43a13
+
+#L2 verse  14 ## 14. Wir werden nach diesem Leben sicher zu unserem Herrn zurückkehren." 
+
+$ 43_014
+
+$ S43a14
+
+#L2 verse  15 ## 15. Aus Seinen Dienern machen sie Ihm jedoch einen Sohn, den sie für einen Teil Seiner Selbst halten. Der Mensch ist offenkundig undankbar. 
+
+$ 43_015
+
+$ S43a15
+
+#L2 verse  16 ## 16. Oder hat Er etwa von Seinen Geschöpfen die Töchter genommen und für euch die Söhne bestimmt? 
+
+$ 43_016
+
+$ S43a16
+
+#L2 verse  17 ## 17. Wenn einem von ihnen gemeldet wird, daß ihm eine Tochter geboren wurde, wird sein Gesicht finster und verbissen. 
+
+$ 43_017
+
+$ S43a17
+
+#L2 verse  18 ## 18. Gott soll ein Kind haben, das in niedlicher Wiege heranwächst und in der Debatte nichts Klares zu sagen vermag? 
+
+$ 43_018
+
+$ S43a18
+
+#L2 verse  19 ## 19. Die Engel, die die Diener des Barmherzigen sind, machen sie zu weiblichen Wesen. Haben sie etwa zugesehen, als sie erschaffen wurden? Ihre Aussagen werden aufgeschrieben, und sie werden sich dafür verantworten. 
+
+$ 43_019
+
+$ S43a19
+
+#L2 verse  20 ## 20. Sie sagen: "Hätte der Barmherzige gewollt, würden wir diese nicht anbeten." Sie verfügen über kein Wissen und sprechen nur so dahin. 
+
+$ 43_020
+
+$ S43a20
+
+#L2 verse  21 ## 21. Oder haben Wir ihnen etwa vorher ein Buch gegeben, an dem sie festhalten? 
+
+$ 43_021
+
+$ S43a21
+
+#L2 verse  22 ## 22. Nein, sie sagen: "Wir haben unsere Väter mit einer Religion  vorgefunden, und wir lassen uns durch ihre Fußstapfen leiten." 
+
+$ 43_022
+
+$ S43a22
+
+#L2 verse  23 ## 23. So war es auch mit den früheren Völkern. Wir haben zu keiner Stadtgemeinschaft einen Gesandten geschickt, dem die in Saus und Braus lebenden Notabeln nicht gesagt hätten: "Wir haben unsere Väter mit einer Religion vorgefunden, und wir folgen ihren Fußstapfen." 
+
+$ 43_023
+
+$ S43a23
+
+#L2 verse  24 ## 24. Er sagte: "Auch wenn ich euch etwas bringe, was euch zielsicherer rechtleitet, als was ihr bei euren Vätern vorgefunden habt?" Darauf sagten sie: "Wir leugnen die Botschaft, mit der ihr entsandt worden seid." 
+
+$ 43_024
+
+$ S43a24
+
+#L2 verse  25 ## 25. Wir bestraften sie qualvoll im Diesseits. Siehe, wie das Ende der Ungläubigen war, die die Gesandten der Lüge bezichtigten! 
+
+$ 43_025
+
+$ S43a25
+
+#L2 verse  26 ## 26. Einst sagte Abraham zu seinem Vater und seinem Volk: "Ich bin frei von allem, was ihr anbetet. 
+
+$ 43_026
+
+$ S43a26
+
+#L2 verse  27 ## 27. Nur den Herrn, Der mich erschaffen hat, bete ich an, und Er wird mich rechtleiten." 
+
+$ 43_027
+
+$ S43a27
+
+#L2 verse  28 ## 28. Er machte es zu einem bleibenden Wort des Bekenntnisses unter seinen Nachkommen, auf daß sie darauf zurückkommen mögen. 
+
+$ 43_028
+
+$ S43a28
+
+#L2 verse  29 ## 29. Ich ließ diese (die Mekkaner, die zu den Nachkommen Abrahams gehören) und auch ihre Väter das Leben genießen, bis die Wahrheit (der Koran) und der offenkundige Gesandte zu ihnen kamen. 
+
+$ 43_029
+
+$ S43a29
+
+#L2 verse  30 ## 30. Als die Wahrheit (der Koran) zu ihnen kam, sprachen sie: "Das ist Zauberei. Wir glauben nicht daran." 
+
+$ 43_030
+
+$ S43a30
+
+#L2 verse  31 ## 31. Sie sprachen: "Warum ist dieser Koran nicht einem der Notabeln von den beiden Städten (Mekka und at-Tâ'if) herabgesandt worden?" 
+
+$ 43_031
+
+$ S43a31
+
+#L2 verse  32 ## 32. Sind sie es etwa, die Gottes Gnade verteilen? Wir sind es, die unter ihnen den Unterhalt im irdischen Leben verteilen. Und Wir haben die einen um mehrere Rangstufen über die anderen erhoben, damit die einen die anderen in ihren Dienst stellen. Die Gnade jedoch, die dein Herr dir (durch das Prophetentum) erwiesen hat, ist bei weitem besser als alles, was sie  anhäufen. 
+
+$ 43_032
+
+$ S43a32
+
+#L2 verse  33 ## 33. Da es nicht dazu kommen soll, daß alle Menschen zu einer  Gemeinde (von Ungläubigen) werden, würden Wir den Ungläubigen, die den Barmherzigen leugnen, Häuser mit silbernen Dächern und silbernen Treppen geben, auf denen sie hinaufsteigen, 
+
+$ 43_033
+
+$ S43a33
+
+#L2 verse  34 ## 34. und für ihre Häuser Türen und Betten aus Silber, auf denen sie liegen können 
+
+$ 43_034
+
+$ S43a34
+
+#L2 verse  35 ## 35. und ihnen Pracht aller Art bescheren. Doch all das sind vergängliche Freuden des irdischen Lebens, und das Jenseits bei deinem Herrn ist den Gottesfürchtigen vorbehalten. 
+
+$ 43_035
+
+$ S43a35
+
+#L2 verse  36 ## 36. Wer sich blind stellt und das ermahnende Buch (den Koran) nicht sieht, für den bestimmen Wir einen Satan, der ihn als Gefährte auf Schritt und Tritt begleitet. 
+
+$ 43_036
+
+$ S43a36
+
+#L2 verse  37 ## 37. Die Satane bringen sie vom rechten Weg ab, während die Gottlosen wähnen, rechtgeleitet zu sein. 
+
+$ 43_037
+
+$ S43a37
+
+#L2 verse  38 ## 38. Wenn der eine oder der andere zu Uns kommt, wird er seinem satanischen Gefährten sagen: "Ich wünsche, zwischen mir und dir wäre ein Abstand wie zwischen Osten und Westen!" Welch schlimmer Gefährte! 
+
+$ 43_038
+
+$ S43a38
+
+#L2 verse  39 ## 39. (Ihm wird gesagt werden:) "Euch nützt heute nicht, daß ihr Gefährten wart, da ihr (euch selbst durch euren Unglauben) unrecht getan habt. Ihr habt alle an der qualvollen Strafe teil." 
+
+$ 43_039
+
+$ S43a39
+
+#L2 verse  40 ## 40. Wie könntest du die hörend machen, die sich taub stellen oder die sehend machen, die sich blind stellen oder die auf offenkundigem Irrtum beharren? 
+
+$ 43_040
+
+$ S43a40
+
+#L2 verse  41 ## 41. Wenn Wir dich vorher abberufen sollten, werden Wir  Vergeltung an ihnen üben. 
+
+$ 43_041
+
+$ S43a41
+
+#L2 verse  42 ## 42. Oder Wir werden dir die Strafe zeigen, die Wir ihnen angedroht haben, sind Wir doch allmächtig. 
+
+$ 43_042
+
+$ S43a42
+
+#L2 verse  43 ## 43. Halte fest an dem Koran, den Wir dir offenbart haben! Du bist auf dem geraden Weg. 
+
+$ 43_043
+
+$ S43a43
+
+#L2 verse  44 ## 44. Er ist Ermahnung für dich und für dein Volk, und ihr werdet euch  im Jenseits verantworten müssen. 
+
+$ 43_044
+
+$ S43a44
+
+#L2 verse  45 ## 45. Frage jene Unserer Gesandten, die Wir vor dir geschickt haben! Haben Wir etwa darin außer dem Barmherzigen andere anzubetende Götter bestimmt? 
+
+$ 43_045
+
+$ S43a45
+
+#L2 verse  46 ## 46. Wir sandten Moses mit Unseren Zeichen zu Pharao und seinen Notabeln. Er sprach: "Ich bin der Gesandte des Herrn der Welten." 
+
+$ 43_046
+
+$ S43a46
+
+#L2 verse  47 ## 47. Als er ihnen Unsere Zeichen vorlegte, brachen sie darüber in Lachen aus. 
+
+$ 43_047
+
+$ S43a47
+
+#L2 verse  48 ## 48. Jedes Zeichen, das Wir ihnen zeigten, wirkte so, als sei es größer als das vorherige. Da sie verleugneten, erlegten Wir ihnen qualvolle Strafen auf, auf daß sie von ihren Untaten abkommen mögen. 
+
+$ 43_048
+
+$ S43a48
+
+#L2 verse  49 ## 49. Sie sprachen : "O du Zauberer! Bitte deinen Herrn kraft des Bundes mit dir, Er möge uns von der Heimsuchung befreien, so werden wir zur Rechtleitung finden!" 
+
+$ 43_049
+
+$ S43a49
+
+#L2 verse  50 ## 50. Doch als Wir sie vom Unheil befreit hatten, brachen sie ihr Wort. 
+
+$ 43_050
+
+$ S43a50
+
+#L2 verse  51 ## 51. Pharao rief den Seinen zu: "O mein Volk! Habe ich nicht allein die Herrschaft über Ägypten und über die Ströme, die unter mir fließen? Könnt ihr denn nicht sehen? 
+
+$ 43_051
+
+$ S43a51
+
+#L2 verse  52 ## 52. Bin ich nicht besser als dieser Niedrige, der sich kaum verständlich ausdrücken kann? 
+
+$ 43_052
+
+$ S43a52
+
+#L2 verse  53 ## 53. Warum hat Sein Herr ihm keinen goldenen Armreif als Zeichen der Vollmacht gegeben? Oder warum sind die Engel nicht als Geleit mitgekommen?" 
+
+$ 43_053
+
+$ S43a53
+
+#L2 verse  54 ## 54. So redete er auf seine Leute ein, und sie gehorchten ihm. Sie waren ein frevelhaftes Volk. 
+
+$ 43_054
+
+$ S43a54
+
+#L2 verse  55 ## 55. Da sie Uns zornig machten, bestraften Wir sie und ließen sie alle samt und sonders ertrinken. 
+
+$ 43_055
+
+$ S43a55
+
+#L2 verse  56 ## 56. Wir machten sie zum Beispiel für die späteren Ungläubigen und zum Gleichnis für alle Menschen. 
+
+$ 43_056
+
+$ S43a56
+
+#L2 verse  57 ## 57. Als Jesus, der Sohn Marias, als Beispiel angeführt (und mit Adam verglichen) wurde, wandte sich dein Volk mit Geschrei davon ab. 
+
+$ 43_057
+
+$ S43a57
+
+#L2 verse  58 ## 58. Sie sprachen: "Sind unsere Götter nicht doch besser als er?" Sie führten dir das Gleichnis nur der Kontroverse wegen an. Sie sind ein streitsüchtiges Volk. 
+
+$ 43_058
+
+$ S43a58
+
+#L2 verse  59 ## 59. Er war nur ein Diener, dem Wir Gnade erwiesen und zum Beispiel für die Kinder Israels  machten. 
+
+$ 43_059
+
+$ S43a59
+
+#L2 verse  60 ## 60. Wenn Wir wollten, würden Wir einige unter euch zu Engeln machen, die euch auf der Erde als Erben nachfolgen. 
+
+$ 43_060
+
+$ S43a60
+
+#L2 verse  61 ## 61. Das ist ein Hinweis auf die Stunde des Jüngsten Gerichts. So zweifelt nicht daran und folgt mir! Das ist der gerade Weg. 
+
+$ 43_061
+
+$ S43a61
+
+#L2 verse  62 ## 62. Der Satan soll euch nicht davon abbringen. Er ist euer offenkundiger Feind. 
+
+$ 43_062
+
+$ S43a62
+
+#L2 verse  63 ## 63. Als Jesus mit den Beweiszeichen kam, sprach er: "Ich bin zu euch mit der Weisheit gekommen, damit ich euch etwas erläutere, worüber ihr gestritten habt. Fürchtet Gott und gehorcht mir! 
+
+$ 43_063
+
+$ S43a63
+
+#L2 verse  64 ## 64. Gott ist mein Herr und euer Herr, so dienet Ihm! Das ist der gerade Weg." 
+
+$ 43_064
+
+$ S43a64
+
+#L2 verse  65 ## 65. Die widerspenstigen Verbände stritten jedoch untereinander. Wehe den Ungerechten vor einer schweren Strafe an einem qualvollen Tag! 
+
+$ 43_065
+
+$ S43a65
+
+#L2 verse  66 ## 66. Die Ungläubigen warten auf nichts anderes als auf die Stunde des Jüngsten Gerichts, die sie überrascht, während sie ahnungslos sind. 
+
+$ 43_066
+
+$ S43a66
+
+#L2 verse  67 ## 67. Die vermeintlichen Freunde werden sich an jenem Tag als Feinde erweisen. Ausgenommen sind die Gottesfürchtigen. 
+
+$ 43_067
+
+$ S43a67
+
+#L2 verse  68 ## 68. Ihnen wird zugerufen: "O Meine Diener! Ihr habt an jenem Tag nichts zu befürchten, und ihr sollt nicht traurig sein. 
+
+$ 43_068
+
+$ S43a68
+
+#L2 verse  69 ## 69. Das sind die, die an Unsere Zeichen glauben und sich Uns ergeben haben. 
+
+$ 43_069
+
+$ S43a69
+
+#L2 verse  70 ## 70. Tretet ins Paradies ein mit euren Gattinnen, wo euch alle ersehnten Freuden zuteil werden!" 
+
+$ 43_070
+
+$ S43a70
+
+#L2 verse  71 ## 71. Goldene Schüsseln und Becher machen die Runde unter ihnen mit allem, was sie sich wünschen und woran sich ihre Augen weiden. "Im Paradies werdet ihr ewig bleiben. 
+
+$ 43_071
+
+$ S43a71
+
+#L2 verse  72 ## 72. Das ist das Paradies, das euch vererbt wird als Vergeltung für die guten Werke, die ihr geleistet habt. 
+
+$ 43_072
+
+$ S43a72
+
+#L2 verse  73 ## 73. Darin gibt es für euch Früchte in Fülle, wovon ihr essen könnt." 
+
+$ 43_073
+
+$ S43a73
+
+#L2 verse  74 ## 74. Die Ungläubigen aber werden ewig in der qualvollen Strafe der Hölle bleiben. 
+
+$ 43_074
+
+$ S43a74
+
+#L2 verse  75 ## 75. Sie wird ihnen nicht gelindert, und sie bleiben darin hoffnungslos verfangen. 
+
+$ 43_075
+
+$ S43a75
+
+#L2 verse  76 ## 76. Nicht Wir haben ihnen unrecht getan, sondern sie sind es, die sich selbst unrecht getan haben. 
+
+$ 43_076
+
+$ S43a76
+
+#L2 verse  77 ## 77. Sie werden rufen: "O Mâlik, du Höllenwart! Dein Herr möge uns vernichten, damit wir erlöst werden!" Er wird aber sagen: "Ihr bleibt für immer darin." 
+
+$ 43_077
+
+$ S43a77
+
+#L2 verse  78 ## 78. Gott spricht: "Wir haben euch (Mekkaner) die Wahrheit überbracht. Doch die meisten unter euch verabscheuten die Wahrheit." 
+
+$ 43_078
+
+$ S43a78
+
+#L2 verse  79 ## 79. Oder haben sie (die Mekkaner) einen Plan beschlossen? Auch Wir haben dagegen Unseren Beschluß gefaßt. 
+
+$ 43_079
+
+$ S43a79
+
+#L2 verse  80 ## 80. Oder meinen sie, daß Wir ihre Geheimnisse und  heimlichen Beratungen nicht hören? Doch, Wir hören sie, und Unsere Boten bei ihnen schreiben alles auf. 
+
+$ 43_080
+
+$ S43a80
+
+#L2 verse  81 ## 81. Sprich: "Wenn der Barmherzige nachweislich einen Sohn hätte, hätte ich ihn als erster angebetet." 
+
+$ 43_081
+
+$ S43a81
+
+#L2 verse  82 ## 82. Erhaben ist der Herr der Himmel und der Erde und der höchsten Allmacht über allem, was sie erdichten. 
+
+$ 43_082
+
+$ S43a82
+
+#L2 verse  83 ## 83. Laß sie hadern und spielen, wie es ihnen gelüstet, bis der Tag, der ihnen angedroht ist, sie plötzlich ereilt. 
+
+$ 43_083
+
+$ S43a83
+
+#L2 verse  84 ## 84. Er ist es, Der im Himmel Gott und auf der Erde Gott ist. Er ist der Allweise, der Allwissende. 
+
+$ 43_084
+
+$ S43a84
+
+#L2 verse  85 ## 85. Voller Segen ist Der, Dem die Herrschaft über Himmel und Erde und was dazwischen ist, gehört, und Der allein das Wissen über die Stunde des Jüngsten Gerichts besitzt. Zu Ihm werdet ihr zurückgebracht werden. 
+
+$ 43_085
+
+$ S43a85
+
+#L2 verse  86 ## 86. Denjenigen, die sie anstatt Seiner anbeten, steht keine Fürsprache zu. Nur den Gläubigen, die sich nach bestem Wissen und Gewissen zur Wahrheit bekannt haben, gebührt sie. 
+
+$ 43_086
+
+$ S43a86
+
+#L2 verse  87 ## 87. Wenn du sie fragst, wer sie erschaffen habe, sagen sie bestimmt: "Gott." Wie lassen sie sich dann davon abbringen, Ihm zu dienen? 
+
+$ 43_087
+
+$ S43a87
+
+#L2 verse  88 ## 88. Bei seinen Worten (den Worten des Propheten Muhammad), der klagte: "Mein Herr! Diese Leute sind ein Vok, das nicht glauben will." 
+
+$ 43_088
+
+$ S43a88
+
+#L2 verse  89 ## 89. Wende dich von ihnen ab und sage: "Frieden!" Sie werden zu wissen bekommen, wohin ihr Unglaube führt. 
+
+$ 43_089
+
+$ S43a89
+

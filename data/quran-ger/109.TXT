@@ -1,0 +1,47 @@
+
+#L1 109. Sure Die Ungläubigen "Al-Kâfirûn"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 6 Verse zählende, mekkanische Sure ermächtigt den Gesandten, mit den Ungläubigen nicht weiter zu debattieren. Er soll ihnen klar sagen, daß es keinen Kompromiß geben kann. Sie dienen nicht seinem Herrn, und er dient nicht ihren Götzen. Jeder beharrt auf seinem Glauben. Sie wollen die verkündete Wahrheit Gottes nicht annehmen und setzen die heidnische Tradition fort. Er aber hängt an der Religion, die Gott für ihn  auserkoren hat. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 109_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Sprich: "Ihr Ungläubigen! 
+
+$ 109_001
+
+$ S109a1
+
+#L2 verse  2 ## 2. Ich diene nicht dem, was ihr dient. 
+
+$ 109_002
+
+$ S109a2
+
+#L2 verse  3 ## 3. Ihr wollt Gott nicht dienen, Dem ich diene. 
+
+$ 109_003
+
+$ S109a3
+
+#L2 verse  4 ## 4. Ich werde nie dem  dienen, dem ihr dient. 
+
+$ 109_004
+
+$ S109a4
+
+#L2 verse  5 ## 5. Ihr werdet Gott nicht dienen, Dem ich diene. 
+
+$ 109_005
+
+$ S109a5
+
+#L2 verse  6 ## 6. Ihr habt eure Religion, und ich habe meine Religion." 
+
+$ 109_006
+
+$ S109a6
+

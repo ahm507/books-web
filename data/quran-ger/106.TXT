@@ -1,0 +1,35 @@
+
+#L1 106. Sure Die Quraisch "Quraisch"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 4 Verse zählende, mekkanische Sure unterstreicht die besondere Huld Gottes, die Er dem Stamm Quraisch erwies. Er ließ in Mekka Sein Heiliges Haus durch Abraham und Ismael errichten, das ihnen Sicherheit und Ehre gewährte. So konnten sie jährlich zwei Handelsreisen unternehmen, eine im Winter in den Jemen und eine im Sommer nach Syrien. Dadurch machten sie Gewinne und brauchten weder Hunger noch  Unsicherheit zu fürchten. Sie sollten darüber nachdenken und dem Herrn dienen, Der sie mit all diesen Gaben bedacht hat. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 106_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Den Quraischiten habe Ich ein sicheres Leben gewährt. 
+
+$ 106_001
+
+$ S106a1
+
+#L2 verse  2 ## 2. Um ihnen ein sicheres Leben zu gewähren, habe Ich ihnen die Winter- und die Sommerreise ermöglicht. 
+
+$ 106_002
+
+$ S106a2
+
+#L2 verse  3 ## 3. Sie sollen dem Herrn dieses Heiligen Hauses (al-Kaaba) aufrichtig dienen, 
+
+$ 106_003
+
+$ S106a3
+
+#L2 verse  4 ## 4. Der ihnen Nahrung gegen den Hunger und Sicherheit gegen die Angst gewährte. 
+
+$ 106_004
+
+$ S106a4
+

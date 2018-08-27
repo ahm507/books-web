@@ -1,0 +1,29 @@
+
+#L1 110. Sure Der Beistand "An-Nasr"  ##
+
+#L2 Einführung: ##
+
+Einführung: Diese 3 Verse zählende, in Medina offenbarte Sure berichtet über Gottes Beistand, der zum Sieg führte - daher der Name der Sure. Der Prophet wird ermahnt, wenn Gottes Beistand und Sieg erfolgen und die Menschen in Scharen Gottes Religion annehmen, seinen Herrn zu lobpreisen und Ihn um Vergebung zu bitten, denn  Er nimmt die aufrichtige Reue an. Der direkte Bezug dazu ist die Öffnung Mekkas im Ramadan des 8. Jahres nach der Hidschra (= Dezember 630 n. Chr.) Die ungläubigen Mekkaner hatten den Waffenstillstand gebrochen, so daß der Prophet seine Truppen ins Feld schickte. Sie sollten erst zu den Waffen greifen, wenn sie angegriffen würden. In der Tat erfolgte der größte Sieg ohne Blutvergießen. Die Götzen wurden vernichtet, und die Kaaba wurde  gereinigt. Im Namen Gottes, des Gnädigen, des Barmherzigen.
+
+$ 110_000
+
+$ S1a1
+
+#L2 verse  1 ## 1. Wenn Gottes Beistand kommt und dann der Sieg, 
+
+$ 110_001
+
+$ S110a1
+
+#L2 verse  2 ## 2. und du die Menschen in Scharen die Religion Gottes annehmen siehst, 
+
+$ 110_002
+
+$ S110a2
+
+#L2 verse  3 ## 3. dann lobpreise deinen Herrn und bitte Ihn um Vergebung, denn Er ist es, Der die Reue gnädig annimmt. 
+
+$ 110_003
+
+$ S110a3
+
