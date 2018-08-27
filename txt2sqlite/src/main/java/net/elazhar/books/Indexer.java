@@ -7,6 +7,7 @@ package net.elazhar.books;
 //import org.apache.lucene.document.Field;
 //import org.apache.lucene.index.IndexWriter;
 //import org.apache.lucene.store.Directory;
+//import org.apache.lucene.store.FSDirectory;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -15,7 +16,6 @@ import java.io.IOException;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
-//import org.apache.lucene.store.FSDirectory;
 
 
 /**
@@ -30,31 +30,12 @@ public class Indexer {
 //	IndexWriter indexWriter = null;
 //   	Directory indexDirectory = null;
 	
-/**
- * Index a complete document using its build properties file
- * @param inputPath the full path of the porpoerties file, see tha example build file to know
- * about the mandatory structure: It has only 4 files, and 3 levels. You can add more by 
- * adding more sequential files.
- * 
- * 
- * BookID = 1
- * 
- * File1=01w.txt
- * File2=02w.txt
- * File3=03w.txt
- * File4=04w.txt
- * 
- * RecordBreaker = #L
- * 
- * Level1=#L0
- * Level2=#L1
- * Level3=#L2 
- * @throws IOException 
- * @throws InterruptedException 
- * 
- */  
-	public int indexDoc(String inputPath, String indexPath)
+
+	public int indexDoc()
 						throws Exception, IOException, InterruptedException {
+
+	    String inputPath  = new java.io.File( "." ).getCanonicalPath();
+        String indexPath = inputPath;
 
 		int indexedRecordsCount = 0; 
 		settings.loadSettings(inputPath + "/build.properties");
@@ -104,14 +85,9 @@ public class Indexer {
 					indexedRecordsCount ++;
 					outCounter++;
 					if(outCounter % 100 == 0) { 
-//						if(out != null) {
-//							out.println(String.format("Record number %d is indexed<br/>", outCounter));
-							logger.info(String.format("Record number %d is indexed<br/>", outCounter));
-//							out.flush();
-//						}
+                        logger.info(String.format("Record number %d is indexed<br/>", outCounter));
 						System.out.println(String.format("Record number %d is indexed", outCounter));
-						
-			            Thread.sleep(500); //sleep for one second
+			            Thread.sleep(500); //!!!
 					}
 					
 					recordID++;
@@ -165,7 +141,7 @@ public class Indexer {
 		//Close the index
 //		if(out != null) {
 //			out.println("Indexing is OK. Now will optimize the index.<br>");
-			logger.info("Indexing is OK. Now will optimize the index.");
+//			logger.info("Indexing is OK. Now will optimize the index.");
 //		}
 //		indexWriter.optimize();
 //
@@ -173,7 +149,7 @@ public class Indexer {
 		
 //		if(out != null) {
 //			out.println("Build is completed successfully<br>");
-			logger.info("Build is completed successfully");
+        logger.info("Build is completed successfully");
 //			out.flush();
 //		}
 		
@@ -251,8 +227,6 @@ public class Indexer {
 	public void indexRecord(int recordID, int bookID, int parentID, String title, 
 			String text, String textNoVoweles) throws IOException {
 
-
-
 //		Document doc = new Document();
 //			doc.add(new Field("id", String.valueOf(recordID), Field.Store.YES, Field.Index.UN_TOKENIZED));
 //			doc.add(new Field("docID", String.valueOf(bookID), Field.Store.YES, Field.Index.UN_TOKENIZED));
@@ -263,6 +237,8 @@ public class Indexer {
 //			indexWriter.addDocument(doc);
 
 			//This should be injected to SQLite record
+
+        logger.info("insert record: " + title);
 
 	}
 	

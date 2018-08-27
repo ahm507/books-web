@@ -1,11 +1,15 @@
 package net.elazhar.books;
 
+import org.springframework.lang.NonNull;
+import org.springframework.validation.ValidationUtils;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Vector;
 import java.util.logging.Logger;
+import java.util.prefs.InvalidPreferencesFormatException;
 
 /**
  * Load the settings of the book to index.
@@ -29,8 +33,8 @@ public class Settings {
  * @throws FileNotFoundException 
  */	
 	
-	public void loadSettings(String propertiesFile) 
-					throws FileNotFoundException, IOException {
+	public void loadSettings(String propertiesFile)
+			throws FileNotFoundException, IOException, InvalidPreferencesFormatException {
 		
 		Logger logger = Logger.getLogger("waqf.indexer.settings");
 		
@@ -39,6 +43,10 @@ public class Settings {
 		
 		props.load(new FileInputStream (propertiesFile));
 		String bookID = props.getProperty("BookID");
+		if(bookID == null || bookID.isEmpty()) {
+			throw new InvalidPreferencesFormatException("Absent or empty BookID property");
+		}
+
 		docID = Integer.parseInt(bookID);
 		
 		recordBreaker = props.getProperty("RecordBreaker");

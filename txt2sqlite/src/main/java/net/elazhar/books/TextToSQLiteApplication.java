@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import java.io.FileNotFoundException; 
 
 @SpringBootApplication
 public class TextToSQLiteApplication implements CommandLineRunner {
@@ -18,8 +18,16 @@ public class TextToSQLiteApplication implements CommandLineRunner {
 	}
 
     @Override 
-    public void run(String... args) {
-        LOG.info("Hello commands. Here you have full spring power inside the console application");
+    public void run(String... args) throws Exception {
+        LOG.info("******* Hello commands. Here you have full spring power inside the console application");
+
+
+        Indexer indexer = new Indexer();
+        try {
+            indexer.indexDoc();
+        } catch (FileNotFoundException e) {
+            LOG.info("build.properties file not found");
+        }
 
 //        loadBuildProperties();
 //
@@ -27,8 +35,8 @@ public class TextToSQLiteApplication implements CommandLineRunner {
 //
 //        parseTextFiles(new TextLineReader(), new SQLiteAppender());
 
-        for (int i = 0; i < args.length; ++i) {
-            LOG.info("args[{}]: {}", i, args[i]);
-        }
+//        for (int i = 0; i < args.length; ++i) {
+//            LOG.info("args[{}]: {}", i, args[i]);
+//        }
     }
 }
