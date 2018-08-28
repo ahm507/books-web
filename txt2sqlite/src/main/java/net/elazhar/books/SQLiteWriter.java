@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 
 import java.io.UnsupportedEncodingException;
 import java.sql.*;
+import org.springframework.beans.factory.annotation.Value;
+
 
 @Service
 public class SQLiteWriter {
@@ -11,34 +13,19 @@ public class SQLiteWriter {
 	String indexPath;
 	Connection connection = null;
 	PreparedStatement preparedStatement = null;
+
+    String sqliteConnection;
+
+    SQLiteWriter(@Value("${sqlite.connection}") String sqliteConnection) {
+        this.sqliteConnection = sqliteConnection;
+    }
 	
-//	int count = 0;
-
-//	int publicId = 1;
-
-//	public static void main(String[] args) throws ParseException, Exception {
-//
-//		String bookCode;// = "g2b1";
-//		if(args.length < 2) {
-//			System.err.println( "Parameters Error!");
-//			System.err.println( "Usage$ indexer.sh path/to/lucene/index  book_code");
-//			System.err.println("");
-//			System.exit(-1);
-//		}
-//		String indexPath = args[0];
-//		bookCode = args[1];
-//		System.out.println(bookCode + ": Starting conversion...");
-//		GenSqlite2 gen = new GenSqlite2(bookCode, indexPath, bookCode);
-//		gen.generateSqlite();
-//	}
-
-
     public void init(String bookCode) {
 
 		this.bookCode = bookCode;
 		try {
 			Class.forName("org.sqlite.JDBC");
-			connection = DriverManager.getConnection("jdbc:sqlite:books.sqlite");
+			connection = DriverManager.getConnection(sqliteConnection);
 			connection.setAutoCommit(false);
 			String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, title, page, page_fts) VALUES(?, ?, ?, ?, ?, ?);";
 			preparedStatement = connection.prepareStatement(insertSql);
