@@ -6,9 +6,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.FileNotFoundException; 
+import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringBootApplication
 public class TextToSQLiteApplication implements CommandLineRunner {
+
+
+    @Autowired
+    Indexer indexer;
 
     private static Logger LOG = LoggerFactory
             .getLogger(TextToSQLiteApplication.class);
@@ -19,10 +24,7 @@ public class TextToSQLiteApplication implements CommandLineRunner {
 
     @Override 
     public void run(String... args) throws Exception {
-        LOG.info("******* Hello commands. Here you have full spring power inside the console application");
 
-
-        Indexer indexer = new Indexer();
         int indexed = 0;
         try {
             indexed = indexer.indexDoc();
@@ -32,14 +34,5 @@ public class TextToSQLiteApplication implements CommandLineRunner {
 
         LOG.info("Indexed records count: " + String.valueOf(indexed));
 
-//        loadBuildProperties();
-//
-//        verifyBuildProperties();
-//
-//        parseTextFiles(new TextLineReader(), new SQLiteAppender());
-
-//        for (int i = 0; i < args.length; ++i) {
-//            LOG.info("args[{}]: {}", i, args[i]);
-//        }
     }
 }

@@ -13,6 +13,9 @@ import java.io.*;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Service;
 
 
 /**
@@ -20,17 +23,19 @@ import java.util.logging.Logger;
  * @author ahamad
  *
  */
+
+@Service
 public class Indexer {
 	private Settings settings = new Settings();
 	private Logger logger = Logger.getLogger("Indexer");	
 	private int indexedRecordsCount; 
 
-//	IndexWriter indexWriter = null;
-//   	Directory indexDirectory = null;
-	
+    @Autowired
+    SQLiteWriter sqliteWriter;
+
 
 	public int indexDoc() throws Exception, IOException, InterruptedException {
-
+        
         indexedRecordsCount = 0;
 
 	    String inputPath  = new java.io.File( "." ).getCanonicalPath();
@@ -45,8 +50,11 @@ public class Indexer {
 		if(filesNames == null || filesNames.length == 0) {
 			throw new Exception("No files specified to index!");
 		}
-		int bookID = settings.getDocID();
-		int recordID = 0;
+		String bookID = settings.getDocID();
+        sqliteWriter.init(bookID);
+	    sqliteWriter.createTables();
+        	
+        int recordID = 0;
 		int parentID = -1;
 		Stack<Integer> parentStack = new Stack<Integer>();
 		parentStack.push(0);
@@ -145,7 +153,11 @@ public class Indexer {
         logger.info("Build is completed successfully");
 //			out.flush();
 //		}
-		
+	
+        
+        sqliteWriter.close();
+    
+    	
 		return indexedRecordsCount;
 	}
 	
@@ -221,8 +233,8 @@ public class Indexer {
 	 * @param textNoVoweles text without the Arabic vowels
 	 * @throws IOException 
 	 */
-	public void indexRecord(int recordID, int bookID, int parentID, String title, 
-			String text, String textNoVoweles) throws IOException {
+	public void indexRecord(int recordID, String bookID, int parentID, String title, 
+			String text, String textNoVoweles) throws Exception {
 
 //		Document doc = new Document();
 //			doc.add(new Field("id", String.valueOf(recordID), Field.Store.YES, Field.Index.UN_TOKENIZED));
@@ -234,8 +246,11 @@ public class Indexer {
 //			indexWriter.addDocument(doc);
 
 			//This should be injected to SQLite record
-
-        logger.info("insert record: " + title);
+        String parentIdString = String.valueOf(parentID);
+        if(parentID == -1) parentIdString = "NO_PARENT";
+            
+        sqliteWriter.appendRecord(recordID, parentIdString, title, text, textNoVoweles);
+        logger.info(String.format("Record %s-%d-%s:%s", bookID, recordID, parentIdString, title));
 		indexedRecordsCount ++;
 
 	}

@@ -20,7 +20,7 @@ import java.util.prefs.InvalidPreferencesFormatException;
 public class Settings {
 
 	String [] fileList;
-	int docID;
+	String docID;
 	String [] levelsBreakers;
 	String recordBreaker;
 	String titleSep;
@@ -47,7 +47,7 @@ public class Settings {
 			throw new InvalidPreferencesFormatException("Absent or empty BookID property");
 		}
 
-		docID = Integer.parseInt(bookID);
+		docID = bookID;
 		
 		recordBreaker = props.getProperty("RecordBreaker");
 		
@@ -87,7 +87,7 @@ public class Settings {
 		return fileList;
 	}
 	
-	public int getDocID() {
+	public String getDocID() {
 		return docID;
 	}
 
