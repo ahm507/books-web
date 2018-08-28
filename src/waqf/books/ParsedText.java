@@ -27,7 +27,7 @@ public class ParsedText {
  * @return an object that has getters that are ready to be used
  * @throws UnsupportedEncodingException 
  */	
-	public static ParsedText parseText(String text, String titleSep) 
+	public static ParsedText parseText(String text, String titleSep, String [] levelBreakers) 
 								throws UnsupportedEncodingException {
 		String title1="", text1="";
 		String[] splitted = text.split(titleSep);
@@ -60,6 +60,12 @@ public class ParsedText {
 			title1 = "";
 			text1 = "";
 		}
+
+        //clean up title
+        for(String level : levelBreakers) {
+            title1 = title1.replaceAll(level, "");
+        }
+
 		return new ParsedText(title1, text1, Display.removeVowels(text1));
 	}
 

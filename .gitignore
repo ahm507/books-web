@@ -8,4 +8,8 @@ build
 WebContent/WEB-INF/data-generated/
 WebContent/WEB-INF/index/
 tags
+spring.log
+*.swp
+*.gz
+
 
