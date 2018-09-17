@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.elazhar.books.scanner;
+package net.elazhar.scanner;
 
 //import org.apache.lucene.document.Document;
 //import org.apache.lucene.document.Field;
@@ -9,12 +9,12 @@ package net.elazhar.books.scanner;
 //import org.apache.lucene.store.Directory;
 //import org.apache.lucene.store.FSDirectory;
 
+import org.springframework.stereotype.Service;
+
 import java.io.*;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
-
-import org.springframework.stereotype.Service;
 
 
 /**
@@ -40,7 +40,7 @@ public class BookScanner {
         
         indexedRecordsCount = 0;
 
-	    String inputPath  = new java.io.File( "." ).getCanonicalPath();
+	    String inputPath  = new File( "." ).getCanonicalPath();
         String indexPath = inputPath;
 
 		settings.loadSettings(inputPath + "/build.properties");

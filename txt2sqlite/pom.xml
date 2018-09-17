@@ -43,6 +43,14 @@
             <version>3.8.7</version>
         </dependency>
 
+		<dependency>
+			<groupId>net.elazhar.books</groupId>
+			<artifactId>scanner</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>

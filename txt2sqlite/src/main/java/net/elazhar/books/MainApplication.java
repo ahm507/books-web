@@ -1,8 +1,8 @@
 package net.elazhar.books;
 
-import net.elazhar.books.scanner.BookScanner;
-import net.elazhar.books.scanner.IndexWriter;
-import net.elazhar.books.scanner.MissingWriterException;
+import net.elazhar.scanner.BookScanner;
+import net.elazhar.scanner.IndexWriter;
+import net.elazhar.scanner.MissingWriterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

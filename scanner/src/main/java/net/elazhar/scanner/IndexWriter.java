@@ -1,7 +1,4 @@
-package net.elazhar.books.scanner;
-
-import java.io.UnsupportedEncodingException;
-import java.sql.SQLException;
+package net.elazhar.scanner;
 
 public interface IndexWriter {
     void init(String bookCode) throws Exception;

@@ -1,4 +1,4 @@
-package net.elazhar.books.scanner;
+package net.elazhar.scanner;
 
 import java.io.UnsupportedEncodingException;
 

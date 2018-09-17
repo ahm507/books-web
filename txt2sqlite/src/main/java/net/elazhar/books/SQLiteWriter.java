@@ -1,6 +1,6 @@
 package net.elazhar.books;
 
-import net.elazhar.books.scanner.IndexWriter;
+import net.elazhar.scanner.IndexWriter;
 import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;

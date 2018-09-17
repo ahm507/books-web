@@ -11,6 +11,7 @@
     <modules>
         <module>txt2sqlite</module>
         <module>indexer</module>
+        <module>scanner</module>
     </modules>
 
 </project>

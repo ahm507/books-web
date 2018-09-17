@@ -1,7 +1,4 @@
-package net.elazhar.books.scanner;
-
-import org.springframework.lang.NonNull;
-import org.springframework.validation.ValidationUtils;
+package net.elazhar.scanner;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
