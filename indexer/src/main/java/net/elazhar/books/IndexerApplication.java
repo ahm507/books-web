@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 public class IndexerApplication implements CommandLineRunner {
 
 
-    private static Logger LOG = LoggerFactory.getLogger(DemoApplication.class);
+    private static Logger LOG = LoggerFactory.getLogger(IndexerApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(IndexerApplication.class, args);
 	}
 
     @Override 
