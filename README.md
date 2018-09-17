@@ -22,6 +22,13 @@ it starts with #L0 and increase as needed. These Table of contents tags are loca
 
 
 
+Scanner:
+--------
+A scanner library that parses book properties file and its refrenced data files and 
+for each document, IndexWriter interface implementor provided. In Txt2sqlite it writes to SQLite database. 
+     
+
+
 Txt2SQlite:
 ----------
 
