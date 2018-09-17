@@ -36,7 +36,7 @@ public class Settings {
 	public void loadSettings(String propertiesFile)
 			throws FileNotFoundException, IOException, InvalidPreferencesFormatException {
 		
-		Logger logger = Logger.getLogger("waqf.indexer.settings");
+		Logger logger = Logger.getLogger("Settings.class");
 		
 		Properties props = new Properties();
 
