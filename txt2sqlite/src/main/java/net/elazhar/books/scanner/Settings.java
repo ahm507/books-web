@@ -1,4 +1,4 @@
-package net.elazhar.books;
+package net.elazhar.books.scanner;
 
 import org.springframework.lang.NonNull;
 import org.springframework.validation.ValidationUtils;

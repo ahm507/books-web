@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.elazhar.books;
+package net.elazhar.books.scanner;
 
 //import org.apache.lucene.document.Document;
 //import org.apache.lucene.document.Field;
@@ -14,6 +14,10 @@ import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
 
+import net.elazhar.books.scanner.IndexWriter;
+import net.elazhar.books.scanner.ParsedText;
+import net.elazhar.books.scanner.Settings;
+import net.elazhar.books.scanner.WiterMissingException;
 import org.springframework.stereotype.Service;
 
 
@@ -76,7 +80,7 @@ public class Indexer {
 						continue;
 					}
 		
-					ParsedText ptext = ParsedText.parseText(record, settings.getTitleSep(), settings.getLevelsBreakers()); 
+					ParsedText ptext = ParsedText.parseText(record, settings.getTitleSep(), settings.getLevelsBreakers());
 					
 					indexRecord(recordID, bookID, parentID, ptext.getTitle(), 
 							ptext.getText(), ptext.getTextNoVowels());

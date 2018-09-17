@@ -1,5 +1,8 @@
 package net.elazhar.books;
 
+import net.elazhar.books.scanner.IndexWriter;
+import net.elazhar.books.scanner.Indexer;
+import net.elazhar.books.scanner.WiterMissingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

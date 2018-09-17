@@ -1,10 +1,10 @@
 package net.elazhar.books;
 
+import net.elazhar.books.scanner.IndexWriter;
 import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
 import java.sql.*;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.logging.Logger;
 
