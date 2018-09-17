@@ -8,11 +8,6 @@ public class TextUtils {
     //}
 
 
-	/**
-	 * This function return a copy from the string that has no Arabic vowels
-	 * @param text
-	 * @return
-	 */	
 	static public String removeVowels(String text) {
 		final int ARABIC_FATHATAN = 0x064B;
 		final int ARABIC_DAMMATAN = 0x064C; 

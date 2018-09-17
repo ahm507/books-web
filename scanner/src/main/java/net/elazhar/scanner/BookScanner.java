@@ -1,5 +1,6 @@
 package net.elazhar.scanner;
 
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -7,12 +8,6 @@ import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
 
-
-/**
- * This class is the main driver to the indexer
- * @author ahamad
- *
- */
 
 @Service
 public class BookScanner {

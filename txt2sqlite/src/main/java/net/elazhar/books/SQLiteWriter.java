@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 @Component
 public class SQLiteWriter implements IndexWriter {
 	private String bookCode;
-	private String indexPath;
 	private Connection connection = null;
 	private PreparedStatement insertStatement = null;
 	private Logger logger = Logger.getLogger("SQLiteWriter");	

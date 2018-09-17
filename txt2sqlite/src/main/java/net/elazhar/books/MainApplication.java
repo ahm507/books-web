@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.FileNotFoundException; 
 import org.springframework.beans.factory.annotation.Autowired;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "net.elazhar")
 public class MainApplication implements CommandLineRunner {
 
 
@@ -19,8 +19,7 @@ public class MainApplication implements CommandLineRunner {
     BookScanner bookScanner;
 
     @Autowired
-    IndexWriter sqliteWriter;
-
+    SQLiteWriter sqliteWriter;
 
     private static Logger LOG = LoggerFactory
             .getLogger(MainApplication.class);
