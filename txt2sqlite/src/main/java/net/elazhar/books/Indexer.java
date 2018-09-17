@@ -53,8 +53,7 @@ public class Indexer {
 		}
 		String bookID = settings.getDocID();
         sqliteWriter.init(bookID);
-	    sqliteWriter.createTables();
-        	
+
         int recordID = 0;
 		int parentID = -1;
 		Stack<Integer> parentStack = new Stack<Integer>();

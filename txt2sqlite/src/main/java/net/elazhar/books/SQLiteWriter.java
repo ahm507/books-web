@@ -23,7 +23,7 @@ public class SQLiteWriter {
 //        this.sqliteConnection = sqliteConnection;
 //    }
 	
-    public void init(String bookCode) {
+    public void init(String bookCode) throws Exception {
 
 		this.bookCode = bookCode;
 		try {
@@ -40,6 +40,8 @@ public class SQLiteWriter {
 			System.exit(-1);
 		}
 
+		createTables();
+
     }
 
     public void close() throws SQLException {
@@ -48,7 +50,7 @@ public class SQLiteWriter {
 	}
 
 
-    public void createTables() throws SQLException {
+    private void createTables() throws SQLException {
 		Statement stmt = null;
 		try {
 			stmt = connection.createStatement();
