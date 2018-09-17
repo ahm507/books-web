@@ -13,4 +13,16 @@ public class IndexerApplicationTests {
 	public void contextLoads() {
 	}
 
+
+    @Test public void getUniqueWords() {
+        
+        //scan fils
+        //split words
+        //get unique words count
+
+    
+
+        
+    }
+
 }
