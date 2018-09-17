@@ -2,7 +2,7 @@ package net.elazhar.books;
 
 import net.elazhar.books.scanner.BookScanner;
 import net.elazhar.books.scanner.IndexWriter;
-import net.elazhar.books.scanner.WiterMissingException;
+import net.elazhar.books.scanner.MissingWriterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -38,7 +38,7 @@ public class MainApplication implements CommandLineRunner {
             indexed = bookScanner.indexDoc();
         } catch (FileNotFoundException e) {
             LOG.info("build.properties file not found");
-        } catch (WiterMissingException e) {
+        } catch (MissingWriterException e) {
             LOG.info(e.getMessage());
             e.printStackTrace();
         }

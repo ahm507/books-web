@@ -14,10 +14,6 @@ import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
 
-import net.elazhar.books.scanner.IndexWriter;
-import net.elazhar.books.scanner.ParsedText;
-import net.elazhar.books.scanner.Settings;
-import net.elazhar.books.scanner.WiterMissingException;
 import org.springframework.stereotype.Service;
 
 
@@ -32,13 +28,13 @@ public class BookScanner {
 	private Settings settings = new Settings();
 	private Logger logger = Logger.getLogger("BookScanner");
 	private int indexedRecordsCount;
-	IndexWriter sqliteWriter;
+	IndexWriter indexWriter;
 
-	public int indexDoc() throws Exception, IOException, InterruptedException, WiterMissingException {
+	public int indexDoc() throws Exception, IOException, InterruptedException, MissingWriterException {
 
-		if(sqliteWriter == null) {
+		if(indexWriter == null) {
 
-			throw new WiterMissingException("A SearchWriter object must be set");
+			throw new MissingWriterException("A SearchWriter object must be set");
 		}
 
         
@@ -55,7 +51,7 @@ public class BookScanner {
 			throw new Exception("No files specified to index!");
 		}
 		String bookID = settings.getDocID();
-        sqliteWriter.init(bookID);
+        indexWriter.init(bookID);
 
         int recordID = 0;
 		int parentID = -1;
@@ -129,7 +125,7 @@ public class BookScanner {
 		
         logger.info("Build is completed successfully");
         
-        sqliteWriter.close();
+        indexWriter.close();
     
     	
 	    return indexedRecordsCount;
@@ -186,13 +182,13 @@ public class BookScanner {
         String parentIdString = String.valueOf(parentID);
         if(parentID == -1) parentIdString = "NO_PARENT";
             
-        sqliteWriter.appendRecord(recordID, parentIdString, title, text, textNoVoweles);
+        indexWriter.appendRecord(recordID, parentIdString, title, text, textNoVoweles);
         logger.info(String.format("Record %s-%d-%s:%s", bookID, recordID, parentIdString, title));
 		indexedRecordsCount ++;
 
 	}
 
 	public void setSetWriter(IndexWriter sqliteWriter) {
-		this.sqliteWriter = sqliteWriter;
+		this.indexWriter = sqliteWriter;
 	}
 }
