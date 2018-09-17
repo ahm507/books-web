@@ -1,7 +1,7 @@
 package net.elazhar.books.scanner;
 
 
-public class Display {
+public class TextUtils {
 
     //function stripAccents(text) {
     //    return text.replace(new RegExp('[\u064B-\u065F]*', 'g'), '');

@@ -67,7 +67,7 @@ public class ParsedText {
         }
 
         
-        return new ParsedText(title1, text1, Display.removeVowels(text1));
+        return new ParsedText(title1, text1, TextUtils.removeVowels(text1));
 	}
 
 	public static String adjustEncoding(String title1) throws UnsupportedEncodingException {
