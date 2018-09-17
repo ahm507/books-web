@@ -18,6 +18,7 @@ import java.util.Vector;
 
 public class Display {
 
+/*
 	public static class DocInfo {
 		public String id;
 		public String parentID;
@@ -39,7 +40,7 @@ public class Display {
 			
 		}
 	}
-
+*/
     //function stripAccents(text) {
     //    return text.replace(new RegExp('[\u064B-\u065F]*', 'g'), '');
     //}
