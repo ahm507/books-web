@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringBootApplication
-public class TextToSQLiteApplication implements CommandLineRunner {
+public class MainApplication implements CommandLineRunner {
 
 
     @Autowired
@@ -23,10 +23,10 @@ public class TextToSQLiteApplication implements CommandLineRunner {
 
 
     private static Logger LOG = LoggerFactory
-            .getLogger(TextToSQLiteApplication.class);
+            .getLogger(MainApplication.class);
 
     public static void main(String[] args) {
-		SpringApplication.run(TextToSQLiteApplication.class, args);
+		SpringApplication.run(MainApplication.class, args);
 	}
 
     @Override 
