@@ -1,7 +1,7 @@
 package net.elazhar.books;
 
+import net.elazhar.books.scanner.BookScanner;
 import net.elazhar.books.scanner.IndexWriter;
-import net.elazhar.books.scanner.Indexer;
 import net.elazhar.books.scanner.WiterMissingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,7 @@ public class MainApplication implements CommandLineRunner {
 
 
     @Autowired
-    Indexer indexer;
+    BookScanner bookScanner;
 
     @Autowired
     IndexWriter sqliteWriter;
@@ -32,10 +32,10 @@ public class MainApplication implements CommandLineRunner {
     @Override 
     public void run(String... args) throws Exception {
 
-        indexer.setSetWriter(sqliteWriter);
+        bookScanner.setSetWriter(sqliteWriter);
         int indexed = 0;
         try {
-            indexed = indexer.indexDoc();
+            indexed = bookScanner.indexDoc();
         } catch (FileNotFoundException e) {
             LOG.info("build.properties file not found");
         } catch (WiterMissingException e) {

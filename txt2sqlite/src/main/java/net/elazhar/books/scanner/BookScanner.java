@@ -28,9 +28,9 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class Indexer {
+public class BookScanner {
 	private Settings settings = new Settings();
-	private Logger logger = Logger.getLogger("Indexer");	
+	private Logger logger = Logger.getLogger("BookScanner");
 	private int indexedRecordsCount;
 	IndexWriter sqliteWriter;
 
