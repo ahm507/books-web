@@ -13,7 +13,6 @@ import java.io.*;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.logging.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -29,7 +28,7 @@ public class Indexer {
 	private Settings settings = new Settings();
 	private Logger logger = Logger.getLogger("Indexer");	
 	private int indexedRecordsCount;
-	SQLiteWriter sqliteWriter;
+	IndexWriter sqliteWriter;
 
 	public int indexDoc() throws Exception, IOException, InterruptedException, WiterMissingException {
 
@@ -189,7 +188,7 @@ public class Indexer {
 
 	}
 
-	public void setSetWriter(SQLiteWriter sqliteWriter) {
+	public void setSetWriter(IndexWriter sqliteWriter) {
 		this.sqliteWriter = sqliteWriter;
 	}
 }

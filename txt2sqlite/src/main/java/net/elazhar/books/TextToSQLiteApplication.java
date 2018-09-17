@@ -16,7 +16,7 @@ public class TextToSQLiteApplication implements CommandLineRunner {
     Indexer indexer;
 
     @Autowired
-    SQLiteWriter sqliteWriter;
+    IndexWriter sqliteWriter;
 
 
     private static Logger LOG = LoggerFactory

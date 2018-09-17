@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import java.util.logging.Logger;
 
 @Component
-public class SQLiteWriter {
+public class SQLiteWriter implements IndexWriter {
 	private String bookCode;
 	private String indexPath;
 	private Connection connection = null;
@@ -23,6 +23,7 @@ public class SQLiteWriter {
 //        this.sqliteConnection = sqliteConnection;
 //    }
 	
+    @Override
     public void init(String bookCode) throws Exception {
 
 		this.bookCode = bookCode;
@@ -44,6 +45,7 @@ public class SQLiteWriter {
 
     }
 
+    @Override
     public void close() throws SQLException {
 		if(insertStatement != null) insertStatement.close();
 		if(connection != null) connection.close();
@@ -73,7 +75,7 @@ public class SQLiteWriter {
 				rs.close();
 				//System.out.print("Existing records exit, overwrite is not allowed.");
                 logger.info("Existing records exit, old records will be removed.");
-                
+
                 stmt.executeUpdate("delete from pages where book_code='" + bookCode + "';");
                 connection.commit();
 			}
@@ -81,7 +83,7 @@ public class SQLiteWriter {
             if(insertStatement == null) {
                 String insertSql = "INSERT INTO pages(page_id, parent_id, book_code, title, page, page_fts) VALUES(?, ?, ?, ?, ?, ?);";
 			    insertStatement = connection.prepareStatement(insertSql);
-                logger.info("Insertion PreparedStatement is initiated"); 
+                logger.info("Insertion PreparedStatement is initiated");
             }
 
         } finally {
@@ -91,6 +93,7 @@ public class SQLiteWriter {
     }
 
 
+    @Override
     public void appendRecord(int pageId, String parentId, String title, String page, String pageNoVowels)
 			throws SQLException, UnsupportedEncodingException {
         
