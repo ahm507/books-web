@@ -15,6 +15,10 @@ public class TextToSQLiteApplication implements CommandLineRunner {
     @Autowired
     Indexer indexer;
 
+    @Autowired
+    SQLiteWriter sqliteWriter;
+
+
     private static Logger LOG = LoggerFactory
             .getLogger(TextToSQLiteApplication.class);
 
@@ -25,11 +29,15 @@ public class TextToSQLiteApplication implements CommandLineRunner {
     @Override 
     public void run(String... args) throws Exception {
 
+        indexer.setSetWriter(sqliteWriter);
         int indexed = 0;
         try {
             indexed = indexer.indexDoc();
         } catch (FileNotFoundException e) {
             LOG.info("build.properties file not found");
+        } catch (WiterMissingException e) {
+            LOG.info(e.getMessage());
+            e.printStackTrace();
         }
 
         LOG.info("Indexed records count: " + String.valueOf(indexed));

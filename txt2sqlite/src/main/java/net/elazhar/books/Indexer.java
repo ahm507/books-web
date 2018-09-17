@@ -28,13 +28,16 @@ import org.springframework.stereotype.Service;
 public class Indexer {
 	private Settings settings = new Settings();
 	private Logger logger = Logger.getLogger("Indexer");	
-	private int indexedRecordsCount; 
+	private int indexedRecordsCount;
+	SQLiteWriter sqliteWriter;
 
-    @Autowired
-    SQLiteWriter sqliteWriter;
+	public int indexDoc() throws Exception, IOException, InterruptedException, WiterMissingException {
 
-    
-	public int indexDoc() throws Exception, IOException, InterruptedException {
+		if(sqliteWriter == null) {
+
+			throw new WiterMissingException("A SearchWriter object must be set");
+		}
+
         
         indexedRecordsCount = 0;
 
@@ -186,5 +189,8 @@ public class Indexer {
 		indexedRecordsCount ++;
 
 	}
-	
+
+	public void setSetWriter(SQLiteWriter sqliteWriter) {
+		this.sqliteWriter = sqliteWriter;
+	}
 }
