@@ -43,6 +43,24 @@ You need to copy books.sqlite to resources folder to the Android application
     cp books.sqlite ./hadith-android/
 
 
+Generating Initial Spring Boot Apps:
+------------------------------------
+First, make sure you installed Spring command line tools.
+
+Show init projects options
+
+    spring init --list
+
+You can run Spring shell for autocomplete
+
+    spring shell
+    init <TAB>
+
+Example generation command from inside "spring shell"
+    
+    init -a=indexer -p=jar -g=net.elazhar.books --package-name=net.elazhar.books 
+
+
 
 Legacy: src/waqf/epub
 ----------------------
