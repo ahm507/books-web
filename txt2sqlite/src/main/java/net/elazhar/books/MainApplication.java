@@ -1,7 +1,6 @@
 package net.elazhar.books;
 
 import net.elazhar.scanner.BookScanner;
-import net.elazhar.scanner.IndexWriter;
 import net.elazhar.scanner.MissingWriterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
