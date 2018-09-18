@@ -32,12 +32,7 @@ public class IndexerApplication implements CommandLineRunner {
     @Override 
     public void run(String... args) throws Exception {
 
-        LOG.info("Application is running");
-
-        //call the scanner and for each document passed for indexing
-        //store unique words in hashmap
-        HashMap<String, ArrayList<Integer>>  index = new HashMap<>();
-
+        LOG.info("Full Text Indexing is started");
 
         bookScanner.setSetWriter(ftsWriter);
         int indexed = 0;

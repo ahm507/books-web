@@ -95,8 +95,10 @@ public class SQLiteWriter implements IndexWriter {
     @Override
     public void appendRecord(int pageId, String parentId, String title, String page, String pageNoVowels)
 			throws SQLException, UnsupportedEncodingException {
-        
-        try {
+
+		logger.info(String.format("Record %s-%d-%s:%s", bookCode, pageId, parentId, title));
+
+		try {
 			insertStatement.setInt(1, pageId);
 			if(pageId == 0) parentId = "NO_PARENT";
 			insertStatement.setString(2, parentId);

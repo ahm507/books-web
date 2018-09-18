@@ -169,7 +169,7 @@ public class BookScanner {
         if(parentID == -1) parentIdString = "NO_PARENT";
             
         indexWriter.appendRecord(recordID, parentIdString, title, text, textNoVoweles);
-        logger.info(String.format("Record %s-%d-%s:%s", bookID, recordID, parentIdString, title));
+//        logger.info(String.format("Record %s-%d-%s:%s", bookID, recordID, parentIdString, title));
 		indexedRecordsCount ++;
 
 	}
