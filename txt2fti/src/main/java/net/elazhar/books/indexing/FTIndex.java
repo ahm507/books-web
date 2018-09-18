@@ -7,7 +7,7 @@ import java.util.TreeSet;
 import java.util.logging.Logger;
 
 public class FTIndex {
-    private HashMap<String, ArrayList<SearchHit>> index = new HashMap<>();
+    private HashMap<String, ArrayList<Hit>> index = new HashMap<>();
     private Logger logger = Logger.getLogger("FTSIndex");
 
     private void showUniqueWords() {
@@ -27,9 +27,9 @@ public class FTIndex {
         for(String word: words) {
             if( ! word.trim().isEmpty()) {
                 //get word
-                ArrayList<SearchHit> hits = index.get(word);
+                ArrayList<Hit> hits = index.get(word);
                 if(hits == null) hits = new ArrayList<>();
-                hits.add(new SearchHit(bookId, docId));
+                hits.add(new Hit(bookId, docId));
                 index.put(word, hits);
             }
         }

@@ -14,12 +14,13 @@ public class FTSWriter implements IndexWriter {
 
     private Logger logger = Logger.getLogger("FTSWriter");
 
+    private FTIndex index = new FTIndex();
+    private TextStore text = new TextStore();
+    private TOCStore toc = new TOCStore();
 
-    FTIndex index = new FTIndex();
-    TextStore text = new TextStore();
-    TOCStore toc = new TOCStore();
+    private String bookCode;
 
-    String bookCode;
+
     @Override
     public void init(String bookCode) throws Exception {
         this.bookCode = bookCode;
@@ -35,9 +36,7 @@ public class FTSWriter implements IndexWriter {
         //store to files
 
     }
-
-
-
+    
     @Override
     public void appendRecord(int docId, String parentId, String title, String document, String documentNoVowels) throws Exception {
         index.indexWords(bookCode, docId, title, documentNoVowels);

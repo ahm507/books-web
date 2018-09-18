@@ -1,12 +1,12 @@
 package net.elazhar.books.indexing;
 
-public class SearchHit {
+public class Hit {
 
     private String bookId;
     private int docId;
 
 
-    public SearchHit(String bookId, int docId) {
+    public Hit(String bookId, int docId) {
         this.bookId = bookId;
         this.docId = docId;
     }
