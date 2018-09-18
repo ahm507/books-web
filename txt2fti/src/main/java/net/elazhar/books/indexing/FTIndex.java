@@ -49,6 +49,10 @@ public class FTIndex {
         return keys.size();
     }
 
+    public int getTotalHitsIndexed() {
+        return hitCounter;
+    }
+
     public Set<Hit> getWordHits(String word) {
         return index.get(word);
     }

@@ -30,6 +30,8 @@ public class FTSWriter implements IndexWriter {
     @Override
     public void close() throws Exception {
 
+        logger.info("Count of unique words indexed: " + index.getDicWordsCount() + " for hits of " + index.getTotalHitsIndexed());
+
         //showUniqueWords();
 
         //compress
