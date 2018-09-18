@@ -39,9 +39,9 @@ public class FTSWriter implements IndexWriter {
 
 
     @Override
-    public void appendRecord(int pageId, String parentId, String title, String document, String documentNoVowels) throws Exception {
-        index.indexWords(bookCode, pageId, title, documentNoVowels);
-        text.storeText(bookCode, pageId, title, document);
-        toc.storeTOC(bookCode, pageId, parentId);
+    public void appendRecord(int docId, String parentId, String title, String document, String documentNoVowels) throws Exception {
+        index.indexWords(bookCode, docId, title, documentNoVowels);
+        text.storeText(bookCode, docId, title, document);
+        toc.storeTOC(bookCode, docId, parentId);
     }
 }
