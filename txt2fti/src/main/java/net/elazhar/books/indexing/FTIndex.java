@@ -44,26 +44,35 @@ public class FTIndex {
     }
 
 
-    public void showStats() {
-
-        logger.info("Total hits stored in memory is: " + hitCounter);
-        logger.info("show first 10 words");
-
+    public int getDicWordsCount() {
         Set<String> keys = index.keySet();
-        int count = 10;
-        Iterator<String> it = keys.iterator();
-        while(count > 0) {
-            if(it.hasNext()) {
-                String key = it.next();
-                Set<Hit> hits = index.get(key);
-                logger.info("word: " + key + ", " + hits);
-            }
-            count--;
-
-        }
-
-
+        return keys.size();
     }
+
+    public Set<Hit> getWordHits(String word) {
+        return index.get(word);
+    }
+
+//    public void showStats() {
+//
+//        logger.info("Total hits stored in memory is: " + hitCounter);
+//        logger.info("show first 10 words");
+//
+//        Set<String> keys = index.keySet();
+//        int count = 10;
+//        Iterator<String> it = keys.iterator();
+//        while(count > 0) {
+//            if(it.hasNext()) {
+//                String key = it.next();
+//                Set<Hit> hits = index.get(key);
+//                logger.info("word: " + key + ", " + hits);
+//            }
+//            count--;
+//
+//        }
+//
+//
+//    }
 
 
 
